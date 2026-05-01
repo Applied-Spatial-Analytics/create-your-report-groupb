@@ -1,11 +1,11 @@
 ---
 title: "Title of your report"
-subtitle: "Project report of Group #"
+subtitle: "Project report of Group B"
 author:
   - name: "Anna Scherrenburg"
     affiliation: "MSc Geomatics"
-  - name: "Student 2"
-    affiliation: "MSc Landscape Architecture"
+  - name: "Viktor Bozev"
+    affiliation: "MSc Geomatics"
   - name: "Student 3"
     affiliation: "MSc Urbanism"
 format: html
