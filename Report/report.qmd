@@ -50,6 +50,22 @@ and start the report from the Introduction section below.
 
 ## Introduction
 
+I'll just write some comments here that we can use later;
+
+Spatial Justice indicators;
+
+Leefbarometer;
+
+-   Physical environment - measures physical attributes like green spaces, water, proximity to highways, traffic nuisance, and landscape quality.
+
+-   Safety & security - tracks registered crime rates, theft, physical vandalism, and reports of antisocial behavior or nuisance.
+
+-   Social Cohesion - Evaluates characteristics of the local population, including employment rates, income levels, integration metrics, and percentage of long-term residents.
+
+-   Services and Facilities - Measures accessibility to essential daily services, including schools, supermarkets, public transit stops, GP practices, and cultural centers.
+
+-   Housing Stock - Assesses the quality, market value, building age, ownership status, and composition of the residential properties
+
 ## Methods
 
 ### MCDA
