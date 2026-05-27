@@ -1,5 +1,5 @@
 ---
-title: "Title of your report"
+title: "Title of your"
 subtitle: "Project report of Group B"
 author:
   - name: "Anna Scherrenburg"
