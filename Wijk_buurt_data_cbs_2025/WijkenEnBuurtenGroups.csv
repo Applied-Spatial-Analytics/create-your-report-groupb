@@ -1,0 +1,347 @@
+Id;Index;Title;Description;ParentId;DimensionId
+WBGM;0;Wijken en buurten per gemeente;;;WijkenEnBuurten
+GM1680;1;Aa en Hunze;;WBGM;WijkenEnBuurten
+GM0358;2;Aalsmeer;;WBGM;WijkenEnBuurten
+GM0197;3;Aalten;;WBGM;WijkenEnBuurten
+GM0059;4;Achtkarspelen;;WBGM;WijkenEnBuurten
+GM0482;5;Alblasserdam;;WBGM;WijkenEnBuurten
+GM0613;6;Albrandswaard;;WBGM;WijkenEnBuurten
+GM0361;7;Alkmaar;;WBGM;WijkenEnBuurten
+GM0141;8;Almelo;;WBGM;WijkenEnBuurten
+GM0034;9;Almere;;WBGM;WijkenEnBuurten
+GM0484;10;Alphen aan den Rijn;;WBGM;WijkenEnBuurten
+GM1723;11;Alphen-Chaam;;WBGM;WijkenEnBuurten
+GM1959;12;Altena;;WBGM;WijkenEnBuurten
+GM0060;13;Ameland;;WBGM;WijkenEnBuurten
+GM0307;14;Amersfoort;;WBGM;WijkenEnBuurten
+GM0362;15;Amstelveen;;WBGM;WijkenEnBuurten
+GM0363;16;Amsterdam;;WBGM;WijkenEnBuurten
+GM0200;17;Apeldoorn;;WBGM;WijkenEnBuurten
+GM0202;18;Arnhem;;WBGM;WijkenEnBuurten
+GM0106;19;Assen;;WBGM;WijkenEnBuurten
+GM0743;20;Asten;;WBGM;WijkenEnBuurten
+GM0744;21;Baarle-Nassau;;WBGM;WijkenEnBuurten
+GM0308;22;Baarn;;WBGM;WijkenEnBuurten
+GM0489;23;Barendrecht;;WBGM;WijkenEnBuurten
+GM0203;24;Barneveld;;WBGM;WijkenEnBuurten
+GM0888;25;Beek (L.);;WBGM;WijkenEnBuurten
+GM1954;26;Beekdaelen;;WBGM;WijkenEnBuurten
+GM0889;27;Beesel;;WBGM;WijkenEnBuurten
+GM1945;28;Berg en Dal;;WBGM;WijkenEnBuurten
+GM1724;29;Bergeijk;;WBGM;WijkenEnBuurten
+GM0893;30;Bergen (L.);;WBGM;WijkenEnBuurten
+GM0373;31;Bergen (NH.);;WBGM;WijkenEnBuurten
+GM0748;32;Bergen op Zoom;;WBGM;WijkenEnBuurten
+GM1859;33;Berkelland;;WBGM;WijkenEnBuurten
+GM1721;34;Bernheze;;WBGM;WijkenEnBuurten
+GM0753;35;Best;;WBGM;WijkenEnBuurten
+GM0209;36;Beuningen;;WBGM;WijkenEnBuurten
+GM0375;37;Beverwijk;;WBGM;WijkenEnBuurten
+GM0310;38;De Bilt;;WBGM;WijkenEnBuurten
+GM1728;39;Bladel;;WBGM;WijkenEnBuurten
+GM0376;40;Blaricum;;WBGM;WijkenEnBuurten
+GM0377;41;Bloemendaal;;WBGM;WijkenEnBuurten
+GM1901;42;Bodegraven-Reeuwijk;;WBGM;WijkenEnBuurten
+GM0755;43;Boekel;;WBGM;WijkenEnBuurten
+GM1681;44;Borger-Odoorn;;WBGM;WijkenEnBuurten
+GM0147;45;Borne;;WBGM;WijkenEnBuurten
+GM0654;46;Borsele;;WBGM;WijkenEnBuurten
+GM0757;47;Boxtel;;WBGM;WijkenEnBuurten
+GM0758;48;Breda;;WBGM;WijkenEnBuurten
+GM1876;49;Bronckhorst;;WBGM;WijkenEnBuurten
+GM0213;50;Brummen;;WBGM;WijkenEnBuurten
+GM0899;51;Brunssum;;WBGM;WijkenEnBuurten
+GM0312;52;Bunnik;;WBGM;WijkenEnBuurten
+GM0313;53;Bunschoten;;WBGM;WijkenEnBuurten
+GM0214;54;Buren;;WBGM;WijkenEnBuurten
+GM0502;55;Capelle aan den IJssel;;WBGM;WijkenEnBuurten
+GM0383;56;Castricum;;WBGM;WijkenEnBuurten
+GM0109;57;Coevorden;;WBGM;WijkenEnBuurten
+GM1706;58;Cranendonck;;WBGM;WijkenEnBuurten
+GM0216;59;Culemborg;;WBGM;WijkenEnBuurten
+GM0148;60;Dalfsen;;WBGM;WijkenEnBuurten
+GM1891;61;Dantumadiel;;WBGM;WijkenEnBuurten
+GM0503;62;Delft;;WBGM;WijkenEnBuurten
+GM0762;63;Deurne;;WBGM;WijkenEnBuurten
+GM0150;64;Deventer;;WBGM;WijkenEnBuurten
+GM0384;65;Diemen;;WBGM;WijkenEnBuurten
+GM1980;66;Dijk en Waard;;WBGM;WijkenEnBuurten
+GM1774;67;Dinkelland;;WBGM;WijkenEnBuurten
+GM0221;68;Doesburg;;WBGM;WijkenEnBuurten
+GM0222;69;Doetinchem;;WBGM;WijkenEnBuurten
+GM0766;70;Dongen;;WBGM;WijkenEnBuurten
+GM0505;71;Dordrecht;;WBGM;WijkenEnBuurten
+GM0498;72;Drechterland;;WBGM;WijkenEnBuurten
+GM1719;73;Drimmelen;;WBGM;WijkenEnBuurten
+GM0303;74;Dronten;;WBGM;WijkenEnBuurten
+GM0225;75;Druten;;WBGM;WijkenEnBuurten
+GM0226;76;Duiven;;WBGM;WijkenEnBuurten
+GM1711;77;Echt-Susteren;;WBGM;WijkenEnBuurten
+GM0385;78;Edam-Volendam;;WBGM;WijkenEnBuurten
+GM0228;79;Ede;;WBGM;WijkenEnBuurten
+GM0317;80;Eemnes;;WBGM;WijkenEnBuurten
+GM1979;81;Eemsdelta;;WBGM;WijkenEnBuurten
+GM0770;82;Eersel;;WBGM;WijkenEnBuurten
+GM1903;83;Eijsden-Margraten;;WBGM;WijkenEnBuurten
+GM0772;84;Eindhoven;;WBGM;WijkenEnBuurten
+GM0230;85;Elburg;;WBGM;WijkenEnBuurten
+GM0114;86;Emmen;;WBGM;WijkenEnBuurten
+GM0388;87;Enkhuizen;;WBGM;WijkenEnBuurten
+GM0153;88;Enschede;;WBGM;WijkenEnBuurten
+GM0232;89;Epe;;WBGM;WijkenEnBuurten
+GM0233;90;Ermelo;;WBGM;WijkenEnBuurten
+GM0777;91;Etten-Leur;;WBGM;WijkenEnBuurten
+GM1940;92;De Fryske Marren;;WBGM;WijkenEnBuurten
+GM0779;93;Geertruidenberg;;WBGM;WijkenEnBuurten
+GM1771;94;Geldrop-Mierlo;;WBGM;WijkenEnBuurten
+GM1652;95;Gemert-Bakel;;WBGM;WijkenEnBuurten
+GM0907;96;Gennep;;WBGM;WijkenEnBuurten
+GM0784;97;Gilze en Rijen;;WBGM;WijkenEnBuurten
+GM1924;98;Goeree-Overflakkee;;WBGM;WijkenEnBuurten
+GM0664;99;Goes;;WBGM;WijkenEnBuurten
+GM0785;100;Goirle;;WBGM;WijkenEnBuurten
+GM1942;101;Gooise Meren;;WBGM;WijkenEnBuurten
+GM0512;102;Gorinchem;;WBGM;WijkenEnBuurten
+GM0513;103;Gouda;;WBGM;WijkenEnBuurten
+GM0518;104;'s-Gravenhage;;WBGM;WijkenEnBuurten
+GM0014;105;Groningen;;WBGM;WijkenEnBuurten
+GM1729;106;Gulpen-Wittem;;WBGM;WijkenEnBuurten
+GM0158;107;Haaksbergen;;WBGM;WijkenEnBuurten
+GM0392;108;Haarlem;;WBGM;WijkenEnBuurten
+GM0394;109;Haarlemmermeer;;WBGM;WijkenEnBuurten
+GM1655;110;Halderberge;;WBGM;WijkenEnBuurten
+GM0160;111;Hardenberg;;WBGM;WijkenEnBuurten
+GM0243;112;Harderwijk;;WBGM;WijkenEnBuurten
+GM0523;113;Hardinxveld-Giessendam;;WBGM;WijkenEnBuurten
+GM0072;114;Harlingen;;WBGM;WijkenEnBuurten
+GM0244;115;Hattem;;WBGM;WijkenEnBuurten
+GM0396;116;Heemskerk;;WBGM;WijkenEnBuurten
+GM0397;117;Heemstede;;WBGM;WijkenEnBuurten
+GM0246;118;Heerde;;WBGM;WijkenEnBuurten
+GM0074;119;Heerenveen;;WBGM;WijkenEnBuurten
+GM0917;120;Heerlen;;WBGM;WijkenEnBuurten
+GM1658;121;Heeze-Leende;;WBGM;WijkenEnBuurten
+GM0399;122;Heiloo;;WBGM;WijkenEnBuurten
+GM0400;123;Den Helder;;WBGM;WijkenEnBuurten
+GM0163;124;Hellendoorn;;WBGM;WijkenEnBuurten
+GM0794;125;Helmond;;WBGM;WijkenEnBuurten
+GM0531;126;Hendrik-Ido-Ambacht;;WBGM;WijkenEnBuurten
+GM0164;127;Hengelo (O.);;WBGM;WijkenEnBuurten
+GM0796;128;'s-Hertogenbosch;;WBGM;WijkenEnBuurten
+GM0252;129;Heumen;;WBGM;WijkenEnBuurten
+GM0797;130;Heusden;;WBGM;WijkenEnBuurten
+GM0534;131;Hillegom;;WBGM;WijkenEnBuurten
+GM0798;132;Hilvarenbeek;;WBGM;WijkenEnBuurten
+GM0402;133;Hilversum;;WBGM;WijkenEnBuurten
+GM1963;134;Hoeksche Waard;;WBGM;WijkenEnBuurten
+GM1735;135;Hof van Twente;;WBGM;WijkenEnBuurten
+GM1966;136;Het Hogeland;;WBGM;WijkenEnBuurten
+GM1911;137;Hollands Kroon;;WBGM;WijkenEnBuurten
+GM0118;138;Hoogeveen;;WBGM;WijkenEnBuurten
+GM0405;139;Hoorn;;WBGM;WijkenEnBuurten
+GM1507;140;Horst aan de Maas;;WBGM;WijkenEnBuurten
+GM0321;141;Houten;;WBGM;WijkenEnBuurten
+GM0406;142;Huizen;;WBGM;WijkenEnBuurten
+GM0677;143;Hulst;;WBGM;WijkenEnBuurten
+GM0353;144;IJsselstein;;WBGM;WijkenEnBuurten
+GM1884;145;Kaag en Braassem;;WBGM;WijkenEnBuurten
+GM0166;146;Kampen;;WBGM;WijkenEnBuurten
+GM0678;147;Kapelle;;WBGM;WijkenEnBuurten
+GM0537;148;Katwijk;;WBGM;WijkenEnBuurten
+GM0928;149;Kerkrade;;WBGM;WijkenEnBuurten
+GM1598;150;Koggenland;;WBGM;WijkenEnBuurten
+GM0542;151;Krimpen aan den IJssel;;WBGM;WijkenEnBuurten
+GM1931;152;Krimpenerwaard;;WBGM;WijkenEnBuurten
+GM1659;153;Laarbeek;;WBGM;WijkenEnBuurten
+GM1982;154;Land van Cuijk;;WBGM;WijkenEnBuurten
+GM0882;155;Landgraaf;;WBGM;WijkenEnBuurten
+GM0415;156;Landsmeer;;WBGM;WijkenEnBuurten
+GM1621;157;Lansingerland;;WBGM;WijkenEnBuurten
+GM0417;158;Laren (NH.);;WBGM;WijkenEnBuurten
+GM0080;159;Leeuwarden;;WBGM;WijkenEnBuurten
+GM0546;160;Leiden;;WBGM;WijkenEnBuurten
+GM0547;161;Leiderdorp;;WBGM;WijkenEnBuurten
+GM1916;162;Leidschendam-Voorburg;;WBGM;WijkenEnBuurten
+GM0995;163;Lelystad;;WBGM;WijkenEnBuurten
+GM1640;164;Leudal;;WBGM;WijkenEnBuurten
+GM0327;165;Leusden;;WBGM;WijkenEnBuurten
+GM1705;166;Lingewaard;;WBGM;WijkenEnBuurten
+GM0553;167;Lisse;;WBGM;WijkenEnBuurten
+GM0262;168;Lochem;;WBGM;WijkenEnBuurten
+GM0809;169;Loon op Zand;;WBGM;WijkenEnBuurten
+GM0331;170;Lopik;;WBGM;WijkenEnBuurten
+GM0168;171;Losser;;WBGM;WijkenEnBuurten
+GM0263;172;Maasdriel;;WBGM;WijkenEnBuurten
+GM1641;173;Maasgouw;;WBGM;WijkenEnBuurten
+GM1991;174;Maashorst;;WBGM;WijkenEnBuurten
+GM0556;175;Maassluis;;WBGM;WijkenEnBuurten
+GM0935;176;Maastricht;;WBGM;WijkenEnBuurten
+GM0420;177;Medemblik;;WBGM;WijkenEnBuurten
+GM0938;178;Meerssen;;WBGM;WijkenEnBuurten
+GM1948;179;Meierijstad;;WBGM;WijkenEnBuurten
+GM0119;180;Meppel;;WBGM;WijkenEnBuurten
+GM0687;181;Middelburg (Z.);;WBGM;WijkenEnBuurten
+GM1842;182;Midden-Delfland;;WBGM;WijkenEnBuurten
+GM1731;183;Midden-Drenthe;;WBGM;WijkenEnBuurten
+GM1952;184;Midden-Groningen;;WBGM;WijkenEnBuurten
+GM1709;185;Moerdijk;;WBGM;WijkenEnBuurten
+GM1978;186;Molenlanden;;WBGM;WijkenEnBuurten
+GM1955;187;Montferland;;WBGM;WijkenEnBuurten
+GM0335;188;Montfoort;;WBGM;WijkenEnBuurten
+GM0944;189;Mook en Middelaar;;WBGM;WijkenEnBuurten
+GM1740;190;Neder-Betuwe;;WBGM;WijkenEnBuurten
+GM0946;191;Nederweert;;WBGM;WijkenEnBuurten
+GM0356;192;Nieuwegein;;WBGM;WijkenEnBuurten
+GM0569;193;Nieuwkoop;;WBGM;WijkenEnBuurten
+GM0267;194;Nijkerk;;WBGM;WijkenEnBuurten
+GM0268;195;Nijmegen;;WBGM;WijkenEnBuurten
+GM1930;196;Nissewaard;;WBGM;WijkenEnBuurten
+GM1970;197;Noardeast-Fryslân;;WBGM;WijkenEnBuurten
+GM1695;198;Noord-Beveland;;WBGM;WijkenEnBuurten
+GM1699;199;Noordenveld;;WBGM;WijkenEnBuurten
+GM0171;200;Noordoostpolder;;WBGM;WijkenEnBuurten
+GM0575;201;Noordwijk;;WBGM;WijkenEnBuurten
+GM0820;202;Nuenen, Gerwen en Nederwetten;;WBGM;WijkenEnBuurten
+GM0302;203;Nunspeet;;WBGM;WijkenEnBuurten
+GM0579;204;Oegstgeest;;WBGM;WijkenEnBuurten
+GM0823;205;Oirschot;;WBGM;WijkenEnBuurten
+GM0824;206;Oisterwijk;;WBGM;WijkenEnBuurten
+GM1895;207;Oldambt;;WBGM;WijkenEnBuurten
+GM0269;208;Oldebroek;;WBGM;WijkenEnBuurten
+GM0173;209;Oldenzaal;;WBGM;WijkenEnBuurten
+GM1773;210;Olst-Wijhe;;WBGM;WijkenEnBuurten
+GM0175;211;Ommen;;WBGM;WijkenEnBuurten
+GM1586;212;Oost Gelre;;WBGM;WijkenEnBuurten
+GM0826;213;Oosterhout;;WBGM;WijkenEnBuurten
+GM0085;214;Ooststellingwerf;;WBGM;WijkenEnBuurten
+GM0431;215;Oostzaan;;WBGM;WijkenEnBuurten
+GM0432;216;Opmeer;;WBGM;WijkenEnBuurten
+GM0086;217;Opsterland;;WBGM;WijkenEnBuurten
+GM0828;218;Oss;;WBGM;WijkenEnBuurten
+GM1509;219;Oude IJsselstreek;;WBGM;WijkenEnBuurten
+GM0437;220;Ouder-Amstel;;WBGM;WijkenEnBuurten
+GM0589;221;Oudewater;;WBGM;WijkenEnBuurten
+GM1734;222;Overbetuwe;;WBGM;WijkenEnBuurten
+GM0590;223;Papendrecht;;WBGM;WijkenEnBuurten
+GM1894;224;Peel en Maas;;WBGM;WijkenEnBuurten
+GM0765;225;Pekela;;WBGM;WijkenEnBuurten
+GM1926;226;Pijnacker-Nootdorp;;WBGM;WijkenEnBuurten
+GM0439;227;Purmerend;;WBGM;WijkenEnBuurten
+GM0273;228;Putten;;WBGM;WijkenEnBuurten
+GM0177;229;Raalte;;WBGM;WijkenEnBuurten
+GM0703;230;Reimerswaal;;WBGM;WijkenEnBuurten
+GM0274;231;Renkum;;WBGM;WijkenEnBuurten
+GM0339;232;Renswoude;;WBGM;WijkenEnBuurten
+GM1667;233;Reusel-De Mierden;;WBGM;WijkenEnBuurten
+GM0275;234;Rheden;;WBGM;WijkenEnBuurten
+GM0340;235;Rhenen;;WBGM;WijkenEnBuurten
+GM0597;236;Ridderkerk;;WBGM;WijkenEnBuurten
+GM1742;237;Rijssen-Holten;;WBGM;WijkenEnBuurten
+GM0603;238;Rijswijk (ZH.);;WBGM;WijkenEnBuurten
+GM1669;239;Roerdalen;;WBGM;WijkenEnBuurten
+GM0957;240;Roermond;;WBGM;WijkenEnBuurten
+GM0736;241;De Ronde Venen;;WBGM;WijkenEnBuurten
+GM1674;242;Roosendaal;;WBGM;WijkenEnBuurten
+GM0599;243;Rotterdam;;WBGM;WijkenEnBuurten
+GM0277;244;Rozendaal;;WBGM;WijkenEnBuurten
+GM0840;245;Rucphen;;WBGM;WijkenEnBuurten
+GM0441;246;Schagen;;WBGM;WijkenEnBuurten
+GM0279;247;Scherpenzeel;;WBGM;WijkenEnBuurten
+GM0606;248;Schiedam;;WBGM;WijkenEnBuurten
+GM0088;249;Schiermonnikoog;;WBGM;WijkenEnBuurten
+GM1676;250;Schouwen-Duiveland;;WBGM;WijkenEnBuurten
+GM0965;251;Simpelveld;;WBGM;WijkenEnBuurten
+GM0845;252;Sint-Michielsgestel;;WBGM;WijkenEnBuurten
+GM1883;253;Sittard-Geleen;;WBGM;WijkenEnBuurten
+GM0610;254;Sliedrecht;;WBGM;WijkenEnBuurten
+GM1714;255;Sluis;;WBGM;WijkenEnBuurten
+GM0090;256;Smallingerland;;WBGM;WijkenEnBuurten
+GM0342;257;Soest;;WBGM;WijkenEnBuurten
+GM0847;258;Someren;;WBGM;WijkenEnBuurten
+GM0848;259;Son en Breugel;;WBGM;WijkenEnBuurten
+GM0037;260;Stadskanaal;;WBGM;WijkenEnBuurten
+GM0180;261;Staphorst;;WBGM;WijkenEnBuurten
+GM0532;262;Stede Broec;;WBGM;WijkenEnBuurten
+GM0851;263;Steenbergen;;WBGM;WijkenEnBuurten
+GM1708;264;Steenwijkerland;;WBGM;WijkenEnBuurten
+GM0971;265;Stein (L.);;WBGM;WijkenEnBuurten
+GM1904;266;Stichtse Vecht;;WBGM;WijkenEnBuurten
+GM1900;267;Súdwest-Fryslân;;WBGM;WijkenEnBuurten
+GM0715;268;Terneuzen;;WBGM;WijkenEnBuurten
+GM0093;269;Terschelling;;WBGM;WijkenEnBuurten
+GM0448;270;Texel;;WBGM;WijkenEnBuurten
+GM1525;271;Teylingen;;WBGM;WijkenEnBuurten
+GM0716;272;Tholen;;WBGM;WijkenEnBuurten
+GM0281;273;Tiel;;WBGM;WijkenEnBuurten
+GM0855;274;Tilburg;;WBGM;WijkenEnBuurten
+GM0183;275;Tubbergen;;WBGM;WijkenEnBuurten
+GM1700;276;Twenterand;;WBGM;WijkenEnBuurten
+GM1730;277;Tynaarlo;;WBGM;WijkenEnBuurten
+GM0737;278;Tytsjerksteradiel;;WBGM;WijkenEnBuurten
+GM0450;279;Uitgeest;;WBGM;WijkenEnBuurten
+GM0451;280;Uithoorn;;WBGM;WijkenEnBuurten
+GM0184;281;Urk;;WBGM;WijkenEnBuurten
+GM0344;282;Utrecht;;WBGM;WijkenEnBuurten
+GM1581;283;Utrechtse Heuvelrug;;WBGM;WijkenEnBuurten
+GM0981;284;Vaals;;WBGM;WijkenEnBuurten
+GM0994;285;Valkenburg aan de Geul;;WBGM;WijkenEnBuurten
+GM0858;286;Valkenswaard;;WBGM;WijkenEnBuurten
+GM0047;287;Veendam;;WBGM;WijkenEnBuurten
+GM0345;288;Veenendaal;;WBGM;WijkenEnBuurten
+GM0717;289;Veere;;WBGM;WijkenEnBuurten
+GM0861;290;Veldhoven;;WBGM;WijkenEnBuurten
+GM0453;291;Velsen;;WBGM;WijkenEnBuurten
+GM0983;292;Venlo;;WBGM;WijkenEnBuurten
+GM0984;293;Venray;;WBGM;WijkenEnBuurten
+GM1961;294;Vijfheerenlanden;;WBGM;WijkenEnBuurten
+GM0622;295;Vlaardingen;;WBGM;WijkenEnBuurten
+GM0096;296;Vlieland;;WBGM;WijkenEnBuurten
+GM0718;297;Vlissingen;;WBGM;WijkenEnBuurten
+GM0986;298;Voerendaal;;WBGM;WijkenEnBuurten
+GM1992;299;Voorne aan Zee;;WBGM;WijkenEnBuurten
+GM0626;300;Voorschoten;;WBGM;WijkenEnBuurten
+GM0285;301;Voorst;;WBGM;WijkenEnBuurten
+GM0865;302;Vught;;WBGM;WijkenEnBuurten
+GM1949;303;Waadhoeke;;WBGM;WijkenEnBuurten
+GM0866;304;Waalre;;WBGM;WijkenEnBuurten
+GM0867;305;Waalwijk;;WBGM;WijkenEnBuurten
+GM0627;306;Waddinxveen;;WBGM;WijkenEnBuurten
+GM0289;307;Wageningen;;WBGM;WijkenEnBuurten
+GM0629;308;Wassenaar;;WBGM;WijkenEnBuurten
+GM0852;309;Waterland;;WBGM;WijkenEnBuurten
+GM0988;310;Weert;;WBGM;WijkenEnBuurten
+GM1960;311;West Betuwe;;WBGM;WijkenEnBuurten
+GM0668;312;West Maas en Waal;;WBGM;WijkenEnBuurten
+GM1969;313;Westerkwartier;;WBGM;WijkenEnBuurten
+GM1701;314;Westerveld;;WBGM;WijkenEnBuurten
+GM0293;315;Westervoort;;WBGM;WijkenEnBuurten
+GM1950;316;Westerwolde;;WBGM;WijkenEnBuurten
+GM1783;317;Westland;;WBGM;WijkenEnBuurten
+GM0098;318;Weststellingwerf;;WBGM;WijkenEnBuurten
+GM0189;319;Wierden;;WBGM;WijkenEnBuurten
+GM0296;320;Wijchen;;WBGM;WijkenEnBuurten
+GM1696;321;Wijdemeren;;WBGM;WijkenEnBuurten
+GM0352;322;Wijk bij Duurstede;;WBGM;WijkenEnBuurten
+GM0294;323;Winterswijk;;WBGM;WijkenEnBuurten
+GM0873;324;Woensdrecht;;WBGM;WijkenEnBuurten
+GM0632;325;Woerden;;WBGM;WijkenEnBuurten
+GM1690;326;De Wolden;;WBGM;WijkenEnBuurten
+GM0880;327;Wormerland;;WBGM;WijkenEnBuurten
+GM0351;328;Woudenberg;;WBGM;WijkenEnBuurten
+GM0479;329;Zaanstad;;WBGM;WijkenEnBuurten
+GM0297;330;Zaltbommel;;WBGM;WijkenEnBuurten
+GM0473;331;Zandvoort;;WBGM;WijkenEnBuurten
+GM0050;332;Zeewolde;;WBGM;WijkenEnBuurten
+GM0355;333;Zeist;;WBGM;WijkenEnBuurten
+GM0299;334;Zevenaar;;WBGM;WijkenEnBuurten
+GM0637;335;Zoetermeer;;WBGM;WijkenEnBuurten
+GM0638;336;Zoeterwoude;;WBGM;WijkenEnBuurten
+GM1892;337;Zuidplas;;WBGM;WijkenEnBuurten
+GM0879;338;Zundert;;WBGM;WijkenEnBuurten
+GM0301;339;Zutphen;;WBGM;WijkenEnBuurten
+GM1896;340;Zwartewaterland;;WBGM;WijkenEnBuurten
+GM0642;341;Zwijndrecht;;WBGM;WijkenEnBuurten
+GM0193;342;Zwolle;;WBGM;WijkenEnBuurten
+GM;343;Alle gemeenten;;;WijkenEnBuurten
+NL;344;Nederland;;;WijkenEnBuurten
+OVERIG;345;Overig;;;WijkenEnBuurten
