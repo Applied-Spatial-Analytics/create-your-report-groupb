@@ -1,5 +1,5 @@
 ---
-title: "Title of your"
+title: "Spatial Justice in the Urban Environment of Rotterdam"
 subtitle: "Project report of Group B"
 author:
   - name: "Anna Scherrenburg"
@@ -52,21 +52,113 @@ and start the report from the Introduction section below.
 
 I'll just write some comments here that we can use later;
 
-Spatial Justice indicators;
+**Spatial Justice indicators;**
 
-Leefbarometer;
+*Leefbarometer;*
 
--   Physical environment - measures physical attributes like green spaces, water, proximity to highways, traffic nuisance, and landscape quality.
+- Physical environment - measures physical attributes like green spaces, water, proximity to highways, traffic nuisance, and landscape quality.
 
--   Safety & security - tracks registered crime rates, theft, physical vandalism, and reports of antisocial behavior or nuisance.
+- Safety & security - tracks registered crime rates, theft, physical vandalism, and reports of antisocial behavior or nuisance.
 
--   Social Cohesion - Evaluates characteristics of the local population, including employment rates, income levels, integration metrics, and percentage of long-term residents.
+- Social Cohesion - Evaluates characteristics of the local population, including employment rates, income levels, integration metrics, and percentage of long-term residents.
 
--   Services and Facilities - Measures accessibility to essential daily services, including schools, supermarkets, public transit stops, GP practices, and cultural centers.
+- Services and Facilities - Measures accessibility to essential daily services, including schools, supermarkets, public transit stops, GP practices, and cultural centers.
 
--   Housing Stock - Assesses the quality, market value, building age, ownership status, and composition of the residential properties
+- Housing Stock - Assesses the quality, market value, building age, ownership status, and composition of the residential properties
+
+I will use physical environment and social cohesion for our spatial justice analysis.
+
+*Neighborhood data CBS*
+
+- Percentage people older than 65 years
+
+- Percentage heritage outside of the Netherlands
+
+- Percentage rental housing
+
+- Amount of people with a social assistance benefit (divide them by total amount of inhabitants to get a percentage)
+
+There are many more measures in this dataset, but for now I'm using these.
+
+**Neighborhoods that lack many measurements**
+
+- Rivium (BU05992540) - 0 inhabitants
+
+- Vondelingenplaat (BU05992295) - 0 inhabitants
+
+- Bedrijvenpark Noord-West (BU05992459) - 0 inhabitants
+
+- Eemhaven (BU05992196) - 20 inhabitants
+
+- Waalhaven (BU05992194) - 10 inhabitants
+
+- Waalhaven Zuid (BU05992198) - 5 inhabitants
+
+I added a check that only considers neighborhoods that has values for at least 4 of the 7 indicators.
 
 ## Methods
+
+### Constructing the Spatial Justice Index
+
+To evaluate and visualize the distribution of spatial equity across Rotterdam's neighborhoods, we developed a composite **Spatial Justice Index**. This index combines multiple dimensions of urban life---ranging from the physical environment to socio-economic status---into a single, standardized metric.
+
+Below is a detailed breakdown of the indicators selected, the rationale behind their inclusion, and the methodology used to combine them.
+
+#### 1. Selected Indicators and Rationale
+
+We selected seven key indicators derived from the *Leefbaarometer 2024* and *CBS Buurtgegevens*. These indicators were chosen because they capture both the structural quality of the neighborhoods and the socio-economic vulnerability of their residents. They are divided into three main categories:
+
+**A. General Liveability**
+
+- **Physical Liveability Score:** Measures the quality of the built environment, housing conditions, and public space.
+- **Social Liveability Score:** Reflects social cohesion, safety, and community dynamics.
+
+::: {.callout-note title="Rationale"}
+These are foundational metrics of urban well-being. A higher score directly correlates with a more favorable and just spatial environment.
+:::
+
+**B. Socio-Economic and Demographic Vulnerability**
+
+- **Percentage of Welfare Recipients:** The proportion of residents relying on general welfare (*bijstandsuitkering*). Represents economic hardship and lack of financial capital.
+- **Percentage of Rental Housing:** Indicates a lower rate of homeownership, which is often tied to lower wealth accumulation and higher residential transiency.
+- **Percentage of Residents 65 and Older:** Older populations often face mobility constraints and have higher dependencies on local neighborhood amenities.
+- **Percentage of Residents with Non-Dutch Heritage:** Included as an indicator of systemic vulnerability, as historically marginalized or migrant communities are often disproportionately concentrated in areas with lower spatial quality.
+
+::: {.callout-note title="Rationale"}
+In the context of spatial justice, a high concentration of these factors typically points to systemic disadvantages. They highlight areas where residents might have less agency to improve their spatial conditions.
+:::
+
+**C. Environmental Accessibility**
+
+- **Average Distance to Green Spaces (meters):** Measures the physical distance residents must travel to reach parks or nature.
+
+::: {.callout-note title="Rationale"}
+Access to green space is a fundamental environmental justice issue, heavily impacting mental and physical health. A greater distance signifies poorer accessibility.
+:::
+
+------------------------------------------------------------------------
+
+#### 2. Data Processing and Combination
+
+To combine these diverse variables (which use different units, such as percentages, absolute scores, and meters) into a single index, we applied a three-step mathematical transformation.
+
+**Step 1: Min-Max Normalization**\
+Every indicator was scaled to a standard range between 0 and 1. This ensures that variables with large numerical values (like distance in meters) do not disproportionately dominate the index compared to smaller values (like percentages). We used the following formula:
+
+$$x_{norm}=\frac{x - x_{min}}{x_{max} - x_{min}}$$
+
+**Step 2: Aligning Directionality**\
+Spatial justice requires all metrics to point in the same direction, where **1 represents the most favorable outcome** and **0 represents the least favorable**.
+
+- The liveability scores (Physical and Social) are **positive indicators**; their normalized values were kept as is.
+- The socio-economic vulnerabilities and distance to green space are **negative indicators** (e.g., a higher distance to parks is worse for spatial justice). These were inverted by subtracting the normalized score from 1 ($1 - x_{norm}$).
+
+**Step 3: Aggregation into the Spatial Justice Index**\
+Finally, we calculated an unweighted average of the seven adjusted scores for each neighborhood.
+
+::: {.callout-important title="Missing Data Threshold"}
+To ensure the index remains statistically robust and representative, a missing-data threshold was implemented. A neighborhood received a valid Spatial Justice Index score only if data was available for at least four out of the seven indicators. Neighborhoods failing to meet this threshold were assigned a null value (`NA`) and are rendered grey on the map, preventing skewed representations based on insufficient data.
+:::
 
 ### MCDA
 
