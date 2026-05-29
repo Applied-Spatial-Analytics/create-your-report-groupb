@@ -10,7 +10,7 @@
 <meta name="author" content="Viktor Bozev">
 <meta name="author" content="Student 3">
 
-<title>Title of your</title>
+<title>Spatial Justice in the Urban Environment of Rotterdam</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,6 +76,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="report_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -87,7 +116,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Title of your</h1>
+<h1 class="title">Spatial Justice in the Urban Environment of Rotterdam</h1>
 <p class="subtitle lead">Project report of Group B</p>
 </div>
 
@@ -172,8 +201,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>I’ll just write some comments here that we can use later;</p>
-<p>Spatial Justice indicators;</p>
-<p>Leefbarometer;</p>
+<p><strong>Spatial Justice indicators;</strong></p>
+<p><em>Leefbarometer;</em></p>
 <ul>
 <li><p>Physical environment - measures physical attributes like green spaces, water, proximity to highways, traffic nuisance, and landscape quality.</p></li>
 <li><p>Safety &amp; security - tracks registered crime rates, theft, physical vandalism, and reports of antisocial behavior or nuisance.</p></li>
@@ -181,9 +210,121 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Services and Facilities - Measures accessibility to essential daily services, including schools, supermarkets, public transit stops, GP practices, and cultural centers.</p></li>
 <li><p>Housing Stock - Assesses the quality, market value, building age, ownership status, and composition of the residential properties</p></li>
 </ul>
+<p>I will use physical environment and social cohesion for our spatial justice analysis.</p>
+<p><em>Neighborhood data CBS</em></p>
+<ul>
+<li><p>Percentage people older than 65 years</p></li>
+<li><p>Percentage heritage outside of the Netherlands</p></li>
+<li><p>Percentage rental housing</p></li>
+<li><p>Amount of people with a social assistance benefit (divide them by total amount of inhabitants to get a percentage)</p></li>
+</ul>
+<p>There are many more measures in this dataset, but for now I’m using these.</p>
+<p><strong>Neighborhoods that lack many measurements</strong></p>
+<ul>
+<li><p>Rivium (BU05992540) - 0 inhabitants</p></li>
+<li><p>Vondelingenplaat (BU05992295) - 0 inhabitants</p></li>
+<li><p>Bedrijvenpark Noord-West (BU05992459) - 0 inhabitants</p></li>
+<li><p>Eemhaven (BU05992196) - 20 inhabitants</p></li>
+<li><p>Waalhaven (BU05992194) - 10 inhabitants</p></li>
+<li><p>Waalhaven Zuid (BU05992198) - 5 inhabitants</p></li>
+</ul>
+<p>I added a check that only considers neighborhoods that has values for at least 4 of the 7 indicators.</p>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<section id="constructing-the-spatial-justice-index" class="level3">
+<h3 class="anchored" data-anchor-id="constructing-the-spatial-justice-index">Constructing the Spatial Justice Index</h3>
+<p>To evaluate and visualize the distribution of spatial equity across Rotterdam’s neighborhoods, we developed a composite <strong>Spatial Justice Index</strong>. This index combines multiple dimensions of urban life—ranging from the physical environment to socio-economic status—into a single, standardized metric.</p>
+<p>Below is a detailed breakdown of the indicators selected, the rationale behind their inclusion, and the methodology used to combine them.</p>
+<section id="selected-indicators-and-rationale" class="level4">
+<h4 class="anchored" data-anchor-id="selected-indicators-and-rationale">1. Selected Indicators and Rationale</h4>
+<p>We selected seven key indicators derived from the <em>Leefbaarometer 2024</em> and <em>CBS Buurtgegevens</em>. These indicators were chosen because they capture both the structural quality of the neighborhoods and the socio-economic vulnerability of their residents. They are divided into three main categories:</p>
+<p><strong>A. General Liveability</strong></p>
+<ul>
+<li><strong>Physical Liveability Score:</strong> Measures the quality of the built environment, housing conditions, and public space.</li>
+<li><strong>Social Liveability Score:</strong> Reflects social cohesion, safety, and community dynamics.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Rationale">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Rationale
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These are foundational metrics of urban well-being. A higher score directly correlates with a more favorable and just spatial environment.</p>
+</div>
+</div>
+<p><strong>B. Socio-Economic and Demographic Vulnerability</strong></p>
+<ul>
+<li><strong>Percentage of Welfare Recipients:</strong> The proportion of residents relying on general welfare (<em>bijstandsuitkering</em>). Represents economic hardship and lack of financial capital.</li>
+<li><strong>Percentage of Rental Housing:</strong> Indicates a lower rate of homeownership, which is often tied to lower wealth accumulation and higher residential transiency.</li>
+<li><strong>Percentage of Residents 65 and Older:</strong> Older populations often face mobility constraints and have higher dependencies on local neighborhood amenities.</li>
+<li><strong>Percentage of Residents with Non-Dutch Heritage:</strong> Included as an indicator of systemic vulnerability, as historically marginalized or migrant communities are often disproportionately concentrated in areas with lower spatial quality.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Rationale">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Rationale
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the context of spatial justice, a high concentration of these factors typically points to systemic disadvantages. They highlight areas where residents might have less agency to improve their spatial conditions.</p>
+</div>
+</div>
+<p><strong>C. Environmental Accessibility</strong></p>
+<ul>
+<li><strong>Average Distance to Green Spaces (meters):</strong> Measures the physical distance residents must travel to reach parks or nature.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Rationale">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Rationale
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Access to green space is a fundamental environmental justice issue, heavily impacting mental and physical health. A greater distance signifies poorer accessibility.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="data-processing-and-combination" class="level4">
+<h4 class="anchored" data-anchor-id="data-processing-and-combination">2. Data Processing and Combination</h4>
+<p>To combine these diverse variables (which use different units, such as percentages, absolute scores, and meters) into a single index, we applied a three-step mathematical transformation.</p>
+<p><strong>Step 1: Min-Max Normalization</strong><br>
+Every indicator was scaled to a standard range between 0 and 1. This ensures that variables with large numerical values (like distance in meters) do not disproportionately dominate the index compared to smaller values (like percentages). We used the following formula:</p>
+<p><span class="math display">\[x_{norm}=\frac{x - x_{min}}{x_{max} - x_{min}}\]</span></p>
+<p><strong>Step 2: Aligning Directionality</strong><br>
+Spatial justice requires all metrics to point in the same direction, where <strong>1 represents the most favorable outcome</strong> and <strong>0 represents the least favorable</strong>.</p>
+<ul>
+<li>The liveability scores (Physical and Social) are <strong>positive indicators</strong>; their normalized values were kept as is.</li>
+<li>The socio-economic vulnerabilities and distance to green space are <strong>negative indicators</strong> (e.g., a higher distance to parks is worse for spatial justice). These were inverted by subtracting the normalized score from 1 (<span class="math inline">\(1 - x_{norm}\)</span>).</li>
+</ul>
+<p><strong>Step 3: Aggregation into the Spatial Justice Index</strong><br>
+Finally, we calculated an unweighted average of the seven adjusted scores for each neighborhood.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Missing Data Threshold">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Missing Data Threshold
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To ensure the index remains statistically robust and representative, a missing-data threshold was implemented. A neighborhood received a valid Spatial Justice Index score only if data was available for at least four out of the seven indicators. Neighborhoods failing to meet this threshold were assigned a null value (<code>NA</code>) and are rendered grey on the map, preventing skewed representations based on insufficient data.</p>
+</div>
+</div>
+</section>
+</section>
 <section id="mcda" class="level3">
 <h3 class="anchored" data-anchor-id="mcda">MCDA</h3>
 </section>
