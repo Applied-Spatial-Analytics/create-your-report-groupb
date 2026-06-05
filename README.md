@@ -28,6 +28,8 @@ In the **Pull requests** section of your repository, you will find a
 feedback on your report throughout the quarter. You can also use this
 pull request to ask questions about the feedback.
 
+Please do not merge the **Feedback** PR!
+
 ### Asking for help
 
 If you have questions about the assignment, please ask them in
