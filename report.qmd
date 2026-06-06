@@ -6,8 +6,10 @@ author:
     affiliation: "MSc Geomatics"
   - name: "Viktor Bozev"
     affiliation: "MSc Geomatics"
-  - name: "Student 3"
-    affiliation: "MSc Urbanism"
+  - name: "Wieger van Teeffelen"
+    affiliation: "MSc Geomatics"
+  - name: "Simon Deuten"
+    affiliation: "Msc Geomatics"
 format: html
 ---
 
@@ -47,7 +49,22 @@ and start the report from the Introduction section below.
 
 ## Introduction
 
+Introduce the topics of spatial justice and uhi,
+
+Write something about the relevance of this research and problem statement, also why relevant to explore Rotterdam and Guangzhou
+
+Research question: How would expanding urban green infrastructure affect the spatial justice of climate adaptation for vulnerable populations in Rotterdam versus Guangzhou?
+
+
+
+
+
 ## Methods
+
+Expain the metrics that will answer the research question
+
+Do we need to do a literature review??
+
 
 ### MCDA
 
