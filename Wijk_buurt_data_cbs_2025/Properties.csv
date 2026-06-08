@@ -1,0 +1,129 @@
+Identifier;Title;Description;Modified;ReleaseDate;ModificationDate;Language;TemporalCoverage;Authority;Catalog;Publisher;ContactPoint;Version;VersionNotes;VersionReason;Frequency;Status;ObservationCount;ObservationsModified;DatasetType;GraphTypes;License;Source;Summary;LongDescription
+86165NED;Kerncijfers wijken en buurten 2025;"Overzicht van statistische gegevens van gemeenten, wijken en buurten in Nederland. 
+
+Gegevens beschikbaar over: 2025.
+
+Status van de cijfers:
+Definitief, tenzij in de toelichting bij het onderwerp expliciet is vermeld dat het voorlopige cijfers betreft.
+
+Wijzigingen per maart 2026
+Binnen de thema’s Bedrijfsvestigingen en Voorzieningen zijn nieuwe cijfers toegevoegd.
+
+Wijzigingen per januari 2026
+De variabelenset van het thema Inkomen is vanaf 2024 gewijzigd. In dat jaar is de nieuwe armoededefinitie gepresenteerd in samenwerking met Nibud en SCP. Dit betekent dat de huidige armoede indicatoren (huishoudens onder of rond sociaal minimum) zijn vervangen door personen in armoede en personen vlak boven de armoedegrens. De voorlopige cijfers over 2025 verschijnen eind 2026 in deze tabel.
+
+Wijzigingen per oktober 2025
+Binnen het onderwerp Bevolking zijn bij het deelonderwerp Bevolking naar herkomst per abuis inwoners met herkomstland Armenië, Azerbeidzjan, Georgië, Kazachstan, Kirgizië, Oezbekistan, Tadzjikistan, Turkmenistan of Turkije meegeteld bij de categorie ‘Europa (exclusief Nederland)’ in plaats van ‘Buiten Europa’. Dit geldt zowel voor personen uit een van deze herkomstlanden geboren in Nederland als buiten Nederland. Die fout is met deze update hersteld.
+
+Wanneer komen er nieuwe cijfers?
+Elk kwartaal worden er nieuwe cijfers toegevoegd indien deze beschikbaar zijn.
+
+
+";2026-03-31T00:00:00+02:00;2026-03-31T00:00:00+02:00;2026-03-31T00:00:00+02:00;nl;2025;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;CBS;https://standaarden.overheid.nl/owms/terms/Centraal_Bureau_voor_de_Statistiek;infoservice@cbs.nl;202603310000;;Actualisering bijzonder;Onregelmatig;Regulier;1326024;2026-03-31T00:00:00+02:00;Mixed;Table,Map;https://creativecommons.org/licenses/by/4.0/;CBS.;"Kerncijfers over demografische en sociaal-economische kenmerken
+Uitgesplitst naar gemeenten, wijken en buurten";"INHOUDSOPGAVE
+
+1. Toelichting
+2. Definities en verklaring van symbolen
+3. Koppelingen naar relevante tabellen en artikelen
+4. Bronnen en methoden
+5. Meer informatie 
+
+
+1. TOELICHTING
+
+Overzicht van statistische gegevens van gemeenten, wijken en buurten in Nederland. 
+
+Gegevens beschikbaar over: 2025.
+
+Status van de cijfers:
+Definitief, tenzij in de toelichting bij het onderwerp expliciet is vermeld dat het voorlopige cijfers betreft.
+
+Wijzigingen per maart 2026
+Binnen de thema’s Bedrijfsvestigingen en Voorzieningen zijn nieuwe cijfers toegevoegd.
+
+Wijzigingen per januari 2026
+De variabelenset van het thema Inkomen is vanaf 2024 gewijzigd. In dat jaar is de nieuwe armoededefinitie gepresenteerd in samenwerking met Nibud en SCP. Dit betekent dat de huidige armoede indicatoren (huishoudens onder of rond sociaal minimum) zijn vervangen door personen in armoede en personen vlak boven de armoedegrens. De voorlopige cijfers over 2025 verschijnen eind 2026 in deze tabel.
+
+Wijzigingen per oktober 2025
+Binnen het onderwerp Bevolking zijn bij het deelonderwerp Bevolking naar herkomst per abuis inwoners met herkomstland Armenië, Azerbeidzjan, Georgië, Kazachstan, Kirgizië, Oezbekistan, Tadzjikistan, Turkmenistan of Turkije meegeteld bij de categorie ‘Europa (exclusief Nederland)’ in plaats van ‘Buiten Europa’. Dit geldt zowel voor personen uit een van deze herkomstlanden geboren in Nederland als buiten Nederland. Die fout is met deze update hersteld.
+
+Wanneer komen er nieuwe cijfers?
+Elk kwartaal worden er nieuwe cijfers toegevoegd indien deze beschikbaar zijn.
+
+
+2. DEFINITIES EN VERKLARING VAN SYMBOLEN
+
+Definities:
+
+Regio:
+De gemeenten in Nederland zijn onderverdeeld in wijken en buurten. Buurten vormen het laagste regionale niveau. Wijken zijn optellingen van één of meer aaneengesloten buurten. De gemeente bepaalt zelf de indeling in wijken en buurten. Het CBS coördineert landelijk deze indeling.
+
+Wijk:
+Onderdeel van een gemeente, bestaande uit één of meerdere buurten. Vaak komt een wijk overeen met een woonplaats of een deel van een grotere woonplaats.
+Omdat gemeente Amsterdam met ingang van statistiekjaar 2023 meer dan 100 wijken telt, heeft deze gemeente letters ingevoerd in haar wijkcodes. Elke wijk in een gemeente en elke buurt binnen een wijk heeft een code van 2 karakters. Tot voor kort bestonden deze wijk- en buurtcodes in alle gemeenten uit 2 cijfers: hiermee zijn 100 combinaties mogelijk (00 t/m 99). De wijkcode en/of buurtcode mogen - indien nodig - ook letters bevatten, zodat meer combinaties mogelijk worden. 
+
+Buurt:
+Onderdeel van een wijk, die vanuit bebouwingsoogpunt of sociaaleconomische structuur homogeen is afgebakend. Homogeen wil zeggen dat één functie dominant is, bijvoorbeeld woonfunctie (woongebied), werkfunctie (industriegebied) of recreatieve functie (natuurgebied). Functies kunnen echter ook gemengd voorkomen.
+
+Verklaring van symbolen:
+
+niets (blanco)	: het cijfer kan op logische gronden niet voorkomen
+. 		: het cijfer is onbekend, onvoldoende betrouwbaar of geheim
+*		: voorlopige cijfers
+**		: nader voorlopige cijfers
+
+
+3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN
+
+Relevante tabellen:
+
+Meer cijfers over wijken en buurten zijn te vinden in de StatLinetabellen:
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=52010'>Recente tabellen Kerncijfers wijken en buurten</a> 
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=81942'>Gearchiveerde tabellen Kerncijfers wijken en buurten</a>
+
+Data uit bovengenoemde StatLinetabellen zijn ook als <a href='https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/wijk-en-buurtstatistieken'>Excelbestand </a>beschikbaar.
+
+Wijk- en buurtcijfers per thema op StatLine:
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=81825'>Arbeid</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=82400'>Energie</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=83370'>Opleidingsniveau</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=84898'>Sociale Zekerheid</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=52240'>Zorg</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=80314'>Nabijheid voorzieningen</a>
+<a href='https://opendata.cbs.nl/statline/#/CBS/nl/navigatieScherm/thema?themaNr=52000'>Bodemgebruik</a>
+
+Overige publicaties met regionale kerncijfers:
+<a href='https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/cijfers-op-de-kaart'>Cijfers op de kaart</a>
+<a href='https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data/geoservices-bij-het-cbs'>Geoservices bij het CBS.</a>
+<a href='https://opendata.cbs.nl/#/CBS/nl/dataset/70072ned'>Regionale kerncijfers Nederland</a>
+Een overzicht van StatLine-tabellen met regionale gegevens staat in het <a href='https://dashboards.cbs.nl/v6/overzicht_regionale_statistieken/'>Overzicht Regionale Statistieken</a>
+
+Relevant artikel:
+<a href='https://www.cbs.nl/nl-nl/longread/statistische-trends/2022/nieuwe-indeling-bevolking-naar-herkomst'>Nieuwe indeling bevolking naar herkomst</a> 
+
+De wijk- en buurtkaart bevat de digitale geometrie van de grenzen van de buurten, wijken en gemeenten en wordt <a href='https://www.cbs.nl/nl-nl/reeksen/redactioneel/geografische-data'>op de CBS-website</a> en op <a href='https://www.pdok.nl/'>pdok.nl</a> beschikbaar gesteld.
+
+Het CBS geeft elk kwartaal een <a href='https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/informatie-voor-gemeenten/nieuwsbrief-regionaal'>Nieuwsbrief Regionaal</a> uit, waarin een overzicht wordt gegeven van de nieuwste cijfers en publicaties op lokaal niveau en overige ontwikkelingen op het gebied van regionale en ruimtelijke statistieken. Hierop kunt u zich abonneren via de volgende link <a href='https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/informatie-voor-gemeenten/nieuwsbrief-regionaal'>Nieuwsbrief Regionaal</a>
+
+Meer informatie is te vinden op de themapagina <a href='https://www.cbs.nl/nl-nl/dossier/nederland-regionaal'>Nederland regionaal</a>.
+
+
+4. BRONNEN EN METHODEN
+
+De onderzoeksmethode van deze tabel is te vinden in de onderzoeksbeschrijving <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/kerncijfers-wijken-en-buurten'>Kerncijfers Wijken en Buurten</a>.
+
+In deze tabel zijn inkomensindicatoren over personen in armoede of vlak boven de armoedegrens opgenomen volgens de nieuwe armoededefinitie. Ieder huishouden in Nederland heeft uitgaven aan huisvesting, energie, verzekeringen, kleding en de dagelijkse boodschappen. Om mee te kunnen doen in de samenleving is er daarnaast geld nodig voor bijvoorbeeld telefonie, internet en sociale activiteiten. Voor 35 verschillende typen huishoudens heeft het Nibud vastgesteld welke bedragen voor welke uitgavenposten minimaal nodig zijn om volwaardig mee te kunnen doen in de samenleving (de zogeheten minimumvoorbeeldbegrotingen).
+
+Om vast te stellen of iemand in armoede leeft, wordt naast de minimumvoorbeeldbegroting ook gekeken naar daadwerkelijke uitgaven van het huishouden en de financiële middelen, het inkomen en eventueel spaargeld of ander direct te besteden bezit. Voor de meeste huishoudens zijn de maandelijkse uitgaven aan wonen, energie en zorg de grootste vaste lasten. Als er na het betalen van deze vaste lasten te weinig geld overblijft voor de andere basisbehoeften, dan is een huishouden en de mensen die er deel van uitmaken, arm. Zie voor meer informatie het rapport
+<a href='https://www.cbs.nl/nl-nl/publicatie/2024/42/de-nieuwe-methode-om-armoede-in-nederland-te-meten'>De nieuwe methode om armoede in Nederland te meten</a>.
+
+De oppervlaktes land en water per regio in deze tabel zijn bepaald door het combineren van het  Bestand Bodemgebruik (BBG) 2017 met het digitale bestand van gemeente-, wijk- en buurtgrenzen. Bij de productie van een nieuwe BBG-editie worden geconstateerde fouten en verbeterde interpretaties op basis van nieuwe bronnen bij eerdere BBG-edities vastgesteld (gecorrigeerd bodemgebruik). Na publicatie van een nieuw BBG worden de arealen land en water per regio voor eerdere verslagjaren van Kerncijfers wijken en buurten (KWB) echter niet herzien. Zie de definities van ‘oppervlakte land’ en ‘oppervlakte water’ voor de toegepaste BBG-edities per verslagjaar van de KWB. Zie de webpagina Bestand Bodemgebruik voor een nadere toelichting op gecorrigeerd bodemgebruik en beschikbare publicaties.
+
+
+5. MEER INFORMATIE
+
+<a href='https://www.cbs.nl/nl-nl/over-ons/contact/infoservice'>Infoservice</a>
+
+Copyright © Centraal Bureau voor de Statistiek, Den Haag/Heerlen 
+Verveelvoudiging is toegestaan, mits het CBS als bron wordt vermeld.
+"
