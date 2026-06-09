@@ -1,0 +1,78 @@
+---
+title: "Title of your report"
+subtitle: "Project report of Group B"
+author:
+  - name: "Anna Scherrenburg"
+    affiliation: "MSc Geomatics"
+  - name: "Viktor Bozev"
+    affiliation: "MSc Geomatics"
+  - name: "Wieger van Teeffelen"
+    affiliation: "MSc Geomatics"
+  - name: "Simon Deuten"
+    affiliation: "Msc Geomatics"
+format: html
+---
+
+::: callout
+## This is a computational notebook
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this 
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+You can delete this entire callout between and including the lines
+```
+::: callout
+```
+and
+
+```
+:::
+```
+and start the report from the Introduction section below.
+:::
+
+## Introduction
+
+Introduce the topics of spatial justice and uhi,
+
+Write something about the relevance of this research and problem statement, also why relevant to explore Rotterdam and Guangzhou
+
+Research question: How would expanding urban green infrastructure affect the spatial justice of climate adaptation for vulnerable populations in Rotterdam versus Guangzhou?
+
+
+
+
+
+## Methods
+
+Expain the metrics that will answer the research question
+
+Do we need to do a literature review??
+
+
+### MCDA
+
+### Typology construction
+
+## Results
+
+## Discussion
+
+## Conclusion
+
