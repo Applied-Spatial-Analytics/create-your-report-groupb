@@ -49,30 +49,66 @@ and start the report from the Introduction section below.
 
 ## Introduction
 
-Introduce the topics of spatial justice and uhi,
+<!-- Introduce the topics of spatial justice and uhi,
 
 Write something about the relevance of this research and problem statement, also why relevant to explore Rotterdam and Guangzhou
 
-Research question: How would expanding urban green infrastructure affect the spatial justice of climate adaptation for vulnerable populations in Rotterdam versus Guangzhou?
+Research question: How would expanding urban green infrastructure affect the spatial justice of climate adaptation for vulnerable populations in Rotterdam versus Guangzhou? -->
+
+Urban environments are increasingly experiencing climate change, in particular the urban heat island (UHI) effect. The heat in cities is often not evenly distributed across the population. In addition, spatial justice metrics such as, distance to coolness are often tied to socio-economic status, making the intersection of urban climate and social equity a relevant problem. Wealthier demographics often have the capital to live in greener neighborhoods with a lower UHI effect, while low-income or socially vulnerable populations more commonly reside in dense urban areas exposed to intense thermal heat and rising health risks. 
+
+As cities seek to adapt, urban green infrastructure has emerged as a strategy to mitigate urban heat island effect and create cooling zones. However, assessing whether these interventions genuinely protect vulnerable populations requires a comparative analysis of different contexts. This research examines the inequality in climate impact between two cities operating on vastly different scales: Rotterdam and Guangzhou. By comparing Rotterdam, a relatively small European port city and Guagzhou, a large subtropical city is highly valuable. This comparison makes it possible to find out if the link between low income and high heat exposure is a global rule, or if it changes depending on how a city is managed. This report aims to evaluate the effectiveness of current adaptation strategies. Ultimately, the research addresses is as follows:
+
+**How would expanding urban green infrastructure affect the spatial justice of climate adaptation for vulnerable populations in Rotterdam versus Guangzhou?**
+
+This report will first dicuss the methods used to perform the research. Than will dicuss the results for Rotterdam and Guangzhou. The discussion covers limitations in the research and compare the results between both cities. Ultimately, the research question is answered in the conclusion.
 
 
+## Methodology
 
+<!-- Do we need to do a literature review?? -->
 
+<!-- We might need to define spatial typologies and run an S-MCDA, since this is the only lectures they gave?? But not sure it's relevant for our research since we're not looking at what solution is best!?-->
 
-## Methods
+### Metrics
 
-Expain the metrics that will answer the research question
+<!-- Expain the metrics that will answer the research question -->
 
-Do we need to do a literature review??
+### Data Sources
 
+<!-- Explain the data that is used for Rotterdam and Guangzhou and why these are chosen -->
 
 ### MCDA
+<!-- 
+Not relevant ? -->
 
 ### Typology construction
 
-## Results
+<!-- Idem? -->
+
+## Results: Rottedam Case Study
+
+### Climate Vulnerability
+
+### Socio-Economic Correlations
+
+### Green Infrastructure Impact
+
+### Micro-Climate Analysis (UMEP)
+
+## Results: Guangzhou Case Study
 
 ## Discussion
 
+<!-- Discuss limitations in data availability, what made it difficult to compare 
+
+Compare how green infrastructure impacts spatial justice in Rotterdam versus Guangzhou -->
+
 ## Conclusion
+
+<!-- Summarise the main findings
+
+Answer research question -->
+
+
 
