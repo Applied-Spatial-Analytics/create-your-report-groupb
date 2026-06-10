@@ -1,5 +1,6 @@
 # This is all from Gemini so have to check it later
 
+
 library(sf)          # For vector data (polygons)
 library(terra)       # For raster data (UHI grid)
 library(ggplot2)     # For plotting
