@@ -33,19 +33,21 @@ This report will first dicuss the methods used to perform the research. Than wil
 
 ## Methodology
 
-<!-- Do we need to do a literature review?? -->
+<!-- We should probably do a short literature review -->
 
 <!-- We might need to define spatial typologies and run an S-MCDA, since this is the only lectures they gave?? But not sure it's relevant for our research since we're not looking at what solution is best!?-->
 
 ### Metrics
 
-<!-- Expain the metrics that will answer the research question -->
+<!-- Exlpain the metrics that will answer the research question -->
 
 ### Data Sources
 
 <!-- Explain the data that is used for Rotterdam and Guangzhou and why these are chosen -->
 
 ### MCDA
+
+<!--We should do at least one of these two (MCDA or Typology) probably -->
 
 ```{=html}
 <!-- 
@@ -56,7 +58,7 @@ Not relevant ? -->
 
 <!-- Idem? -->
 
-## Results: Rottedam Case Study
+## Results: Rotterdam Case Study
 
 ### Climate Vulnerability
 
@@ -129,15 +131,18 @@ To ensure the index remains statistically robust and representative, a threshold
 
 ### Green Infrastructure Impact
 
+<!-- I don't understand what you mean with this subsection - or does the distance to green thing belong here? -->
+
 ### Micro-Climate Analysis (UMEP)
+
+<!-- I think the UMEP plugin is too much work to fix. It needs a lot of datasets (at least DTM and DSM -  which I can easily find in QGIS but I need them on my laptop - and downloading them is like 60gb for just the rotterdam area) and takes a lot of time. -->
 
 ## Results: Guangzhou Case Study
 
 Comparing Rotterdam and Guangzhou presents an immense challenge of scale: Guangzhou's administrative area is more than 200 times larger than Rotterdam's. To make a meaningful cross-continental comparison, we narrowed our scope to Guangzhou's four central urban districts: \*Haizhu, Liwan, Yuexiu, and Tianhe\*.
 
-However, because these central districts are individually still vastly larger than a standard Rotterdam neighborhood (\*buurt\*), a direct comparison was still geometrically skewed. To resolve this, we manually disaggregated (split) these four districts into smaller, sub-district spatial units using Guangzhou's \*main road networks and the Pearl River\* as geographic boundaries. This brought the spatial footprint of our analytical units down to a size comparable to Rotterdam’s neighborhoods.
+These central districts are divided into subdistricts, for which there is data available on population density and mean land surface temperature.
 
-While this spatial splitting solved the geometric scaling issue, it introduced a significant bottleneck for data acquisition. Most municipal socio-economic data for Guangzhou is only published at the aggregated district level. Because we split these districts into custom units, matching that coarse data to our finer, road-bounded neighborhoods became exceptionally difficult—a limitation that heavily influenced our spatial justice indexing.
 
 ![Splitted central districts of Guangzhou](Guangzhou/Guangzhou_admin_boundaries.png){#fig-plot width="70%" fig-pos="H"}
 
