@@ -60,6 +60,11 @@ Not relevant ? -->
 
 ### Climate Vulnerability
 
+Distance to green vs. Land Surface temperature results;
+
+![Distance to green vs LST in Gunagzhou](results_lst_distance_to_green/rotterdam_dist_lst.png){#fig-plot width="70%" fig-pos="H"}
+
+
 ### Socio-Economic Correlations
 
 ::: {.callout-note title="Methodological Note on City Comparison"}
@@ -137,6 +142,10 @@ While this spatial splitting solved the geometric scaling issue, it introduced a
 ![Splitted central districts of Guangzhou](Guangzhou/Guangzhou_admin_boundaries.png){#fig-plot width="70%" fig-pos="H"}
 
 ### Climate Vulnerability
+
+Distance to green vs. Land Surface temperature results;
+
+![Distance to green vs LST in Gunagzhou](results_lst_distance_to_green/guangzhou_dist_lst.png){#fig-plot width="70%" fig-pos="H"}
 
 ### Socio-Economic Correlations
 
