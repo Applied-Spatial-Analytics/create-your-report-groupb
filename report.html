@@ -137,6 +137,13 @@ window.Quarto = {
 </header>
 
 
+<section id="still-to-do" class="level2">
+<h2 class="anchored" data-anchor-id="still-to-do">Still to do:</h2>
+<ul>
+<li><p>Short literature review for methodology</p></li>
+<li></li>
+</ul>
+</section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <!-- Introduce the topics of spatial justice and uhi,
@@ -145,17 +152,17 @@ Write something about the relevance of this research and problem statement, also
 
 Research question: How would expanding urban green infrastructure affect the spatial justice of climate adaptation for vulnerable populations in Rotterdam versus Guangzhou? -->
 <p>Urban environments are increasingly experiencing climate change, in particular the urban heat island (UHI) effect. The heat in cities is often not evenly distributed across the population. In addition, spatial justice metrics such as, distance to coolness are often tied to socio-economic status, making the intersection of urban climate and social equity a relevant problem. Wealthier demographics often have the capital to live in greener neighborhoods with a lower UHI effect, while low-income or socially vulnerable populations more commonly reside in dense urban areas exposed to intense thermal heat and rising health risks.</p>
-<p>As cities seek to adapt, urban green infrastructure has emerged as a strategy to mitigate urban heat island effect and create cooling zones. However, assessing whether these interventions genuinely protect vulnerable populations requires a comparative analysis of different contexts. This research examines the inequality in climate impact between two cities operating on vastly different scales: Rotterdam and Guangzhou. By comparing Rotterdam, a relatively small European port city and Guagzhou, a large subtropical city is highly valuable. This comparison makes it possible to find out if the link between low income and high heat exposure is a global rule, or if it changes depending on how a city is managed. This report aims to evaluate the effectiveness of current adaptation strategies. Ultimately, the research addresses is as follows:</p>
+<p>As cities seek to adapt, urban green infrastructure has emerged as a strategy to mitigate urban heat island effect and create cooling zones. However, assessing whether these interventions genuinely protect vulnerable populations requires a comparative analysis of different contexts. This research examines the inequality in climate impact between two cities operating on vastly different scales: Rotterdam and Guangzhou. By comparing Rotterdam, a relatively small European port city and Guangzhou, a large subtropical city is highly valuable. This comparison makes it possible to find out if the link between low income and high heat exposure is a global rule, or if it changes depending on how a city is managed. This report aims to evaluate the effectiveness of current adaptation strategies. Ultimately, the research addresses is as follows:</p>
 <p><strong>How would expanding urban green infrastructure affect the spatial justice of climate adaptation for vulnerable populations in Rotterdam versus Guangzhou?</strong></p>
-<p>This report will first dicuss the methods used to perform the research. Than will dicuss the results for Rotterdam and Guangzhou. The discussion covers limitations in the research and compare the results between both cities. Ultimately, the research question is answered in the conclusion.</p>
+<p>This report will first discuss the methods used to perform the research. Than will discuss the results for Rotterdam and Guangzhou. The discussion covers limitations in the research and compare the results between both cities. Ultimately, the research question is answered in the conclusion.</p>
 </section>
 <section id="methodology" class="level2">
 <h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<!-- Do we need to do a literature review?? -->
+<!-- We should probably do a short literature review -->
 <!-- We might need to define spatial typologies and run an S-MCDA, since this is the only lectures they gave?? But not sure it's relevant for our research since we're not looking at what solution is best!?-->
 <section id="metrics" class="level3">
 <h3 class="anchored" data-anchor-id="metrics">Metrics</h3>
-<!-- Expain the metrics that will answer the research question -->
+<!-- Explain the metrics that will answer the research question -->
 </section>
 <section id="data-sources" class="level3">
 <h3 class="anchored" data-anchor-id="data-sources">Data Sources</h3>
@@ -163,6 +170,7 @@ Research question: How would expanding urban green infrastructure affect the spa
 </section>
 <section id="mcda" class="level3">
 <h3 class="anchored" data-anchor-id="mcda">MCDA</h3>
+<!--We should do at least one of these two (MCDA or Typology) probably -->
 <!-- 
 Not relevant ? -->
 </section>
@@ -171,18 +179,19 @@ Not relevant ? -->
 <!-- Idem? -->
 </section>
 </section>
-<section id="results-rottedam-case-study" class="level2">
-<h2 class="anchored" data-anchor-id="results-rottedam-case-study">Results: Rottedam Case Study</h2>
+<section id="results-rotterdam-case-study" class="level2">
+<h2 class="anchored" data-anchor-id="results-rotterdam-case-study">Results: Rotterdam Case Study</h2>
 <section id="climate-vulnerability" class="level3">
 <h3 class="anchored" data-anchor-id="climate-vulnerability">Climate Vulnerability</h3>
-<p>Distance to green vs.&nbsp;Land Surface temperature results;</p>
+<p>Distance to green vs.&nbsp;Land Surface temperature results is plotted as a metric of climate vulnerability. The analysis begins by extracting residential building footprints (woonfunctie). These buildings are spatially joined with a dataset (which dataset exactly) containing their pre-calculated distance to the nearest “cool spot.” Concurrently, a raster map of Land Surface Temperatures is reprojected and cropped to perfectly match the city’s residential bounding box.The residential building data is aggregated into a continuous 150-meter hexagonal grid. For each hexagon, the script calculates the average walking distance from the enclosed buildings to the nearest cool space.</p>
+<p>Based on the plot there is not a clear correlation between distance to green spaces and LST in Rotterdam. The most vulnerable residential spots in terms of accesibility are distributed across both high-heat and moderate-temperature areas. This indicates that poor access to cooling spaces is a structural issue not exclusively isolated to the absolute hottest neighborhoods in the city of Rotterdam.</p>
 <div id="fig-plot" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="results_lst_distance_to_green/rotterdam_dist_lst.png" class="img-fluid figure-img" style="width:70.0%" data-fig-pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Distance to green vs LST in Gunagzhou
+Figure&nbsp;1: Distance to green vs LST in Rotterdam
 </figcaption>
 </figure>
 </div>
@@ -255,51 +264,54 @@ Finally, we calculated an unweighted average of the seven adjusted scores for ea
 <p>To ensure the index remains statistically robust and representative, a threshold for the amount of inhabitants was implemented. A neighborhood received a valid Spatial Justice Index score only if it has more than 50 inhabitants. Neighborhoods failing to meet this threshold were assigned a null value (<code>NA</code>) and are rendered grey on the map.</p>
 </div>
 </div>
-<div id="fig-plot" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Liveablility/Spatial_justice_index_v3.png" class="img-fluid figure-img" style="width:70.0%" data-fig-pos="H">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Spatial Justice Index per neighborhood in Rotterdam
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Liveablility/Spatial_justice_index_v3.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Spatial Justice Index per neighborhood in Rotterdam</figcaption>
 </figure>
 </div>
 </section>
 </section>
 <section id="green-infrastructure-impact" class="level3">
 <h3 class="anchored" data-anchor-id="green-infrastructure-impact">Green Infrastructure Impact</h3>
+<!-- I don't understand what you mean with this subsection - or does the distance to green thing belong here? -->
 </section>
 <section id="micro-climate-analysis-umep" class="level3">
 <h3 class="anchored" data-anchor-id="micro-climate-analysis-umep">Micro-Climate Analysis (UMEP)</h3>
+<!-- I think the UMEP plugin is too much work to fix. It needs a lot of datasets (at least DTM and DSM -  which I can easily find in QGIS but I need them on my laptop - and downloading them is like 60gb for just the rotterdam area) and takes a lot of time. -->
 </section>
 </section>
 <section id="results-guangzhou-case-study" class="level2">
 <h2 class="anchored" data-anchor-id="results-guangzhou-case-study">Results: Guangzhou Case Study</h2>
 <p>Comparing Rotterdam and Guangzhou presents an immense challenge of scale: Guangzhou’s administrative area is more than 200 times larger than Rotterdam’s. To make a meaningful cross-continental comparison, we narrowed our scope to Guangzhou’s four central urban districts: *Haizhu, Liwan, Yuexiu, and Tianhe*.</p>
-<p>However, because these central districts are individually still vastly larger than a standard Rotterdam neighborhood (*buurt*), a direct comparison was still geometrically skewed. To resolve this, we manually disaggregated (split) these four districts into smaller, sub-district spatial units using Guangzhou’s *main road networks and the Pearl River* as geographic boundaries. This brought the spatial footprint of our analytical units down to a size comparable to Rotterdam’s neighborhoods.</p>
-<p>While this spatial splitting solved the geometric scaling issue, it introduced a significant bottleneck for data acquisition. Most municipal socio-economic data for Guangzhou is only published at the aggregated district level. Because we split these districts into custom units, matching that coarse data to our finer, road-bounded neighborhoods became exceptionally difficult—a limitation that heavily influenced our spatial justice indexing.</p>
-<div id="fig-plot" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Guangzhou/Guangzhou_admin_boundaries.png" class="img-fluid figure-img" style="width:70.0%" data-fig-pos="H">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Splitted central districts of Guangzhou
-</figcaption>
+<p>These central districts are divided into subdistricts, for which there is data available on population density and mean land surface temperature.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Guangzhou/Guangzhou_admin_boundaries.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Sub-districts in the central area of Guangzhou</figcaption>
 </figure>
 </div>
 <section id="climate-vulnerability-1" class="level3">
 <h3 class="anchored" data-anchor-id="climate-vulnerability-1">Climate Vulnerability</h3>
-<p>Distance to green vs.&nbsp;Land Surface temperature results;</p>
-<div id="fig-plot" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="results_lst_distance_to_green/guangzhou_dist_lst.png" class="img-fluid figure-img" style="width:70.0%" data-fig-pos="H">
+<div class="callout callout-style-default callout-important callout-titled" title="Methodological Adaptation for Guangzhou">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Distance to green vs LST in Gunagzhou
-</figcaption>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Methodological Adaptation for Guangzhou
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since less data was available for Guangzhou compared to Rotterdam, a modified approach was required to create a comparable visualization of climate vulnerability. Because accurate data for individual residential buildings in Guangzhou was unavailable, the relevant OpenStreetMap (OSM) polygons for general residential land use were first queried. To avoid relying on overly large, generalized areas, these polygons were subdivided into a standard 100-meter vector grid, effectively generating smaller raster cells that simulate individual building footprints. In addition, green spaces were identified using using OSM by extracting multiple vegetation categories, such as forests, parks, and grasslands. To facilitate a network analysis determining the distance from each simulated residential building to the nearest green area, pedestrian walking paths were also queried to map the usable routing infrastructure. The network analysis was then executed in R. This script performed a network-based accessibility analysis by converting both the 100-meter residential grid cells and the green spaces into representative origin and destination points. Finally, by utilizing the OSM pedestrian geometries, a routable network graph was constructed to calculate the exact distance a human would need to walk along actual streets and paths to reach the closest park boundary.</p>
+</div>
+</div>
+<p>After all data had been extracted, the same visualization can be done for Climate vulnerability as for Rotterdam, by plotting the distance to green spaces against the mean land surface temperature (LST). This allows us to visually assess whether areas with higher LST also tend to be farther from green spaces, which would indicate a spatial justice issue in terms of climate vulnerability. In the case of Guangzhou, the hexagons are 500 meter hexagons which is done to make the plot more readable.</p>
+<p>Compared to the Rotterdam case, the Guangzhou plot shows a higher overall distance to green spaces, with many residential areas located more than 500 meters away from the nearest park. Additionally, there is a clearer positive correlation between distance to green and LST in Guangzhou, suggesting that residents in hotter areas are also more likely to be farther from cooling green spaces. This pattern indicates a significant spatial justice concern, as vulnerable populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. This pattern was not so clearly visible for Rotterdam, where the distance to green spaces was generally lower and less strongly correlated with LST, suggesting a more equitable distribution of green infrastructure in relation to heat exposure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="results_lst_distance_to_green/guangzhou_dist_lst.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Distance to green vs LST in Guangzhou</figcaption>
 </figure>
 </div>
 </section>
