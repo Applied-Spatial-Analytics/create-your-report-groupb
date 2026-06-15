@@ -75,7 +75,7 @@ Based on the plot shown in @fig-rot-green-lst there is not a clear correlation b
 
 @wieger Al die hele lichte hexagons zijn niet zo zichtbaar hier (ook omdat de LST kleur daar bijna hetzelfde is) maar misschien toch alles een donkere rand geven? En de gemeente grens van Rotterdam eroverheen is chill. Oh en zorgen dat je alle buurten die hierboven staan op de kaart hebt :)
 
-![Distance to green vs LST in Rotterdam](results_lst_distance_to_green/rotterdam_dist_lst.png){#fig-rot-green-lst fig-pos="H" fig-align="center" width="70%"}
+![Distance to green vs LST in Rotterdam](results_lst_distance_to_green/climate_vul_rotterdam.png){#fig-rot-green-lst fig-pos="H" fig-align="center" width="70%"}
 
 ## Socio-Economic Vulnerability
 
@@ -186,7 +186,7 @@ Compared to the Rotterdam case, the Guangzhou plot shows a higher overall distan
 
 @wieger hier nog de Guangzhou extent aanpassen naar die 4 districts + de outline daarvan erop zetten
 
-![Distance to green vs LST in Guangzhou](results_lst_distance_to_green/guangzhou_dist_lst.png){#fig-green-lst-guangzhou fig-pos="H" fig-align="center" width="70%"}
+![Distance to green vs LST in Guangzhou](results_lst_distance_to_green/climate_vul_guangzhou.png){#fig-green-lst-guangzhou fig-pos="H" fig-align="center" width="70%"}
 
 ## Socio-Economic Vulnerability
 
