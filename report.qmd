@@ -148,6 +148,8 @@ To ensure the index remains statistically robust and representative, a threshold
 
 **TO DO: make a SJI map with just the values that are also available in Guangzhou**
 
+![Spatial Justice Index per neighbourhood in Rotterdam comparable to Guangzhou](Maps_for_report/RotterdamSJI.png){#fig-sji-rot-simple fig-pos="H" fig-align="center" width="80%"}
+
 ### I don't know how to call this yet
 
 **TO DO: explain what we can tell from the map**
