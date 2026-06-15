@@ -62,6 +62,7 @@ buurten_scaled <- buurten_ready %>%
   )
 
 # Calculate Spatial Justice Index
+weights <- c(fys = 2, soc = 1, `65plus` = 0.5, outside_nl = 0.5, rent = 1, welfare = 0.5, green = 2)
 buurten_index <- buurten_scaled %>%
   mutate(
     ## Positive indicators
@@ -80,15 +81,20 @@ buurten_index <- buurten_scaled %>%
     ) %>%
     rowwise() %>%
     mutate(
-    # Weighted average
-    scores_vector = list(c(`65plus_score`,
+      # Combine scores into a vector
+      scores_vector = list(c(`65plus_score`,
                              fem_score, dens_score)),
-    aantal_na = sum(is.na(unlist(scores_vector))),
 
-    spatial_justice_index = ifelse(aantal_na >= 4,
-                                   NA,
-                                   mean(unlist(scores_vector), na.rm = TRUE))
-  ) %>%
+      aantal_na = sum(is.na(unlist(scores_vector))),
+
+      # Calculate weighted average if there are enough observations
+      spatial_justice_index = ifelse(
+        aantal_na >= 4,
+        NA,
+        # Weighted mean logic:
+        sum(unlist(scores_vector) * weights, na.rm = TRUE) / sum(weights[!is.na(unlist(scores_vector))])
+      )
+    ) %>%
   ungroup()
 
 # Plot the map
@@ -104,16 +110,15 @@ ggplot(data = buurten_index) +
 
   # Formatting of the map
   labs(
-    title = "Spatial Justice Index per Neighborhood in Guangzhou",
-    subtitle = "Combined index of liveability, demography and social-economic status",
-    caption = "Index is between 0 (least favorable) and 1 (most favorable)\nNeigborhoods with few avaialable measurements are grey\nSource: WorldPop.org"
+    title = "Spatial Justice Index per Neighborhood in Rotterdam",
+    caption = "Source: Leefbarometer 2024 & CBS Buurtgegevens"
   ) +
   theme_minimal() +
   theme(
     panel.grid = element_blank(),
     axis.text = element_blank(),
     plot.title = element_text(face = "bold", size = 14),
-    #subtitle = element_text(size = 11, color = "grey30"),
+    caption = element_text(size = 7, color = "grey30"),
     legend.position = "right"
   )
 
