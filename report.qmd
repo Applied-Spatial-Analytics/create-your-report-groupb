@@ -33,6 +33,13 @@ This report will first discuss the methodology used to perform the research in b
 # Methodology
 
 <!-- We should probably do a short literature review -->
+To evaluate the relationship between urban green infrastructure allocation and socio-economic vulnerability, this study bridges urban climate and social equity by quantifying the urban heat island (UHI) effect alongside several metrics of spatial justice. The methodology is structured as follows: defining the metrics for measuring UHI and spatial justice, explaining the data sources used for the analysis, and integrating these dimensions through a Multi-Criteria Decision Analysis (MCDA) framework.
+
+The UHI effect is a phenomenon where urban areas experience higher temperatures than their rural surroundings. This is the effect of the built environment, which absorbs and retains heat, leading to elevated temperatures in cities. In addition, lack of vegetation and green spaces in cities contribute to this effect due to reduced evapotranspiration and shading. Therefore the presence of green infrastructure is a key factor in mitigating UHI (https://www.sciencedirect.com/science/article/pii/S0169204620301407?via%3Dihub). 
+
+Spatial justice concerns the fair distribution of resources, services and environmental benefits across urban space. Therefore, spatial justice can be measured in multiple ways, including socio-economic indicators, such as income, education, and employment, as well as access to green spaces. This study focuses on socio-economic aspects and access to green spaces which can be connected to the UHI effect. By combining these metrics through a Multi-Criteria Decision Analysis (MCDA) framework, the relation between urban climate and spatial justice can be evaluated and compared for Rotterdam and Guangzhou. 
+**TO DO: include reference for spatial justice claims and APA**
+
 
 ## Metrics
 
