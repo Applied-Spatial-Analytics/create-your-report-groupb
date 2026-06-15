@@ -69,13 +69,15 @@ The operational workflow for the Spatial Justice Index was executed in four sequ
 
 **TO DO: write introduction - what do we want to find out in this section, why is LST vs distance to green a metric?**
 
-Land Surface Temperature vs. Distance to Green results is plotted as a metric of climate vulnerability. The analysis begins by extracting residential building footprints (woonfunctie). These buildings are spatially joined with a data set (which data set exactly) containing their pre-calculated distance to the nearest "cool spot." Concurrently, a raster map of Land Surface Temperatures is re-projected and cropped to perfectly match the city's residential bounding box. The residential building data is aggregated into a continuous 150-meter hexagonal grid. For each hexagon, the script calculates the average walking distance from the enclosed buildings to the nearest cool space.
+Land Surface Temperature vs. Distance to Green results is plotted as a metric of climate vulnerability. The analysis begins by extracting residential building footprints (woonfunctie). These buildings are spatially joined with a data set (which data set exactly) containing their pre-calculated distance to the nearest "cool spot." Concurrently, a raster map of Land Surface Temperatures is re-projected and cropped to perfectly match the city's residential bounding box. The residential building data is aggregated into a continuous 300-meter hexagonal grid. For each hexagon, the script calculates the average walking distance from the enclosed buildings to the nearest cool space.
 
 Based on the plot shown in @fig-rot-green-lst there is not a clear correlation between distance to green spaces and LST in Rotterdam. The most vulnerable residential spots in terms of accessibility are distributed across both high-heat and moderate-temperature areas. This indicates that poor access to cooling spaces is a structural issue not exclusively isolated to the absolute hottest neighborhoods in the city of Rotterdam.
 
 @wieger Al die hele lichte hexagons zijn niet zo zichtbaar hier (ook omdat de LST kleur daar bijna hetzelfde is) maar misschien toch alles een donkere rand geven? En de gemeente grens van Rotterdam eroverheen is chill. Oh en zorgen dat je alle buurten die hierboven staan op de kaart hebt :)
 
 ![Distance to green vs LST in Rotterdam](results_lst_distance_to_green/climate_vul_rotterdam.png){#fig-rot-green-lst fig-pos="H" fig-align="center" width="70%"}
+
+**Need to lst data for the whole area of Rotterdam and summer values@Viktor**
 
 ## Socio-Economic Vulnerability
 
@@ -180,7 +182,7 @@ To facilitate a network analysis determining the distance from each simulated re
 
 **TO DO: Change the paragraphs below because of changing of hexagon size**
 
-After all data had been extracted, the same visualization can be done for Climate vulnerability as for Rotterdam, by plotting the distance to green spaces against the mean land surface temperature (LST). This allows us to visually assess whether areas with higher LST also tend to be farther from green spaces, which would indicate a spatial justice issue in terms of climate vulnerability. In the case of Guangzhou, the hexagons are 500 meter hexagons which is done to make the plot more readable.
+After all data had been extracted, the same visualization can be done for Climate vulnerability as for Rotterdam, by plotting the distance to green spaces against the mean land surface temperature (LST). This allows us to visually assess whether areas with higher LST also tend to be farther from green spaces, which would indicate a spatial justice issue in terms of climate vulnerability. In the case of Guangzhou, the hexagons are 300 meter hexagons which is done to make the plot more readable.
 
 Compared to the Rotterdam case, the Guangzhou plot shows a higher overall distance to green spaces, with many residential areas located more than 500 meters away from the nearest park. Additionally, there is a clearer positive correlation between distance to green and LST in Guangzhou, suggesting that residents in hotter areas are also more likely to be farther from cooling green spaces. This pattern indicates a significant spatial justice concern, as vulnerable populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. This pattern was not so clearly visible for Rotterdam, where the distance to green spaces was generally lower and less strongly correlated with LST, suggesting a more equitable distribution of green infrastructure in relation to heat exposure.
 
