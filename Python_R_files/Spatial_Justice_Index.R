@@ -6,7 +6,7 @@ library(ggplot2)
 library(scales)
 
 # Read data from the GeoPackage file
-gpkg_bestand <- "data/KantonData.gpkg"
+gpkg_bestand <- "Liveablility/Neighborhood_groen_netwerk.gpkg"
 buurten_sf <- st_read(gpkg_bestand)
 
 clean_cbs <- function(x) {
@@ -20,7 +20,7 @@ buurten_ready <- buurten_sf %>%
 
     #fys_num      = clean_cbs(rotterdam_liveability_2024_fys),
     #soc_num      = clean_cbs(rotterdam_liveability_2024_soc),
-    #age65_num    = clean_cbs(percentagePersonen65JaarEnOuder),
+    age65_num    = clean_cbs(percentagePersonen65JaarEnOuder),
     #heritage_num = clean_cbs(percentageMetHerkomstlandNederland),
     #rent_num     = clean_cbs(percentageHuurwoningen),
     #welfare_abs  = clean_cbs(aantalPersonenMetEenAlgBijstandsuitkeringTot),
@@ -33,9 +33,9 @@ buurten_ready <- buurten_sf %>%
     ## Percentage welfare
     #percentageWelfare = ifelse(inhabitants > 0, (welfare_abs / inhabitants) * 100, NA)
     
-    age65_num = clean_cbs(Over65Percentagemean),
-    female_num = clean_cbs(FemalePercentagemean),
-    pop_density = clean_cbs(PopDensity)
+    #age65_num = clean_cbs(Over65Percentagemean),
+    female_num = clean_cbs(PercentageVrouwen),
+    pop_density = clean_cbs(bevolkingsdichtheidInwonersPerKm2)
 
   )
 
@@ -118,7 +118,7 @@ ggplot(data = buurten_index) +
     panel.grid = element_blank(),
     axis.text = element_blank(),
     plot.title = element_text(face = "bold", size = 14),
-    caption = element_text(size = 7, color = "grey30"),
+    #caption = element_text(size = 7, color = "grey30"),
     legend.position = "right"
   )
 
@@ -128,7 +128,7 @@ buurten_gpkg_klaar <- buurten_index %>%
 st_write(
   obj = buurten_gpkg_klaar,
   dsn = gpkg_bestand,
-  layer = "spatial_justice_index",
+  layer = "Neighborhood_groen_netwerk",
   delete_layer = TRUE # Overschrijft de laag als je de code nogmaals runt
 )
 

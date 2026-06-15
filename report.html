@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="report_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="report_files/libs/quarto-html/anchor.min.js"></script>
 <link href="report_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="report_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="report_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -145,7 +145,7 @@ window.Quarto = {
 <p><strong>“How does the relationship between urban green infrastructure allocation and socio-economic vulnerability vary between Rotterdam and Guangzhou?”</strong></p>
 <p>In order to get a clear answer to this question, this is divided into two subquestions;</p>
 <ol type="1">
-<li>How do the physical and socio-economic criteria of spatial justice correlate with the Land Surface Temperature effect in each city?</li>
+<li>How do the physical and socio-economic criteria of spatial justice correlate with the Land Surface Temperature in each city?</li>
 <li>Which neighborhoods exhibit the highest deficit in environmental amenities relative to their vulnerability index, identifying them as priority zones for green adaptation?</li>
 </ol>
 <p>This report will first discuss the methodology used to perform the research in both study areas. Secondly, the results for Rotterdam and Guangzhou are presented individually. The subsequent discussion section covers limitations of the data, addresses spatial uncertainties, and directly contrasts findings between the two target cities. Ultimately, the research question is answered in the concluding section, alongside recommendation for equitable urban planning.</p>
@@ -153,6 +153,9 @@ window.Quarto = {
 <section id="methodology" class="level1">
 <h1>Methodology</h1>
 <!-- We should probably do a short literature review -->
+<p>To evaluate the relationship between urban green infrastructure allocation and socio-economic vulnerability, this study bridges urban climate and social equity by quantifying the urban heat island (UHI) effect alongside several metrics of spatial justice. The methodology is structured as follows: defining the metrics for measuring UHI and spatial justice, explaining the data sources used for the analysis, and integrating these dimensions through a Multi-Criteria Decision Analysis (MCDA) framework.</p>
+<p>The UHI effect is a phenomenon where urban areas experience higher temperatures than their rural surroundings. This is the effect of the built environment, which absorbs and retains heat, leading to elevated temperatures in cities. In addition, lack of vegetation and green spaces in cities contribute to this effect due to reduced evapotranspiration and shading. Therefore the presence of green infrastructure is a key factor in mitigating UHI (https://www.sciencedirect.com/science/article/pii/S0169204620301407?via%3Dihub).</p>
+<p>Spatial justice concerns the fair distribution of resources, services and environmental benefits across urban space. Therefore, spatial justice can be measured in multiple ways, including socio-economic indicators, such as income, education, and employment, as well as access to green spaces. This study focuses on socio-economic aspects and access to green spaces which can be connected to the UHI effect. By combining these metrics through a Multi-Criteria Decision Analysis (MCDA) framework, the relation between urban climate and spatial justice can be evaluated and compared for Rotterdam and Guangzhou. <strong>TO DO: include reference for spatial justice claims and APA</strong></p>
 <section id="metrics" class="level2">
 <h2 class="anchored" data-anchor-id="metrics">Metrics</h2>
 <!-- Explain the metrics that will answer the research question -->
@@ -296,6 +299,16 @@ Figure&nbsp;3: Spatial Justice Index per neighborhood in Rotterdam
 <section id="simplified-spatial-justice-index" class="level3">
 <h3 class="anchored" data-anchor-id="simplified-spatial-justice-index">Simplified Spatial Justice Index</h3>
 <p><strong>TO DO: make a SJI map with just the values that are also available in Guangzhou</strong></p>
+<div id="fig-sji-rot-simple" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sji-rot-simple-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Maps_for_report/RotterdamSJI.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" data-fig-pos="H">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sji-rot-simple-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Spatial Justice Index per neighbourhood in Rotterdam comparable to Guangzhou
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="i-dont-know-how-to-call-this-yet" class="level3">
 <h3 class="anchored" data-anchor-id="i-dont-know-how-to-call-this-yet">I don’t know how to call this yet</h3>
@@ -319,7 +332,7 @@ Figure&nbsp;3: Spatial Justice Index per neighborhood in Rotterdam
 <img src="Maps_for_report/Guangzhou_admin_boundaries.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" data-fig-pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sub-districts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Sub-districts in the central area of Guangzhou
+Figure&nbsp;5: Sub-districts in the central area of Guangzhou
 </figcaption>
 </figure>
 </div>
@@ -350,7 +363,7 @@ Figure&nbsp;4: Sub-districts in the central area of Guangzhou
 <img src="results_lst_distance_to_green/guangzhou_dist_lst.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" data-fig-pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-green-lst-guangzhou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Distance to green vs LST in Guangzhou
+Figure&nbsp;6: Distance to green vs LST in Guangzhou
 </figcaption>
 </figure>
 </div>
