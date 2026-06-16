@@ -50,11 +50,11 @@ Spatial justice concerns the fair distribution of resources, services and enviro
 
 <!-- Explain the data that is used for Rotterdam and Guangzhou and why these are chosen -->
 
-For both Rotterdam and Guangzhou, the analysis relies on a combination of spatial and socio-economic datasets. For Rotterdam, data was primarily sourced from the *Leefbaarometer 2024* and *CBS Buurtgegevens*, which provide comprehensive neighborhood-level information on physical liveability, social cohesion, housing conditions, and demographic characteristics. These datasets are complemented by high-resolution Land Surface Temperature (LST) data derived from satellite imagery, enabling precise mapping of urban heat distribution. 
+For both Rotterdam and Guangzhou, the analysis relies on a combination of spatial and socio-economic datasets. For Rotterdam, data was primarily sourced from the *Leefbaarometer 2024* and *CBS Buurtgegevens*, which provide comprehensive neighborhood-level information on physical livability, social cohesion, housing conditions, and demographic characteristics. These datasets are complemented by high-resolution Land Surface Temperature (LST) data derived from satellite imagery, enabling precise mapping of urban heat distribution.
 
-For Guangzhou, data acquisition posed a greater challenge due to limited availability of granular socio-economic information. Consequently, the analysis utilized OpenStreetMap (OSM) data to extract residential land use and green space locations, supplemented by pedestrian network data to assess accessibility. LST data for Guangzhou was obtained from remote sensing sources, ensuring comparability with the Rotterdam dataset. For population data for Guangzhou, which is similar to the data provided by CBS, we used open data from "WorldPop.org". However, as it is a global dataset, it may not be as accurate as for example the CBS data for Rotterdam. The integration of these diverse datasets allows for a robust cross-city comparison of spatial justice and urban climate vulnerability. 
+For Guangzhou, data acquisition posed a greater challenge due to limited availability of granular socio-economic information. Consequently, the analysis utilized OpenStreetMap (OSM) data to extract residential land use and green space locations, supplemented by pedestrian network data to assess accessibility. LST data for Guangzhou was obtained from remote sensing sources, ensuring comparability with the Rotterdam dataset. For population data for Guangzhou, which is similar to the data provided by CBS, we used open data from "WorldPop.org". However, as it is a global dataset, it may not be as accurate as for example the CBS data for Rotterdam. The integration of these diverse datasets allows for a robust cross-city comparison of spatial justice and urban climate vulnerability.
 
-As we wanted to compare the two cities, we had to make sure that the data was comparable. Therefore, we used the same metrics for both cities. In order to make the analysis for both cities comparable, we had to make sure that for both cities we used the same amount of data. As there is much more data available for Rotterdam, we had to make sure that we only used the data that was also available for Guangzhou. This means that we had to leave out some of the data for Rotterdam, which is a limitation of this study. 
+As we wanted to compare the two cities, we had to make sure that the data was comparable. Therefore, we used the same metrics for both cities. In order to make the analysis for both cities comparable, we had to make sure that for both cities we used the same amount of data. As there is much more data available for Rotterdam, we had to make sure that we only used the data that was also available for Guangzhou. This means that we had to leave out some of the data for Rotterdam, which is a limitation of this study.
 
 ## Multi-Criteria Decision Analysis
 
@@ -80,9 +80,7 @@ Land Surface Temperature vs. Distance to Green results is plotted as a metric of
 
 Based on the plot shown in @fig-rot-green-lst there is not a clear correlation between distance to green spaces and LST in Rotterdam. The most vulnerable residential spots in terms of accessibility are distributed across both high-heat and moderate-temperature areas. This indicates that poor access to cooling spaces is a structural issue not exclusively isolated to the absolute hottest neighborhoods in the city of Rotterdam.
 
-@wieger Al die hele lichte hexagons zijn niet zo zichtbaar hier (ook omdat de LST kleur daar bijna hetzelfde is) maar misschien toch alles een donkere rand geven? En de gemeente grens van Rotterdam eroverheen is chill. Oh en zorgen dat je alle buurten die hierboven staan op de kaart hebt :)
-
-![Distance to green vs LST in Rotterdam](results_lst_distance_to_green/climate_vul_rotterdam.png){#fig-rot-green-lst fig-pos="H" fig-align="center" width="100%"}
+![Distance to green vs LST in Rotterdam](results_lst_distance_to_green/climate_vul_rotterdam.png){#fig-rot-green-lst fig-pos="H" fig-align="center"}
 
 ## Socio-Economic Vulnerability
 
@@ -155,7 +153,7 @@ To ensure the index remains statistically robust and representative, a threshold
 
 **TO DO: make a SJI map with just the values that are also available in Guangzhou**
 
-![Spatial Justice Index per neighborhood in Rotterdam comparable to Guangzhou](Maps_for_report/RotterdamSJI.png){#fig-sji-rot-full fig-pos="H" fig-align="center" width="80%"}
+![Spatial Justice Index per neighborhood in Rotterdam comparable to Guangzhou](Maps_for_report/RotterdamSJI.png){fig-pos="H" fig-align="center" width="80%"}
 
 ### I don't know how to call this yet
 
@@ -193,9 +191,7 @@ After all data had been extracted, the same visualization can be done for Climat
 
 Compared to the Rotterdam case, the Guangzhou plot shows a higher overall distance to green spaces, with many residential areas located more than 500 meters away from the nearest park. Additionally, there is a clearer positive correlation between distance to green and LST in Guangzhou, suggesting that residents in hotter areas are also more likely to be farther from cooling green spaces. This pattern indicates a significant spatial justice concern, as vulnerable populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. This pattern was not so clearly visible for Rotterdam, where the distance to green spaces was generally lower and less strongly correlated with LST, suggesting a more equitable distribution of green infrastructure in relation to heat exposure.
 
-@wieger hier nog de Guangzhou extent aanpassen naar die 4 districts + de outline daarvan erop zetten
-
-![Distance to green vs LST in Guangzhou](results_lst_distance_to_green/climate_vul_guangzhou.png){#fig-green-lst-guangzhou fig-pos="H" fig-align="center" width="70%"}
+![Distance to green vs LST in Guangzhou](results_lst_distance_to_green/climate_vul_guangzhou.png){#fig-green-lst-guangzhou fig-pos="H" fig-align="center" width="100%"}
 
 ## Socio-Economic Vulnerability
 
