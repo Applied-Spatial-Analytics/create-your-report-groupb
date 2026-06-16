@@ -6,7 +6,7 @@ library(ggplot2)
 library(scales)
 
 # Read data from the GeoPackage file
-gpkg_bestand <- "Liveablility/Neighborhood_groen_netwerk.gpkg"
+gpkg_bestand <- "Rotterdam_data/Liveablility/Neighborhood_groen_netwerk.gpkg"
 buurten_sf <- st_read(gpkg_bestand)
 
 clean_cbs <- function(x) {
@@ -62,7 +62,7 @@ buurten_scaled <- buurten_ready %>%
   )
 
 # Calculate Spatial Justice Index
-weights <- c(fys = 2, soc = 1, `65plus` = 0.5, outside_nl = 0.5, rent = 1, welfare = 0.5, green = 2)
+weights <- c(age = 0.5, fem = 0.3, dens = 1)
 buurten_index <- buurten_scaled %>%
   mutate(
     ## Positive indicators
