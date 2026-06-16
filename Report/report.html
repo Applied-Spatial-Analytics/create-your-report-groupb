@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -27,7 +27,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="report_files/libs/clipboard/clipboard.min.js"></script>
@@ -37,7 +56,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="report_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="report_files/libs/quarto-html/anchor.min.js"></script>
 <link href="report_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="report_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="report_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -139,11 +158,12 @@ window.Quarto = {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p><strong>TO DO: include references for the claims made in this section (marked in bold)</strong></p>
-<p>Urban environments are increasingly vulnerable to the impacts of climate change, particularly the intensification of the Urban Heat Island (UHI) effect. <strong>Literature suggests</strong> that urban thermal stress is often unevenly distributed across municipal populations, with spatial justice metrics - such as proximity to cooling urban green spaces - aligning with socio-economic disparities. In many metropolitan contexts, <strong>wealthier demographics tend to reside in suburban or highly vegetated neighborhoods</strong> characterized by lower ambient temperatures. Conversely, lower-income or socially vulnerable populations are often <strong>concentrated within dense, highly paved urban cores</strong>, potentially exposing them to elevated thermal conditions and associated health risks. This intersection of micro-climate variation and social equity forms an important challenge for modern urban planning.</p>
+<p>Urban environments are increasingly vulnerable to the impacts of climate change, particularly the intensification of the Urban Heat Island (UHI) effect. <span class="citation" data-cites="wong-2016">Wong et al. (<a href="#ref-wong-2016" role="doc-biblioref">2016</a>)</span> suggest that urban thermal stress is often unevenly distributed across municipal populations, with spatial justice metrics - such as proximity to cooling urban green spaces - aligning with socio-economic disparities. In many metropolitan context, lower-income or socially vulnerable populations are often concentrated within dense, highly paved urban cores, potentially exposing them to elevated thermal conditions and associated health risks <span class="citation" data-cites="wong-2016">(<a href="#ref-wong-2016" role="doc-biblioref">Wong et al. 2016</a>)</span>. This intersection of micro-climate variation and social equity forms an important challenge for modern urban planning.</p>
 <p>As municipal governments seek to adapt, the expansion of urban green infrastructure has emerged as a strategy to mitigate the UHI effect and establish cooling zones. However, assessing whether these interventions genuinely protect vulnerable communities requires a comparative analysis across different urban environments. This research examines the inequality in climate impact between two cities operating on vastly different geographical, demographic, and administrative scales: Rotterdam, a compact European port city, and Guangzhou, a large, dense subtropical city. By comparing these distinct urban frameworks, this study investigates whether the link between socio-economic vulnerability and high heat exposure functions as a universal urban pattern, or if it varies significantly based on local climate zones and governance models. Ultimately, this report aims to evaluate the systemic equity of current climate adaptation strategies by addressing the following primary research question:</p>
-<p><strong>“How does the relationship between urban green infrastructure allocation and socio-economic vulnerability vary between Rotterdam and Guangzhou?”</strong></p>
-<p>In order to get a clear answer to this question, this is divided into two subquestions;</p>
+<blockquote class="blockquote">
+<p><em>How does the relationship between urban green infrastructure allocation and socio-economic vulnerability vary between Rotterdam and Guangzhou?</em></p>
+</blockquote>
+<p>In order to get a clear answer to this question, this is divided into two sub-questions;</p>
 <ol type="1">
 <li>How do the physical and socio-economic criteria of spatial justice correlate with the Land Surface Temperature in each city?</li>
 <li>Which neighborhoods exhibit the highest deficit in environmental amenities relative to their vulnerability index, identifying them as priority zones for green adaptation?</li>
@@ -152,23 +172,46 @@ window.Quarto = {
 </section>
 <section id="methodology" class="level1">
 <h1>Methodology</h1>
-<!-- We should probably do a short literature review -->
-<p>To evaluate the relationship between urban green infrastructure allocation and socio-economic vulnerability, this study bridges urban climate and social equity by quantifying the urban heat island (UHI) effect alongside several metrics of spatial justice. The methodology is structured as follows: defining the metrics for measuring UHI and spatial justice, explaining the data sources used for the analysis, and integrating these dimensions through a Multi-Criteria Decision Analysis (MCDA) framework.</p>
-<p>The UHI effect is a phenomenon where urban areas experience higher temperatures than their rural surroundings. This is the effect of the built environment, which absorbs and retains heat, leading to elevated temperatures in cities. In addition, lack of vegetation and green spaces in cities contribute to this effect due to reduced evapotranspiration and shading. Therefore the presence of green infrastructure is a key factor in mitigating UHI (https://www.sciencedirect.com/science/article/pii/S0169204620301407?via%3Dihub).</p>
-<p>Spatial justice concerns the fair distribution of resources, services and environmental benefits across urban space. Therefore, spatial justice can be measured in multiple ways, including socio-economic indicators, such as income, education, and employment, as well as access to green spaces. This study focuses on socio-economic aspects and access to green spaces which can be connected to the UHI effect. By combining these metrics through a Multi-Criteria Decision Analysis (MCDA) framework, the relation between urban climate and spatial justice can be evaluated and compared for Rotterdam and Guangzhou. <strong>TO DO: include reference for spatial justice claims and APA</strong></p>
+<p>To evaluate the relationship between urban green infrastructure allocation and socio-economic vulnerability, this study bridges urban climate and social equity by quantifying the land surface temperature (LST) distribution alongside several metrics of spatial justice. The methodology is structured as follows: defining the metrics for measuring LST and spatial justice, explaining the data sources used for the analysis, and integrating these dimensions through a Multi-Criteria Decision Analysis (MCDA) framework.</p>
+<p>As <span class="citation" data-cites="bartesaghi-koc-2020">Bartesaghi-Koc et al. (<a href="#ref-bartesaghi-koc-2020" role="doc-biblioref">2020</a>)</span> describe, the UHI effect is a phenomenon where urban areas experience higher temperatures than their rural surroundings. This is the effect of the built environment, which absorbs and retains heat, leading to elevated temperatures in cities. In addition, lack of vegetation and green spaces in cities contribute to this effect due to reduced evapotranspiration and shading. Therefore the presence of green infrastructure is a key factor in mitigating UHI <span class="citation" data-cites="bartesaghi-koc-2020">(<a href="#ref-bartesaghi-koc-2020" role="doc-biblioref">Bartesaghi-Koc et al. 2020</a>)</span>.</p>
+<p>According to <span class="citation" data-cites="dadashpoor-2025">Dadashpoor and Dehghan (<a href="#ref-dadashpoor-2025" role="doc-biblioref">2025</a>)</span>, spatial justice concerns the fair distribution of resources, services and environmental benefits across urban space. Therefore, spatial justice can be measured in multiple ways, including socio-economic indicators, such as income, education, and employment, as well as access to green spaces. This study focuses on socio-economic aspects and access to green spaces which can be connected to the LST distribution. By combining these metrics through a Multi-Criteria Decision Analysis (MCDA) framework, the relation between urban climate and spatial justice can be evaluated and compared for Rotterdam and Guangzhou.</p>
 <section id="metrics" class="level2">
 <h2 class="anchored" data-anchor-id="metrics">Metrics</h2>
 <!-- Explain the metrics that will answer the research question -->
+<ul>
+<li><p>LST and how we obtained that - Viktor explain your workflow here!</p></li>
+<li><p>Spatial justice metrics</p></li>
+<li><p>Distance to green</p></li>
+</ul>
 </section>
 <section id="data-sources" class="level2">
 <h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
-<!-- Explain the data that is used for Rotterdam and Guangzhou and why these are chosen -->
+<p>For both Rotterdam and Guangzhou, the analysis relies on a combination of spatial and socio-economic datasets. For Rotterdam, data was primarily sourced from the <em>Leefbaarometer 2024</em> and <em>CBS Buurtgegevens</em>, which provide comprehensive neighborhood-level information on physical livability, social cohesion, housing conditions, and demographic characteristics. These datasets are complemented by high-resolution Land Surface Temperature (LST) data derived from satellite imagery, enabling precise mapping of urban heat distribution.</p>
+<p>For Guangzhou, data acquisition posed a greater challenge due to limited availability of granular socio-economic information. Consequently, the analysis utilized OpenStreetMap (OSM) data to extract residential land use and green space locations, supplemented by pedestrian network data to assess accessibility. LST data for Guangzhou was obtained from remote sensing sources, ensuring comparability with the Rotterdam dataset. For population data for Guangzhou, which is similar to the data provided by CBS, we used open data from “WorldPop.org”. However, as it is a global dataset, it may not be as accurate as for example the CBS data for Rotterdam. The integration of these diverse datasets allows for a robust cross-city comparison of spatial justice and urban climate vulnerability.</p>
+<p>As we wanted to compare the two cities, we had to make sure that the data was comparable. Therefore, we used the same metrics for both cities. In order to make the analysis for both cities comparable, we had to make sure that for both cities we used the same amount of data. As there is much more data available for Rotterdam, we had to make sure that we only used the data that was also available for Guangzhou. This means that we had to leave out some of the data for Rotterdam, which is a limitation of this study.</p>
 </section>
 <section id="multi-criteria-decision-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="multi-criteria-decision-analysis">Multi-Criteria Decision Analysis</h2>
-<p>Multi-Criteria Decision Analysis (MCDA) is a structured evaluation framework used to solve complex decision and spatial planning problems that involve multiple criteria. It relies on decomposing a complex problem into measurable criteria, normalizing the data to a common scale, applying explicit weights that reflect strategic priorities, and aggregating the results to rank or score geographic alternatives.</p>
-<p>Evaluating spatial justice and urban climate adaptation cannot be achieved through a single metric; it requires balancing socio-economic vulnerabilities against environmental and physical urban characteristics. MCDA allows for the simultaneous integration of different datasets by transforming them into a uniform, dimensionless scale. Additionally it allows researchers to embed priorities into the mathematical model via weighting.</p>
+<p>Multi-Criteria Decision Analysis (MCDA) is a structured evaluation framework used to solve complex decision and spatial planning problems that involve multiple criteria. As highlighted in a review by <span class="citation" data-cites="huang-2011">B. Huang et al. (<a href="#ref-huang-2011" role="doc-biblioref">2011</a>)</span>, MCDA has seen accelerating growth in environmental and strategic planning because it provides a transparent, technically valid framework to balance technical data against diverse stakeholder values. The methodology relies on decomposing a complex problem into measurable criteria, normalizing heterogeneous data to a common scale, applying explicit weights that reflect strategic priorities, and aggregating the results to rank or score geographic alternatives.</p>
+<p>Evaluating spatial justice and urban climate adaptation cannot be achieved through a single metric; it requires balancing socio-economic vulnerabilities against environmental and physical urban characteristics. According to <span class="citation" data-cites="dadashpoor-2025">Dadashpoor and Dehghan (<a href="#ref-dadashpoor-2025" role="doc-biblioref">2025</a>)</span>, spatial justice is an inherently multidimensional, dynamic concept encompassing categories such as equal access, equity, diversity, and public participation. To analyze these intersecting dimensions simultaneously, a flexible, integrative approach is necessary. MCDA allows for this integration by transforming diverse datasets into a uniform, dimensionless scale. Furthermore, by embedding priorities into the mathematical model via weighting, researchers can directly reflect the equity and need-based distribution dimension emphasized by <span class="citation" data-cites="dadashpoor-2025">Dadashpoor and Dehghan (<a href="#ref-dadashpoor-2025" role="doc-biblioref">2025</a>)</span>, ensuring that final spatial interventions prioritize structurally disadvantaged or vulnerable urban areas.</p>
 <p>The operational workflow for the Spatial Justice Index was executed in four sequential phases; criteria selection, data normalization, weight assignment, and aggregation. In order to get a comprehensive Spatial Justice Index, it was useful to combine multiple criteria into one value. This is where MCDA came in and we were able to normalize all the values and assign different weight to the criteria.</p>
+</section>
+<section id="reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
+<p><strong>Where to find the data:</strong></p>
+<ul>
+<li><p>Rotterdam: neighborhood data from CBS - including most spatial justice metrics, Leefbaarometer 2024, buildings from the BAG (including function), road network and green areas from OSM</p></li>
+<li><p>Guangzhou: building/road/green area data from OSM, inhabitant data from ?</p></li>
+</ul>
+<p><strong>Explanation of the code:</strong></p>
+<ul>
+<li><p>Spatial Justice Index; R code available in the “code” folder of the repository, it uses data from the “data” folder of the repository. Is used to combine different Spatial justice indicators into one index</p>
+<ul>
+<li>we have to make separate files for the complete SJI code and the simplified SJI of rotterdam so they can be readily used</li>
+</ul></li>
+<li><p>Network analysis; R code available in the “code” folder. Takes multiple datasets as input (available in the data folder). is used to compute the distance from houses to green areas. And it simultaneously plots it, aggregated to hexagons, over the UHI</p></li>
+<li><p>I (Anna) think the other code files were not really used but not completely sure</p></li>
+</ul>
 </section>
 </section>
 <section id="results-rotterdam-case-study" class="level1">
@@ -180,7 +223,7 @@ window.Quarto = {
 <div id="fig-buurten-rotterdam" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-buurten-rotterdam-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Maps_for_report/Rotterdam_admin_boundaries.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%">
+<img src="maps/Rotterdam_admin_boundaries.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-buurten-rotterdam-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Municipal boundary and neighborhoods (“buurten”) in Rotterdam
@@ -192,11 +235,10 @@ Figure&nbsp;1: Municipal boundary and neighborhoods (“buurten”) in Rotterdam
 <p><strong>TO DO: write introduction - what do we want to find out in this section, why is LST vs distance to green a metric?</strong></p>
 <p>Land Surface Temperature vs.&nbsp;Distance to Green results is plotted as a metric of climate vulnerability. The analysis begins by extracting residential building footprints (woonfunctie). These buildings are spatially joined with a data set (which data set exactly) containing their pre-calculated distance to the nearest “cool spot.” Concurrently, a raster map of Land Surface Temperatures is re-projected and cropped to perfectly match the city’s residential bounding box. The residential building data is aggregated into a continuous 150-meter hexagonal grid. For each hexagon, the script calculates the average walking distance from the enclosed buildings to the nearest cool space.</p>
 <p>Based on the plot shown in <a href="#fig-rot-green-lst" class="quarto-xref">Figure&nbsp;2</a> there is not a clear correlation between distance to green spaces and LST in Rotterdam. The most vulnerable residential spots in terms of accessibility are distributed across both high-heat and moderate-temperature areas. This indicates that poor access to cooling spaces is a structural issue not exclusively isolated to the absolute hottest neighborhoods in the city of Rotterdam.</p>
-<p><span class="citation" data-cites="wieger">@wieger</span> Al die hele lichte hexagons zijn niet zo zichtbaar hier (ook omdat de LST kleur daar bijna hetzelfde is) maar misschien toch alles een donkere rand geven? En de gemeente grens van Rotterdam eroverheen is chill. Oh en zorgen dat je alle buurten die hierboven staan op de kaart hebt :)</p>
 <div id="fig-rot-green-lst" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-rot-green-lst-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="results_lst_distance_to_green/rotterdam_dist_lst.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" data-fig-pos="H">
+<img src="maps/results_lst_distance_to_green/climate_vul_rotterdam.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rot-green-lst-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Distance to green vs LST in Rotterdam
@@ -267,7 +309,8 @@ Figure&nbsp;2: Distance to green vs LST in Rotterdam
 </section>
 <section id="step-3-aggregation-into-the-spatial-justice-index---mcda" class="level4">
 <h4 class="anchored" data-anchor-id="step-3-aggregation-into-the-spatial-justice-index---mcda"><strong>Step 3: Aggregation into the Spatial Justice Index - MCDA</strong></h4>
-<p>To evaluate spatial justice across the designated neighborhoods, a weighted Multi-Criteria Decision Analysis (MCDA) framework was implemented. This approach allows for the simultaneous evaluation of diverse spatial, environmental, and socia-economic indicators by assigning explicit weights that reflect their relative importance to the research objectives. In this configuration, the primary analytical focus is placed on the physical and environmental conditions of the urban landscape. Consequently, the physical environment score and the green space accessibility score are prioritized and assigned the highest weight (<span class="math inline">\(w = 2.0\)</span>), ensuring that tangible spatial amenities and climate-adaptive features heavily drive the final index.</p>
+<p><strong>TO DO: put in some code from the R file here</strong></p>
+<p>To evaluate spatial justice across the designated neighborhoods, a weighted Multi-Criteria Decision Analysis (MCDA) framework was implemented. This approach allows for the simultaneous evaluation of diverse spatial, environmental, and socio-economic indicators by assigning explicit weights that reflect their relative importance to the research objectives. In this configuration, the primary analytical focus is placed on the physical and environmental conditions of the urban landscape. Consequently, the physical environment score and the green space accessibility score are prioritized and assigned the highest weight (<span class="math inline">\(w = 2.0\)</span>), ensuring that tangible spatial amenities and climate-adaptive features heavily drive the final index.</p>
 <p>Conversely, socio-demographic indicators capturing vulnerability - specifically the proportions of elderly residents, citizens born outside the Netherlands, and households relying on welfare - often capture overlapping dimensions of socio-economic vulnerability within the urban fabric. To prevent these closely related variables from artificially dominating the index through redundant compounding, they are down-weighted (<span class="math inline">\(w = 0.5\)</span>). The remaining socio-economic and housing dimensions are maintained at a baseline weight (<span class="math inline">\(w=1.0\)</span>). The final Multi-Criteria is calculated dynamically for each neighborhood using a normalized weighted average:</p>
 <p><span class="math display">\[Spatial Justice Index = \frac{\sum_{i=1}^{n} (S_i \times w_i)}{\sum_{i=1}^{n} (w_i \cdot I_i)}\]</span></p>
 <p>where <span class="math inline">\(S_i\)</span> represents the normalized score for criterion <span class="math inline">\(i\)</span>, <span class="math inline">\(w_i\)</span> is its assigned weight, and <span class="math inline">\(I_i\)</span> is an indicator variable equal to 1 if the data is is present and 0 if it is missing (<span class="math inline">\(N A\)</span>). This ensures that the final evaluation remains mathematically rigorous, robust to data sparsity, and strictly aligned with our emphasis on physical spatial justice.</p>
@@ -287,7 +330,7 @@ Figure&nbsp;2: Distance to green vs LST in Rotterdam
 <div id="fig-sji-rot-full" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sji-rot-full-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Maps_for_report/SJI_Rotterdam_Full.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" data-fig-pos="H">
+<img src="maps/SJI_Rotterdam_Full.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sji-rot-full-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: Spatial Justice Index per neighborhood in Rotterdam
@@ -298,20 +341,20 @@ Figure&nbsp;3: Spatial Justice Index per neighborhood in Rotterdam
 </section>
 <section id="simplified-spatial-justice-index" class="level3">
 <h3 class="anchored" data-anchor-id="simplified-spatial-justice-index">Simplified Spatial Justice Index</h3>
-<p><strong>TO DO: make a SJI map with just the values that are also available in Guangzhou</strong></p>
-<div id="fig-sji-rot-simple" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H" data-fig-align="center">
+<p><strong>TO DO: explain what metrics were used in this map</strong></p>
+<div id="fig-rot-sji-simple" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-sji-rot-simple-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Maps_for_report/RotterdamSJI.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" data-fig-pos="H">
+<div aria-describedby="fig-rot-sji-simple-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="maps/RotterdamSJI.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-pos="H">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sji-rot-simple-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Spatial Justice Index per neighbourhood in Rotterdam comparable to Guangzhou
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rot-sji-simple-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Spatial Justice Index per neighborhood in Rotterdam comparable to Guangzhou
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="i-dont-know-how-to-call-this-yet" class="level3">
-<h3 class="anchored" data-anchor-id="i-dont-know-how-to-call-this-yet">I don’t know how to call this yet</h3>
+<section id="notable-aspects-in-the-spatial-justice-index-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="notable-aspects-in-the-spatial-justice-index-distribution">Notable aspects in the Spatial Justice Index distribution</h3>
 <p><strong>TO DO: explain what we can tell from the map</strong></p>
 </section>
 </section>
@@ -329,7 +372,7 @@ Figure&nbsp;4: Spatial Justice Index per neighbourhood in Rotterdam comparable t
 <div id="fig-sub-districts" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sub-districts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Maps_for_report/Guangzhou_admin_boundaries.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" data-fig-pos="H">
+<img src="maps/Guangzhou_admin_boundaries.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sub-districts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;5: Sub-districts in the central area of Guangzhou
@@ -356,11 +399,10 @@ Figure&nbsp;5: Sub-districts in the central area of Guangzhou
 <p><strong>TO DO: Change the paragraphs below because of changing of hexagon size</strong></p>
 <p>After all data had been extracted, the same visualization can be done for Climate vulnerability as for Rotterdam, by plotting the distance to green spaces against the mean land surface temperature (LST). This allows us to visually assess whether areas with higher LST also tend to be farther from green spaces, which would indicate a spatial justice issue in terms of climate vulnerability. In the case of Guangzhou, the hexagons are 500 meter hexagons which is done to make the plot more readable.</p>
 <p>Compared to the Rotterdam case, the Guangzhou plot shows a higher overall distance to green spaces, with many residential areas located more than 500 meters away from the nearest park. Additionally, there is a clearer positive correlation between distance to green and LST in Guangzhou, suggesting that residents in hotter areas are also more likely to be farther from cooling green spaces. This pattern indicates a significant spatial justice concern, as vulnerable populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. This pattern was not so clearly visible for Rotterdam, where the distance to green spaces was generally lower and less strongly correlated with LST, suggesting a more equitable distribution of green infrastructure in relation to heat exposure.</p>
-<p><span class="citation" data-cites="wieger">@wieger</span> hier nog de Guangzhou extent aanpassen naar die 4 districts + de outline daarvan erop zetten</p>
 <div id="fig-green-lst-guangzhou" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-green-lst-guangzhou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="results_lst_distance_to_green/guangzhou_dist_lst.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%" data-fig-pos="H">
+<img src="maps/results_lst_distance_to_green/climate_vul_guangzhou.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-green-lst-guangzhou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;6: Distance to green vs LST in Guangzhou
@@ -387,8 +429,25 @@ Compare how green infrastructure impacts spatial justice in Rotterdam versus Gua
 
 Answer research question -->
 </section>
+<section id="references" class="level1 unnumbered">
 
-</main>
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-huang-2011" class="csl-entry" role="listitem">
+B. Huang, Ivy, Jeffrey Keisler, and Igor Linkov. 2011. <span>“<span class="nocase">Multi-criteria decision Analysis in Environmental Sciences: Ten years of applications and trends</span>.”</span> <em>Science of the Total Environment</em> 409 (19): 3578–94. <a href="https://doi.org/10.1016/j.scitotenv.2011.06.022">https://doi.org/10.1016/j.scitotenv.2011.06.022</a>.
+</div>
+<div id="ref-bartesaghi-koc-2020" class="csl-entry" role="listitem">
+Bartesaghi-Koc, Carlos, Paul Osmond, and Alan Peters. 2020. <span>“<span class="nocase">Quantifying the seasonal cooling capacity of <span>‘green infrastructure types’</span> (GITs): An approach to assess and mitigate surface urban heat island in Sydney, Australia</span>.”</span> <em>Landscape and Urban Planning</em> 203 (July): 103893. <a href="https://doi.org/10.1016/j.landurbplan.2020.103893">https://doi.org/10.1016/j.landurbplan.2020.103893</a>.
+</div>
+<div id="ref-dadashpoor-2025" class="csl-entry" role="listitem">
+Dadashpoor, Hashem, and Roya Dehghan. 2025. <em><span>Defining Spatial Justice: A Review</span></em>. No. 103387. Vol. 160. <a href="https://doi.org/10.1016/j.habitatint.2025.103387">https://doi.org/10.1016/j.habitatint.2025.103387</a>.
+</div>
+<div id="ref-wong-2016" class="csl-entry" role="listitem">
+Wong, Man, Fen Peng, Bin Zou, Wen Shi, and Gaines Wilson. 2016. <span>“<span class="nocase">Spatially Analyzing the inequity of the Hong Kong Urban Heat Island by Socio-Demographic characteristics</span>.”</span> <em>International Journal of Environmental Research and Public Health</em> 13 (3): 317. <a href="https://doi.org/10.3390/ijerph13030317">https://doi.org/10.3390/ijerph13030317</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

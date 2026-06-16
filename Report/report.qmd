@@ -11,21 +11,18 @@ author:
   - name: "Simon Deuten"
     affiliation: "Msc Geomatics"
 format: html
+bibliography: references.bib
 ---
-
-[***We mostly want feedback on the structure of the report / what you think of the complete analysis after we implement the "relationship urban climate and spatial justice" section.***]{.underline}
 
 # Introduction
 
-**TO DO: include references for the claims made in this section (marked in bold)**
-
-Urban environments are increasingly vulnerable to the impacts of climate change, particularly the intensification of the Urban Heat Island (UHI) effect. **Literature suggests** that urban thermal stress is often unevenly distributed across municipal populations, with spatial justice metrics - such as proximity to cooling urban green spaces - aligning with socio-economic disparities. In many metropolitan contexts, **wealthier demographics tend to reside in suburban or highly vegetated neighborhoods** characterized by lower ambient temperatures. Conversely, lower-income or socially vulnerable populations are often **concentrated within dense, highly paved urban cores**, potentially exposing them to elevated thermal conditions and associated health risks. This intersection of micro-climate variation and social equity forms an important challenge for modern urban planning.
+Urban environments are increasingly vulnerable to the impacts of climate change, particularly the intensification of the Urban Heat Island (UHI) effect. @wong-2016 suggest that urban thermal stress is often unevenly distributed across municipal populations, with spatial justice metrics - such as proximity to cooling urban green spaces - aligning with socio-economic disparities. In many metropolitan context, lower-income or socially vulnerable populations are often concentrated within dense, highly paved urban cores, potentially exposing them to elevated thermal conditions and associated health risks [@wong-2016]. This intersection of micro-climate variation and social equity forms an important challenge for modern urban planning.
 
 As municipal governments seek to adapt, the expansion of urban green infrastructure has emerged as a strategy to mitigate the UHI effect and establish cooling zones. However, assessing whether these interventions genuinely protect vulnerable communities requires a comparative analysis across different urban environments. This research examines the inequality in climate impact between two cities operating on vastly different geographical, demographic, and administrative scales: Rotterdam, a compact European port city, and Guangzhou, a large, dense subtropical city. By comparing these distinct urban frameworks, this study investigates whether the link between socio-economic vulnerability and high heat exposure functions as a universal urban pattern, or if it varies significantly based on local climate zones and governance models. Ultimately, this report aims to evaluate the systemic equity of current climate adaptation strategies by addressing the following primary research question:
 
-**"How does the relationship between urban green infrastructure allocation and socio-economic vulnerability vary between Rotterdam and Guangzhou?"**
+> *How does the relationship between urban green infrastructure allocation and socio-economic vulnerability vary between Rotterdam and Guangzhou?*
 
-In order to get a clear answer to this question, this is divided into two subquestions;
+In order to get a clear answer to this question, this is divided into two sub-questions;
 
 1.  How do the physical and socio-economic criteria of spatial justice correlate with the Land Surface Temperature in each city?
 2.  Which neighborhoods exhibit the highest deficit in environmental amenities relative to their vulnerability index, identifying them as priority zones for green adaptation?
@@ -34,21 +31,23 @@ This report will first discuss the methodology used to perform the research in b
 
 # Methodology
 
-<!-- We should probably do a short literature review -->
+To evaluate the relationship between urban green infrastructure allocation and socio-economic vulnerability, this study bridges urban climate and social equity by quantifying the land surface temperature (LST) distribution alongside several metrics of spatial justice. The methodology is structured as follows: defining the metrics for measuring LST and spatial justice, explaining the data sources used for the analysis, and integrating these dimensions through a Multi-Criteria Decision Analysis (MCDA) framework.
 
-To evaluate the relationship between urban green infrastructure allocation and socio-economic vulnerability, this study bridges urban climate and social equity by quantifying the urban heat island (UHI) effect alongside several metrics of spatial justice. The methodology is structured as follows: defining the metrics for measuring UHI and spatial justice, explaining the data sources used for the analysis, and integrating these dimensions through a Multi-Criteria Decision Analysis (MCDA) framework.
+As @bartesaghi-koc-2020 describe, the UHI effect is a phenomenon where urban areas experience higher temperatures than their rural surroundings. This is the effect of the built environment, which absorbs and retains heat, leading to elevated temperatures in cities. In addition, lack of vegetation and green spaces in cities contribute to this effect due to reduced evapotranspiration and shading. Therefore the presence of green infrastructure is a key factor in mitigating UHI [@bartesaghi-koc-2020].
 
-The UHI effect is a phenomenon where urban areas experience higher temperatures than their rural surroundings. This is the effect of the built environment, which absorbs and retains heat, leading to elevated temperatures in cities. In addition, lack of vegetation and green spaces in cities contribute to this effect due to reduced evapotranspiration and shading. Therefore the presence of green infrastructure is a key factor in mitigating UHI (https://www.sciencedirect.com/science/article/pii/S0169204620301407?via%3Dihub).
-
-Spatial justice concerns the fair distribution of resources, services and environmental benefits across urban space. Therefore, spatial justice can be measured in multiple ways, including socio-economic indicators, such as income, education, and employment, as well as access to green spaces. This study focuses on socio-economic aspects and access to green spaces which can be connected to the UHI effect. By combining these metrics through a Multi-Criteria Decision Analysis (MCDA) framework, the relation between urban climate and spatial justice can be evaluated and compared for Rotterdam and Guangzhou. **TO DO: include reference for spatial justice claims and APA**
+According to @dadashpoor-2025, spatial justice concerns the fair distribution of resources, services and environmental benefits across urban space. Therefore, spatial justice can be measured in multiple ways, including socio-economic indicators, such as income, education, and employment, as well as access to green spaces. This study focuses on socio-economic aspects and access to green spaces which can be connected to the LST distribution. By combining these metrics through a Multi-Criteria Decision Analysis (MCDA) framework, the relation between urban climate and spatial justice can be evaluated and compared for Rotterdam and Guangzhou.
 
 ## Metrics
 
 <!-- Explain the metrics that will answer the research question -->
 
-## Data Sources
+- LST and how we obtained that - Viktor explain your workflow here!
 
-<!-- Explain the data that is used for Rotterdam and Guangzhou and why these are chosen -->
+- Spatial justice metrics
+
+- Distance to green
+
+## Data Sources
 
 For both Rotterdam and Guangzhou, the analysis relies on a combination of spatial and socio-economic datasets. For Rotterdam, data was primarily sourced from the *Leefbaarometer 2024* and *CBS Buurtgegevens*, which provide comprehensive neighborhood-level information on physical livability, social cohesion, housing conditions, and demographic characteristics. These datasets are complemented by high-resolution Land Surface Temperature (LST) data derived from satellite imagery, enabling precise mapping of urban heat distribution.
 
@@ -58,11 +57,29 @@ As we wanted to compare the two cities, we had to make sure that the data was co
 
 ## Multi-Criteria Decision Analysis
 
-Multi-Criteria Decision Analysis (MCDA) is a structured evaluation framework used to solve complex decision and spatial planning problems that involve multiple criteria. It relies on decomposing a complex problem into measurable criteria, normalizing the data to a common scale, applying explicit weights that reflect strategic priorities, and aggregating the results to rank or score geographic alternatives.
+Multi-Criteria Decision Analysis (MCDA) is a structured evaluation framework used to solve complex decision and spatial planning problems that involve multiple criteria. As highlighted in a review by @huang-2011, MCDA has seen accelerating growth in environmental and strategic planning because it provides a transparent, technically valid framework to balance technical data against diverse stakeholder values. The methodology relies on decomposing a complex problem into measurable criteria, normalizing heterogeneous data to a common scale, applying explicit weights that reflect strategic priorities, and aggregating the results to rank or score geographic alternatives.
 
-Evaluating spatial justice and urban climate adaptation cannot be achieved through a single metric; it requires balancing socio-economic vulnerabilities against environmental and physical urban characteristics. MCDA allows for the simultaneous integration of different datasets by transforming them into a uniform, dimensionless scale. Additionally it allows researchers to embed priorities into the mathematical model via weighting.
+Evaluating spatial justice and urban climate adaptation cannot be achieved through a single metric; it requires balancing socio-economic vulnerabilities against environmental and physical urban characteristics. According to @dadashpoor-2025, spatial justice is an inherently multidimensional, dynamic concept encompassing categories such as equal access, equity, diversity, and public participation. To analyze these intersecting dimensions simultaneously, a flexible, integrative approach is necessary. MCDA allows for this integration by transforming diverse datasets into a uniform, dimensionless scale. Furthermore, by embedding priorities into the mathematical model via weighting, researchers can directly reflect the equity and need-based distribution dimension emphasized by @dadashpoor-2025, ensuring that final spatial interventions prioritize structurally disadvantaged or vulnerable urban areas.
 
 The operational workflow for the Spatial Justice Index was executed in four sequential phases; criteria selection, data normalization, weight assignment, and aggregation. In order to get a comprehensive Spatial Justice Index, it was useful to combine multiple criteria into one value. This is where MCDA came in and we were able to normalize all the values and assign different weight to the criteria.
+
+## Reproducibility
+
+**Where to find the data:**
+
+- Rotterdam: neighborhood data from CBS - including most spatial justice metrics, Leefbaarometer 2024, buildings from the BAG (including function), road network and green areas from OSM
+
+- Guangzhou: building/road/green area data from OSM, inhabitant data from ?
+
+**Explanation of the code:**
+
+- Spatial Justice Index; R code available in the "code" folder of the repository, it uses data from the "data" folder of the repository. Is used to combine different Spatial justice indicators into one index
+
+  - we have to make separate files for the complete SJI code and the simplified SJI of rotterdam so they can be readily used
+
+- Network analysis; R code available in the "code" folder. Takes multiple datasets as input (available in the data folder). is used to compute the distance from houses to green areas. And it simultaneously plots it, aggregated to hexagons, over the UHI
+
+- I (Anna) think the other code files were not really used but not completely sure
 
 # Results: Rotterdam Case Study
 
@@ -70,7 +87,7 @@ The operational workflow for the Spatial Justice Index was executed in four sequ
 
 - explain why we deleted the western area (no inhabitants/industrial area)
 
-![Municipal boundary and neighborhoods ("buurten") in Rotterdam](Maps_for_report/Rotterdam_admin_boundaries.png){#fig-buurten-rotterdam fig-align="center" width="80%"}
+![Municipal boundary and neighborhoods ("buurten") in Rotterdam](maps/Rotterdam_admin_boundaries.png){#fig-buurten-rotterdam fig-align="center"}
 
 ## Climate Vulnerability
 
@@ -80,7 +97,7 @@ Land Surface Temperature vs. Distance to Green results is plotted as a metric of
 
 Based on the plot shown in @fig-rot-green-lst there is not a clear correlation between distance to green spaces and LST in Rotterdam. The most vulnerable residential spots in terms of accessibility are distributed across both high-heat and moderate-temperature areas. This indicates that poor access to cooling spaces is a structural issue not exclusively isolated to the absolute hottest neighborhoods in the city of Rotterdam.
 
-![Distance to green vs LST in Rotterdam](results_lst_distance_to_green/climate_vul_rotterdam.png){#fig-rot-green-lst fig-pos="H" fig-align="center"}
+![Distance to green vs LST in Rotterdam](maps/results_lst_distance_to_green/climate_vul_rotterdam.png){#fig-rot-green-lst fig-pos="H" fig-align="center"}
 
 ## Socio-Economic Vulnerability
 
@@ -135,7 +152,9 @@ Spatial justice requires all metrics to point in the same direction, where 1 rep
 
 #### **Step 3: Aggregation into the Spatial Justice Index - MCDA**
 
-To evaluate spatial justice across the designated neighborhoods, a weighted Multi-Criteria Decision Analysis (MCDA) framework was implemented. This approach allows for the simultaneous evaluation of diverse spatial, environmental, and socia-economic indicators by assigning explicit weights that reflect their relative importance to the research objectives. In this configuration, the primary analytical focus is placed on the physical and environmental conditions of the urban landscape. Consequently, the physical environment score and the green space accessibility score are prioritized and assigned the highest weight ($w = 2.0$), ensuring that tangible spatial amenities and climate-adaptive features heavily drive the final index.
+**TO DO: put in some code from the R file here**
+
+To evaluate spatial justice across the designated neighborhoods, a weighted Multi-Criteria Decision Analysis (MCDA) framework was implemented. This approach allows for the simultaneous evaluation of diverse spatial, environmental, and socio-economic indicators by assigning explicit weights that reflect their relative importance to the research objectives. In this configuration, the primary analytical focus is placed on the physical and environmental conditions of the urban landscape. Consequently, the physical environment score and the green space accessibility score are prioritized and assigned the highest weight ($w = 2.0$), ensuring that tangible spatial amenities and climate-adaptive features heavily drive the final index.
 
 Conversely, socio-demographic indicators capturing vulnerability - specifically the proportions of elderly residents, citizens born outside the Netherlands, and households relying on welfare - often capture overlapping dimensions of socio-economic vulnerability within the urban fabric. To prevent these closely related variables from artificially dominating the index through redundant compounding, they are down-weighted ($w = 0.5$). The remaining socio-economic and housing dimensions are maintained at a baseline weight ($w=1.0$). The final Multi-Criteria is calculated dynamically for each neighborhood using a normalized weighted average:
 
@@ -147,15 +166,15 @@ where $S_i$ represents the normalized score for criterion $i$, $w_i$ is its assi
 To ensure the index remains statistically robust and representative, a threshold for the amount of inhabitants was implemented. A neighborhood received a valid Spatial Justice Index score only if it has more than 50 inhabitants. Neighborhoods failing to meet this threshold were assigned a null value ($N A$) and are rendered grey on the map.
 :::
 
-![Spatial Justice Index per neighborhood in Rotterdam](Maps_for_report/SJI_Rotterdam_Full.png){#fig-sji-rot-full fig-pos="H" fig-align="center" width="80%"}
+![Spatial Justice Index per neighborhood in Rotterdam](maps/SJI_Rotterdam_Full.png){#fig-sji-rot-full fig-pos="H" fig-align="center"}
 
 ### Simplified Spatial Justice Index
 
-**TO DO: make a SJI map with just the values that are also available in Guangzhou**
+**TO DO: explain what metrics were used in this map**
 
-![Spatial Justice Index per neighborhood in Rotterdam comparable to Guangzhou](Maps_for_report/RotterdamSJI.png){fig-pos="H" fig-align="center" width="80%"}
+![Spatial Justice Index per neighborhood in Rotterdam comparable to Guangzhou](maps/RotterdamSJI.png){#fig-rot-sji-simple fig-pos="H" fig-align="center"}
 
-### I don't know how to call this yet
+### Notable aspects in the Spatial Justice Index distribution
 
 **TO DO: explain what we can tell from the map**
 
@@ -173,7 +192,7 @@ Comparing Rotterdam and Guangzhou presents a challenge of scale: Guangzhou's adm
 
 These central districts are divided into sub-districts, for which there is data available on population density and mean Land Surface Temperature. The sub-districts are relatively equal in size to the neighborhoods of Rotterdam, making it a comparable set-up.
 
-![Sub-districts in the central area of Guangzhou](Maps_for_report/Guangzhou_admin_boundaries.png){#fig-sub-districts fig-pos="H" fig-align="center" width="70%"}
+![Sub-districts in the central area of Guangzhou](maps/Guangzhou_admin_boundaries.png){#fig-sub-districts fig-pos="H" fig-align="center"}
 
 ## Climate Vulnerability
 
@@ -191,7 +210,7 @@ After all data had been extracted, the same visualization can be done for Climat
 
 Compared to the Rotterdam case, the Guangzhou plot shows a higher overall distance to green spaces, with many residential areas located more than 500 meters away from the nearest park. Additionally, there is a clearer positive correlation between distance to green and LST in Guangzhou, suggesting that residents in hotter areas are also more likely to be farther from cooling green spaces. This pattern indicates a significant spatial justice concern, as vulnerable populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. This pattern was not so clearly visible for Rotterdam, where the distance to green spaces was generally lower and less strongly correlated with LST, suggesting a more equitable distribution of green infrastructure in relation to heat exposure.
 
-![Distance to green vs LST in Guangzhou](results_lst_distance_to_green/climate_vul_guangzhou.png){#fig-green-lst-guangzhou fig-pos="H" fig-align="center" width="100%"}
+![Distance to green vs LST in Guangzhou](maps/results_lst_distance_to_green/climate_vul_guangzhou.png){#fig-green-lst-guangzhou fig-pos="H" fig-align="center"}
 
 ## Socio-Economic Vulnerability
 
@@ -212,3 +231,5 @@ Compare how green infrastructure impacts spatial justice in Rotterdam versus Gua
 
 Answer research question -->
 ```
+
+# References
