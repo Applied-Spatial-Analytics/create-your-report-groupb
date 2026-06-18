@@ -105,7 +105,7 @@ Land Surface Temperature vs. Distance to Green results is plotted as a metric of
 
 Based on the plot shown in @fig-rot-green-lst there is not a clear correlation between distance to green spaces and LST in Rotterdam. The most vulnerable residential spots in terms of accessibility are distributed across both high-heat and moderate-temperature areas. This indicates that poor access to cooling spaces is a structural issue not exclusively isolated to the absolute hottest neighborhoods in the city of Rotterdam.
 
-![Distance to green vs LST in Rotterdam](maps/results_lst_distance_to_green/climate_vul_rotterdam.png){#fig-rot-green-lst fig-pos="H" fig-align="center"}
+![Distance to green vs LST in Rotterdam](maps/vulnerability_rotterdam.png){#fig-rot-green-lst fig-pos="H" fig-align="center"}
 
 ## Socio-Economic Vulnerability
 
@@ -222,7 +222,7 @@ After all data had been extracted, the same visualization can be done for Climat
 
 Compared to the Rotterdam case, the Guangzhou plot shows a higher overall distance to green spaces, with many residential areas located more than 500 meters away from the nearest park. Additionally, there is a clearer positive correlation between distance to green and LST in Guangzhou, suggesting that residents in hotter areas are also more likely to be farther from cooling green spaces. This pattern indicates a significant spatial justice concern, as vulnerable populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. This pattern was not so clearly visible for Rotterdam, where the distance to green spaces was generally lower and less strongly correlated with LST, suggesting a more equitable distribution of green infrastructure in relation to heat exposure.
 
-![Distance to green vs LST in Guangzhou](maps/results_lst_distance_to_green/climate_vul_guangzhou.png){#fig-green-lst-guangzhou fig-pos="H" fig-align="center"}
+![Distance to green vs LST in Guangzhou](maps/vulnerability_guangzhou.png){#fig-green-lst-guangzhou fig-pos="H" fig-align="center"}
 
 ## Socio-Economic Vulnerability
 

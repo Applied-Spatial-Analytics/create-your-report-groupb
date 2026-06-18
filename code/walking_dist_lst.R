@@ -17,7 +17,7 @@ city_configs <- list(
     lst_file     = here("create-your-report-groupb/data/LST_files/lst_rotterdam_hot.tif"),
     max_dist     = 500,
     worst_dist   = 400,
-    caption      = "Hexagon resolution: 300m | Dark outlines = >400m walk to green", # Updated caption
+    caption      = "Hexagon resolution: 300m | Dark outlines = >400m walk to green", 
     plot_output  = "create-your-report-groupb/Report/maps/vulnerability_rotterdam.png"
   ),
   guangzhou = list(
@@ -29,10 +29,29 @@ city_configs <- list(
     lst_file     = here("create-your-report-groupb/data/LST_files/lst_guangzhou_hot.tif"),
     max_dist     = 1500,
     worst_dist   = 1500,
-    caption      = "Hexagon resolution: 300m | Dark outlines = >1500m walk to green", # Updated caption
+    caption      = "Hexagon resolution: 300m | Dark outlines = >1500m walk to green", 
     plot_output  = "create-your-report-groupb/Report/maps/vulnerability_guangzhou.png"
   )
 )
+
+# -------------------------------------------------------------------------
+# NEW: Global / Shared LST Break Calculation
+# -------------------------------------------------------------------------
+message("Calculating a uniform temperature scale across all cities...")
+global_mins <- c()
+global_maxs <- c()
+
+for (city_name in names(city_configs)) {
+  temp_rast <- terra::rast(city_configs[[city_name]]$lst_file)
+  global_mins <- c(global_mins, terra::global(temp_rast, "min", na.rm = TRUE)[1,1])
+  global_maxs <- c(global_maxs, terra::global(temp_rast, "max", na.rm = TRUE)[1,1])
+}
+
+# Find the absolute min and max spanning both cities and create clean, regular breaks
+shared_lst_breaks <- pretty(c(min(global_mins), max(global_maxs)), n = 10)
+message("Unified Temperature Range: ", min(shared_lst_breaks), "°C to ", max(shared_lst_breaks), "°C")
+# -------------------------------------------------------------------------
+
 
 for (city_name in names(city_configs)) {
   cfg <- city_configs[[city_name]]
@@ -93,11 +112,6 @@ for (city_name in names(city_configs)) {
   lst_trimmed   <- terra::crop(lst_data_proj, terra::vect(city_outline)) %>% 
     terra::mask(terra::vect(city_outline))
   
-  # Dynamic Break Logic
-  lst_min <- floor(terra::global(lst_trimmed, "min", na.rm = TRUE)[1,1])
-  lst_max <- ceiling(terra::global(lst_trimmed, "max", na.rm = TRUE)[1,1])
-  lst_breaks <- seq(lst_min, lst_max, length.out = 8)
-  
   # 4. Grid Generation & Analysis
   hex_grid <- st_make_grid(base_data, cellsize = 300, square = FALSE) %>%
     st_sf() %>%
@@ -112,7 +126,6 @@ for (city_name in names(city_configs)) {
     ) %>%
     mutate(
       plot_distance = ifelse(avg_distance > cfg$max_dist, cfg$max_dist, avg_distance)
-      # CHANGED: Removed the rule that overrode park grids to NA, leaving true 0m distances intact
     )
   
   if (city_name == "guangzhou") {
@@ -126,13 +139,14 @@ for (city_name in names(city_configs)) {
   map_bbox <- st_bbox(city_outline)
   
   p <- ggplot() +
-    geom_spatraster_contour_filled(data = lst_trimmed, alpha = 0.5, breaks = lst_breaks) +
-    scale_fill_brewer(palette = "YlOrRd", name = "LST (°C)", direction = 1) +
+    geom_spatraster_contour_filled(data = lst_trimmed, alpha = 0.5, breaks = shared_lst_breaks) +
+    
+    # FIXED: Changed from scale_fill_brewer to scale_fill_fermenter
+    scale_fill_fermenter(palette = "YlOrRd", name = "LST (°C)", direction = 1) + 
     
     ggnewscale::new_scale_fill() +
     
-    geom_sf(data = hex_analysis, aes(fill = plot_distance), alpha = 0.35, color = "white", linewidth = 0.01) +
-    # CHANGED: Removed na.value = "#006d2c" so it scales cleanly down to 0 using the standard BuPu gradient
+    geom_sf(data = hex_analysis, aes(fill = plot_distance), alpha = 0.3, color = "white", linewidth = 0.01) +
     scale_fill_distiller(palette = "BuPu", direction = 1, name = "Avg Walk Distance\nto Green (m)", limits = c(0, cfg$max_dist)) +
     
     geom_sf(data = hex_analysis %>% filter(avg_distance > cfg$worst_dist), fill = NA, color = "#333333", linewidth = 0.5) +
@@ -141,7 +155,4 @@ for (city_name in names(city_configs)) {
     theme_void() +
     labs(title = paste(cfg$name, "Residential Climate Vulnerability Hotspots"), subtitle = "Walking distance to green spaces overlaid on Land Surface Temperature (LST)", caption = cfg$caption) +
     theme(plot.title = element_text(face = "bold", size = 14), legend.position = "right")
-  
-  print(p)
-  ggsave(cfg$plot_output, plot = p, width = 10, height = 8, dpi = 300)
 }
