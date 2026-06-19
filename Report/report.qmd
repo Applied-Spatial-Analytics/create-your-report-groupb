@@ -40,14 +40,11 @@ According to @dadashpoor-2025, spatial justice concerns the fair distribution of
 ## Metrics
 
 <!-- Explain the metrics that will answer the research question -->
-- Scale - We settled on using a scale of 1:110000 for both Rotterdam and Guangzhou's city extents so that the comparison analysis is harmonized on exclusively one common scale. 
-- LST - To assess the urban micro-climate, Land Surface Temperature (LST) maps were generated for both cities using sattelite imagery from Landsat-8 and Lndsat-9. For Rotterdam, imagery from July 2025, and for Guangzhou, imagery from August 2025 was acquired. We wanted to pick the hottest times of the year to measure the impact of the LST at its highest values. Picking out datasets with unobstructed view of the city extents was heavily dependent on the availability of satellite imagery for the specific period we wanted.
-The spatial analysis was conducted by first clipping the raster datasets to the respective study area boundary polygons using a mask layer. To convert the raw Digital Number (DN) values into meaningful temperature readings, the standard USGS scale factor was applied to calculate the temperature in Kelvin:
-$$T_{K}={DN * 0.0341802 + 149.0}$$
 
+- Scale - We settled on using a scale of 1:110000 for both Rotterdam and Guangzhou's city extents so that the comparison analysis is harmonized on exclusively one common scale.
+- LST - To assess the urban micro-climate, Land Surface Temperature (LST) maps were generated for both cities using sattelite imagery from Landsat-8 and Lndsat-9. For Rotterdam, imagery from July 2025, and for Guangzhou, imagery from August 2025 was acquired. We wanted to pick the hottest times of the year to measure the impact of the LST at its highest values. Picking out datasets with unobstructed view of the city extents was heavily dependent on the availability of satellite imagery for the specific period we wanted. The spatial analysis was conducted by first clipping the raster datasets to the respective study area boundary polygons using a mask layer. To convert the raw Digital Number (DN) values into meaningful temperature readings, the standard USGS scale factor was applied to calculate the temperature in Kelvin: $$T_{K}={DN * 0.0341802 + 149.0}$$
 
-Subsequently, the Kelvin values were converted to degrees Celsius using the following formula:
-$$T_{∘C}= {T_{K} - 273.15}$$
+Subsequently, the Kelvin values were converted to degrees Celsius using the following formula: $$T_{∘C}= {T_{K} - 273.15}$$
 
 - Spatial justice metrics - ...
 
@@ -57,8 +54,7 @@ To measure social equity, we used spatial justice metrics like income and distan
 
 ## Data Sources {#sec-data-sources}
 
-For both Rotterdam and Guangzhou, the analysis relies on a combination of spatial and socio-economic datasets.
-The LST data for Guangzhou and Rotterdam was obtained by downloading Landsat 8/9 Collection 2 Level-2 Surface Temperature satellite imagery (ST_B10) using the *USGS Earth Explorer* [@usgsee-2026]. The data for Rotterdam is from the month of July 2025, and for Guangzhou, it its from August 2025. We wanted to pick the hottest times of the year to measure the impact of the LST at its highest values. It is important to point out that picking out datasets with unobstructed view of the city extents was heavily dependent on the availability of satellite imagery for the specific period we wanted.
+For both Rotterdam and Guangzhou, the analysis relies on a combination of spatial and socio-economic datasets. The LST data for Guangzhou and Rotterdam was obtained by downloading Landsat 8/9 Collection 2 Level-2 Surface Temperature satellite imagery (ST_B10) using the *USGS Earth Explorer* [@usgsee-2026]. The data for Rotterdam is from the month of July 2025, and for Guangzhou, it its from August 2025. We wanted to pick the hottest times of the year to measure the impact of the LST at its highest values. It is important to point out that picking out datasets with unobstructed view of the city extents was heavily dependent on the availability of satellite imagery for the specific period we wanted.
 
 For Rotterdam, data was primarily sourced from the *Leefbaarometer 2024* [@leefbarometer-2026] and *CBS Buurtgegevens [@cbs-2026]* , which provide comprehensive neighborhood-level information on physical livability, social cohesion, housing conditions, and demographic characteristics. These datasets are complemented by high-resolution Land Surface Temperature (LST) data derived from satellite imagery, enabling precise mapping of urban heat distribution. Because distance to green is an important indicator in Spatial Justice, a network analysis was performed using building data from the *BAG*, obtained via the PDOK plugin in QGIS [@pdok-2026], and road networks and green areas from *OpenStreetMap (OSM)* [@OpenStreetMap]*.*
 
@@ -104,8 +100,7 @@ However, applying this data across the entire administrative boundary of Rotterd
 
 ## Land Surface Temperature
 
-After deriving the land surface temperature for Rotterdam, the results showcased in the figure below are clearly defined. Lighter areas correspond to larger green areas and the water bodies in the city extent. In contrast, the darker areas correspond to places such as industrial zones and inner ports of Rotterdam, which are the biggest contributor of extreme LST values on the map:
-![Land surface temperature of Rotterdam in July 2025](maps/lst_rotterdam.png){#fig-lst-rdm fig-align="center"}
+After deriving the land surface temperature for Rotterdam, the results showcased in the figure below are clearly defined. Lighter areas correspond to larger green areas and the water bodies in the city extent. In contrast, the darker areas correspond to places such as industrial zones and inner ports of Rotterdam, which are the biggest contributor of extreme LST values on the map: ![Land surface temperature of Rotterdam in July 2025](maps/lst_rotterdam.png){#fig-lst-rdm fig-align="center"}
 
 ## Climate Vulnerability
 
@@ -196,17 +191,11 @@ To ensure the index remains statistically robust and representative, a threshold
 
 ## Relationship Urban Climate and Spatial Justice
 
-**TO DO: Write introduction to this section**
-As not everyone is as vulnerable to heat stress as others, it is important to look at the relationship between the spatial justice index, which is mostly based on socio-demographic factors, and the land surface temperature. By plotting the two together, we can visually assess whether the most vulnerable neighborhoods are also the ones experiencing the highest temperatures. This can reveal whether there is a spatial justice issue in terms of climate vulnerability, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure.
+**TO DO: Write introduction to this section** As not everyone is as vulnerable to heat stress as others, it is important to look at the relationship between the spatial justice index, which is mostly based on socio-demographic factors, and the land surface temperature. By plotting the two together, we can visually assess whether the most vulnerable neighborhoods are also the ones experiencing the highest temperatures. This can reveal whether there is a spatial justice issue in terms of climate vulnerability, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure.
 
-**TO DO: Make a combined map of Spatial Justice Index and LST**
-![Spatial Justice Index and Land Surface Temperature in Rotterdam](maps/LST_SJI_Rotterdam.png){#fig-sji-lst-rot fig-pos="H" fig-align="center"}
+**TO DO: Make a combined map of Spatial Justice Index and LST** ![Spatial Justice Index and Land Surface Temperature in Rotterdam](maps/LST_SJI_Rotterdam.png){#fig-sji-lst-rot fig-pos="H" fig-align="center"}
 
-
-**TO DO: Describe the process of making the map and what you can tell from it**
-We used the simplified Spatial Justice Index, which is based on the same metrics as the Guangzhou SJI, to make it comparable. We plotted the SJI against the LST for each neighborhood, using a scatter plot. The plot shows that there is some correlation between the two variables, although not very strong. But we can see some linear trend where the most vulnerable neighborhoods (with a lower SJI) tend to have higher LST values, indicating that they are more exposed to heat stress. However, there are also some outliers where vulnerable neighborhoods have lower LST values, which could be due to the presence of green spaces or other cooling factors. Overall, the plot suggests that there is a spatial justice issue in terms of climate vulnerability in Rotterdam, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. However, the relationship is not very strong, and further analysis would be needed to confirm this finding.
-
-
+**TO DO: Describe the process of making the map and what you can tell from it** We used the simplified Spatial Justice Index, which is based on the same metrics as the Guangzhou SJI, to make it comparable. We plotted the SJI against the LST for each neighborhood, using a scatter plot. The plot shows that there is some correlation between the two variables, although not very strong. But we can see some linear trend where the most vulnerable neighborhoods (with a lower SJI) tend to have higher LST values, indicating that they are more exposed to heat stress. However, there are also some outliers where vulnerable neighborhoods have lower LST values, which could be due to the presence of green spaces or other cooling factors. Overall, the plot suggests that there is a spatial justice issue in terms of climate vulnerability in Rotterdam, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. However, the relationship is not very strong, and further analysis would be needed to confirm this finding.
 
 # Results: Guangzhou Case Study
 
@@ -217,6 +206,7 @@ These central districts are divided into sub-districts, for which there is data 
 ![Sub-districts in the central area of Guangzhou](maps/Guangzhou_admin_boundaries.png){#fig-sub-districts fig-pos="H" fig-align="center"}
 
 ## Land Surface Temperature
+
 In a similar way after deriving the land surface temperature for Rotterdam, the results for Guangzhou showcase a clear contrast between the least and most influenced areas. The natural parks and water canals that go across Guangzhou are areas that are the least influenced due to their inherent nature. In comparison, the darker areas correspond to the industrial areas and areas under construction, which are the biggest contributor of extreme LST values for Guangzhou:
 
 ![Land surface temperature of Guangzhou in August 2025](maps/lst_guangzhou.png){#fig-lst-guang fig-align="center"}
@@ -232,7 +222,6 @@ Since there was no data available for individual residential buildings in Guangz
 In order to retrieve cadastral information of Guangzhou, the relevant *OpenStreetMap* (OSM) polygons for general residential land use were first queried using *QuickOSM* and visualized in QGIS. To avoid relying on overly large, generalized areas, these polygons were subdivided into a standard 100-meter vector grid, effectively generating smaller raster cells that simulate individual building footprints. In addition, green spaces were identified by extracting multiple vegetation categories, such as forests, parks, and grasslands from again using *QuickOSM*.
 
 To facilitate a network analysis determining the distance from each simulated residential building to the nearest green area, pedestrian walking paths were also queried to map the usable routing infrastructure by querying over footpaths and similar walking path features. The network analysis was then executed in R using the dodgr package. This script performed a network-based accessibility analysis by converting both the 100-meter residential grid cells and the green spaces into representative origin and destination points. Finally, by utilizing the OSM pedestrian geometries, a routable network graph was constructed to calculate the exact distance a human would need to walk along actual streets and paths to reach the closest park boundary. Since the park polygons are often very large and the actual entrances to the park are not always clearly defined, the distance was calculated to the nearest point on the park boundary.
-
 
 ### Visualization and interpretation
 

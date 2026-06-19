@@ -179,8 +179,8 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="metrics">Metrics</h2>
 <!-- Explain the metrics that will answer the research question -->
 <ul>
-<li>Scale We settled on using a scale of 1:110000 for both Rotterdam and Guangzhou’s city extents so that the comparison analysis is harmonized on exclusively one common scale.</li>
-<li>LST To assess the urban micro-climate, Land Surface Temperature (LST) maps were generated for both cities using sattelite imagery from Landsat-8 and Lndsat-9. For Rotterdam, imagery from July 2025, and for Guangzhou, imagery from August 2025 was acquired. We wanted to pick the hottest times of the year to measure the impact of the LST at its highest values. Picking out datasets with unobstructed view of the city extents was heavily dependent on the availability of satellite imagery for the specific period we wanted. The spatial analysis was conducted by first clipping the raster datasets to the respective study area boundary polygons using a mask layer. To convert the raw Digital Number (DN) values into meaningful temperature readings, the standard USGS scale factor was applied to calculate the temperature in Kelvin: <span class="math display">\[T_{K}={DN * 0.0341802 + 149.0}\]</span></li>
+<li>Scale - We settled on using a scale of 1:110000 for both Rotterdam and Guangzhou’s city extents so that the comparison analysis is harmonized on exclusively one common scale.</li>
+<li>LST - To assess the urban micro-climate, Land Surface Temperature (LST) maps were generated for both cities using sattelite imagery from Landsat-8 and Lndsat-9. For Rotterdam, imagery from July 2025, and for Guangzhou, imagery from August 2025 was acquired. We wanted to pick the hottest times of the year to measure the impact of the LST at its highest values. Picking out datasets with unobstructed view of the city extents was heavily dependent on the availability of satellite imagery for the specific period we wanted. The spatial analysis was conducted by first clipping the raster datasets to the respective study area boundary polygons using a mask layer. To convert the raw Digital Number (DN) values into meaningful temperature readings, the standard USGS scale factor was applied to calculate the temperature in Kelvin: <span class="math display">\[T_{K}={DN * 0.0341802 + 149.0}\]</span></li>
 </ul>
 <p>Subsequently, the Kelvin values were converted to degrees Celsius using the following formula: <span class="math display">\[T_{∘C}= {T_{K} - 273.15}\]</span></p>
 <ul>
@@ -238,7 +238,7 @@ Figure&nbsp;1: Municipal boundary and neighborhoods (“buurten”) in Rotterdam
 </div>
 <section id="land-surface-temperature" class="level2">
 <h2 class="anchored" data-anchor-id="land-surface-temperature">Land Surface Temperature</h2>
-<p>After deriving the land surface temperature for Rotterdam, the results showcased in the figure below are clearly defined. Lighter areas correspond to larger green areas and the water bodies in the city extent. In contrast, the darker areas correspond to places such as industrial zones and inner ports of Rotterdam, which are the biggest contributor of extreme LST values on the map: <img src="maps/lst_rotterdam.png" class="img-fluid quarto-figure quarto-figure-center" alt="Land surface temperature of Rotterdam in July 2025"></p>
+<p>After deriving the land surface temperature for Rotterdam, the results showcased in the figure below are clearly defined. Lighter areas correspond to larger green areas and the water bodies in the city extent. In contrast, the darker areas correspond to places such as industrial zones and inner ports of Rotterdam, which are the biggest contributor of extreme LST values on the map: <img src="maps/lst_rotterdam.png" id="fig-lst-rdm" class="img-fluid quarto-figure quarto-figure-center anchored" alt="Land surface temperature of Rotterdam in July 2025"></p>
 </section>
 <section id="climate-vulnerability" class="level2">
 <h2 class="anchored" data-anchor-id="climate-vulnerability">Climate Vulnerability</h2>
@@ -369,9 +369,9 @@ Figure&nbsp;4: Spatial Justice Index per neighborhood in Rotterdam comparable to
 </section>
 <section id="relationship-urban-climate-and-spatial-justice" class="level2">
 <h2 class="anchored" data-anchor-id="relationship-urban-climate-and-spatial-justice">Relationship Urban Climate and Spatial Justice</h2>
-<p><strong>TO DO: Write introduction to this section</strong></p>
-<p><strong>TO DO: Make a combined map of Spatial Justice Index and LST</strong></p>
-<p><strong>TO DO: Describe the process of making the map and what you can tell from it</strong></p>
+<p><strong>TO DO: Write introduction to this section</strong> As not everyone is as vulnerable to heat stress as others, it is important to look at the relationship between the spatial justice index, which is mostly based on socio-demographic factors, and the land surface temperature. By plotting the two together, we can visually assess whether the most vulnerable neighborhoods are also the ones experiencing the highest temperatures. This can reveal whether there is a spatial justice issue in terms of climate vulnerability, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure.</p>
+<p><strong>TO DO: Make a combined map of Spatial Justice Index and LST</strong> <img src="maps/LST_SJI_Rotterdam.png" id="fig-sji-lst-rot" class="img-fluid quarto-figure quarto-figure-center anchored" data-fig-pos="H" alt="Spatial Justice Index and Land Surface Temperature in Rotterdam"></p>
+<p><strong>TO DO: Describe the process of making the map and what you can tell from it</strong> We used the simplified Spatial Justice Index, which is based on the same metrics as the Guangzhou SJI, to make it comparable. We plotted the SJI against the LST for each neighborhood, using a scatter plot. The plot shows that there is some correlation between the two variables, although not very strong. But we can see some linear trend where the most vulnerable neighborhoods (with a lower SJI) tend to have higher LST values, indicating that they are more exposed to heat stress. However, there are also some outliers where vulnerable neighborhoods have lower LST values, which could be due to the presence of green spaces or other cooling factors. Overall, the plot suggests that there is a spatial justice issue in terms of climate vulnerability in Rotterdam, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. However, the relationship is not very strong, and further analysis would be needed to confirm this finding.</p>
 </section>
 </section>
 <section id="results-guangzhou-case-study" class="level1">
@@ -391,10 +391,14 @@ Figure&nbsp;5: Sub-districts in the central area of Guangzhou
 <section id="land-surface-temperature-1" class="level2">
 <h2 class="anchored" data-anchor-id="land-surface-temperature-1">Land Surface Temperature</h2>
 <p>In a similar way after deriving the land surface temperature for Rotterdam, the results for Guangzhou showcase a clear contrast between the least and most influenced areas. The natural parks and water canals that go across Guangzhou are areas that are the least influenced due to their inherent nature. In comparison, the darker areas correspond to the industrial areas and areas under construction, which are the biggest contributor of extreme LST values for Guangzhou:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="maps/lst_guangzhou.png" class="img-fluid figure-img"></p>
-<figcaption>Land surface temperature of Guangzhou in August 2025</figcaption>
+<div id="fig-lst-guang" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lst-guang-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="maps/lst_guangzhou.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lst-guang-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Land surface temperature of Guangzhou in August 2025
+</figcaption>
 </figure>
 </div>
 </section>
@@ -428,7 +432,7 @@ Figure&nbsp;5: Sub-districts in the central area of Guangzhou
 <img src="maps/vulnerability_guangzhou.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="H">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-green-lst-guangzhou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Distance to green vs LST in Guangzhou
+Figure&nbsp;7: Distance to green vs LST in Guangzhou
 </figcaption>
 </figure>
 </div>
@@ -436,9 +440,30 @@ Figure&nbsp;6: Distance to green vs LST in Guangzhou
 </section>
 <section id="socio-economic-vulnerability-1" class="level2">
 <h2 class="anchored" data-anchor-id="socio-economic-vulnerability-1">Socio-Economic Vulnerability</h2>
+<div id="fig-sji-guangzhou" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sji-guangzhou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="maps/SJI_Guangzhou.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-pos="H">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sji-guangzhou-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Spatial Justice Index per sub-district in Guangzhou
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="relationship-urban-climate-and-spatial-justice-1" class="level2">
 <h2 class="anchored" data-anchor-id="relationship-urban-climate-and-spatial-justice-1">Relationship Urban Climate and Spatial Justice</h2>
+<div id="fig-sji-lst-gz" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sji-lst-gz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="maps/LST_SJI_Guangzhou.png" class="img-fluid quarto-figure quarto-figure-center figure-img" data-fig-pos="H">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sji-lst-gz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Spatial Justice Index and Land Surface Temperature in Guangzhou
+</figcaption>
+</figure>
+</div>
+<p>We used the same simplified Spatial Justice Index as for Rotterdam, which is based on the same metrics. We plotted the SJI against the LST for each sub-district, using a scatter plot. Unlike for Rotterdam, the plot shows no correlation at all between the two variables. This can be due to the lack of detailed data for Guangzhou, or it could indicate that there is no spatial justice issue in terms of climate vulnerability in Guangzhou. However, without further analysis, it is difficult to draw any conclusions from this plot.</p>
 </section>
 </section>
 <section id="discussion" class="level1">
