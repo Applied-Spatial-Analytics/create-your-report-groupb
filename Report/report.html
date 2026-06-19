@@ -179,15 +179,21 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="metrics">Metrics</h2>
 <!-- Explain the metrics that will answer the research question -->
 <ul>
-<li><p>LST and how we obtained that - Viktor explain your workflow here!</p></li>
-<li><p>Spatial justice metrics</p></li>
-<li><p>Distance to green</p></li>
+<li>Scale We settled on using a scale of 1:110000 for both Rotterdam and Guangzhou’s city extents so that the comparison analysis is harmonized on exclusively one common scale.</li>
+<li>LST To assess the urban micro-climate, Land Surface Temperature (LST) maps were generated for both cities using sattelite imagery from Landsat-8 and Lndsat-9. For Rotterdam, imagery from July 2025, and for Guangzhou, imagery from August 2025 was acquired. We wanted to pick the hottest times of the year to measure the impact of the LST at its highest values. Picking out datasets with unobstructed view of the city extents was heavily dependent on the availability of satellite imagery for the specific period we wanted. The spatial analysis was conducted by first clipping the raster datasets to the respective study area boundary polygons using a mask layer. To convert the raw Digital Number (DN) values into meaningful temperature readings, the standard USGS scale factor was applied to calculate the temperature in Kelvin: <span class="math display">\[T_{K}={DN * 0.0341802 + 149.0}\]</span></li>
 </ul>
+<p>Subsequently, the Kelvin values were converted to degrees Celsius using the following formula: <span class="math display">\[T_{∘C}= {T_{K} - 273.15}\]</span></p>
+<ul>
+<li><p>Spatial justice metrics - …</p></li>
+<li><p>Distance to green - …</p></li>
+</ul>
+<p>To measure social equity, we used spatial justice metrics like income and distance to green spaces…</p>
 </section>
 <section id="sec-data-sources" class="level2">
 <h2 class="anchored" data-anchor-id="sec-data-sources">Data Sources</h2>
-<p>For both Rotterdam and Guangzhou, the analysis relies on a combination of spatial and socio-economic datasets. For Rotterdam, data was primarily sourced from the <em>Leefbaarometer 2024</em> <span class="citation" data-cites="leefbarometer-2026">(<a href="#ref-leefbarometer-2026" role="doc-biblioref">Ministerie van Binnenlandse Zaken en Koninkrijksrelaties 2026</a>)</span> and <em>CBS Buurtgegevens <span class="citation" data-cites="cbs-2026">(<a href="#ref-cbs-2026" role="doc-biblioref">Centraal Bureau voor de Statistiek 2026</a>)</span></em> , which provide comprehensive neighborhood-level information on physical livability, social cohesion, housing conditions, and demographic characteristics. These datasets are complemented by high-resolution Land Surface Temperature (LST) data derived from satellite imagery, enabling precise mapping of urban heat distribution. Because distance to green is an important indicator in Spatial Justice, a network analysis was performed using building data from the <em>BAG</em>, obtained via the PDOK plugin in QGIS <span class="citation" data-cites="pdok-2026">(<a href="#ref-pdok-2026" role="doc-biblioref">Duivenvoorde 2026</a>)</span>, and road networks and green areas from <em>OpenStreetMap (OSM)</em> <span class="citation" data-cites="OpenStreetMap">(<a href="#ref-OpenStreetMap" role="doc-biblioref">OpenStreetMap contributors 2017</a>)</span><em>.</em></p>
-<p>For Guangzhou, data acquisition posed a greater challenge due to limited availability of granular socio-economic information. Consequently, the analysis utilized <em>OSM</em> data to extract residential land use and green space locations, supplemented by pedestrian network data to assess accessibility. LST data for Guangzhou was obtained from remote sensing sources, ensuring methodological consistency with the Rotterdam dataset. Population distribution for Guangzhouwas modeled using open-source data from “WorldPop.org” <span class="citation" data-cites="worldpop-2026">(<a href="#ref-worldpop-2026" role="doc-biblioref">WorldPop 2026</a>)</span>. However, because <em>WorldPop</em> is a gridded global dataset, it may lack the localized accuracy of official census products like the Dutch CBS data. Despite these variations in source material, the integration of these datasets allows for a robust cross-city comparison of spatial justice and urban climate vulnerability.</p>
+<p>For both Rotterdam and Guangzhou, the analysis relies on a combination of spatial and socio-economic datasets. The LST data for Guangzhou and Rotterdam was obtained by downloading Landsat 8/9 Collection 2 Level-2 Surface Temperature satellite imagery (ST_B10) using the <em>USGS Earth Explorer</em> <span class="citation" data-cites="usgsee-2026">(<a href="#ref-usgsee-2026" role="doc-biblioref">USGS 2026</a>)</span>. The data for Rotterdam is from the month of July 2025, and for Guangzhou, it its from August 2025. We wanted to pick the hottest times of the year to measure the impact of the LST at its highest values. It is important to point out that picking out datasets with unobstructed view of the city extents was heavily dependent on the availability of satellite imagery for the specific period we wanted.</p>
+<p>For Rotterdam, data was primarily sourced from the <em>Leefbaarometer 2024</em> <span class="citation" data-cites="leefbarometer-2026">(<a href="#ref-leefbarometer-2026" role="doc-biblioref">Ministerie van Binnenlandse Zaken en Koninkrijksrelaties 2026</a>)</span> and <em>CBS Buurtgegevens <span class="citation" data-cites="cbs-2026">(<a href="#ref-cbs-2026" role="doc-biblioref">Centraal Bureau voor de Statistiek 2026</a>)</span></em> , which provide comprehensive neighborhood-level information on physical livability, social cohesion, housing conditions, and demographic characteristics. These datasets are complemented by high-resolution Land Surface Temperature (LST) data derived from satellite imagery, enabling precise mapping of urban heat distribution. Because distance to green is an important indicator in Spatial Justice, a network analysis was performed using building data from the <em>BAG</em>, obtained via the PDOK plugin in QGIS <span class="citation" data-cites="pdok-2026">(<a href="#ref-pdok-2026" role="doc-biblioref">Duivenvoorde 2026</a>)</span>, and road networks and green areas from <em>OpenStreetMap (OSM)</em> <span class="citation" data-cites="OpenStreetMap">(<a href="#ref-OpenStreetMap" role="doc-biblioref">OpenStreetMap contributors 2017</a>)</span><em>.</em></p>
+<p>For Guangzhou, data acquisition posed a greater challenge due to limited availability of granular socio-economic information. Consequently, the analysis utilized <em>OSM</em> data to extract residential land use and green space locations, supplemented by pedestrian network data to assess accessibility. LST data for Guangzhou was obtained from remote sensing sources, ensuring methodological consistency with the Rotterdam dataset. Population distribution for Guangzhou was modelled using open-source data from “WorldPop.org” <span class="citation" data-cites="worldpop-2026">(<a href="#ref-worldpop-2026" role="doc-biblioref">WorldPop 2026</a>)</span>. However, because <em>WorldPop</em> is a gridded global dataset, it may lack the localized accuracy of official census products like the Dutch CBS data. Despite these variations in source material, the integration of these datasets allows for a robust cross-city comparison of spatial justice and urban climate vulnerability.</p>
 <p>To ensure a valid comparative analysis between the two distinct urban contexts, uniform metrics were applied to both cities. Because data availability for Rotterdam significantly outpaced that of Guangzhou, the scope of the Rotterdam analysis was intentionally restricted to align with the indicators available for Guangzhou. Omitting these higher-resolution variables for Rotterdam represents a deliberate methodological limitation of this study, accepted in favor of cross-city comparability.</p>
 </section>
 <section id="multi-criteria-decision-analysis" class="level2">
@@ -230,6 +236,10 @@ Figure&nbsp;1: Municipal boundary and neighborhoods (“buurten”) in Rotterdam
 </figcaption>
 </figure>
 </div>
+<section id="land-surface-temperature" class="level2">
+<h2 class="anchored" data-anchor-id="land-surface-temperature">Land Surface Temperature</h2>
+<p>After deriving the land surface temperature for Rotterdam, the results showcased in the figure below are clearly defined. Lighter areas correspond to larger green areas and the water bodies in the city extent. In contrast, the darker areas correspond to places such as industrial zones and inner ports of Rotterdam, which are the biggest contributor of extreme LST values on the map: <img src="maps/lst_rotterdam.png" class="img-fluid quarto-figure quarto-figure-center" alt="Land surface temperature of Rotterdam in July 2025"></p>
+</section>
 <section id="climate-vulnerability" class="level2">
 <h2 class="anchored" data-anchor-id="climate-vulnerability">Climate Vulnerability</h2>
 <p>To map localized climate vulnerability, this analysis intersects physical exposure to extreme heat with the availability of environmental mitigation measures. Specifically, the Land Surface Temperature (LST) is compared against the pedestrian walking distance to urban green spaces, which serve as crucial cooling amenities during extreme heat events. Examining this relationship reveals whether structural deficits in urban cooling infrastructure are concentrated in the areas facing the highest thermal stress.</p>
@@ -303,7 +313,7 @@ Figure&nbsp;2: Distance to green vs LST in Rotterdam
 <h4 class="anchored" data-anchor-id="step-2-aligning-directionality"><strong>Step 2: Aligning Directionality</strong></h4>
 <p>Spatial justice requires all metrics to point in the same direction, where 1 represents the most favorable outcome and 0 represents the least favorable.</p>
 <ul>
-<li>The livability scores (Physical and Social) are positive indicators; their normalized values were kept as is.</li>
+<li>The liveability scores (Physical and Social) are positive indicators; their normalized values were kept as is.</li>
 <li>The socio-economic vulnerabilities and distance to green space are negative indicators (e.g., a higher distance to parks is worse for spatial justice). These were inverted by subtracting the normalized score from 1 (<span class="math inline">\(1 - x_{norm}\)</span>).</li>
 </ul>
 </section>
@@ -378,6 +388,16 @@ Figure&nbsp;5: Sub-districts in the central area of Guangzhou
 </figcaption>
 </figure>
 </div>
+<section id="land-surface-temperature-1" class="level2">
+<h2 class="anchored" data-anchor-id="land-surface-temperature-1">Land Surface Temperature</h2>
+<p>In a similar way after deriving the land surface temperature for Rotterdam, the results for Guangzhou showcase a clear contrast between the least and most influenced areas. The natural parks and water canals that go across Guangzhou are areas that are the least influenced due to their inherent nature. In comparison, the darker areas correspond to the industrial areas and areas under construction, which are the biggest contributor of extreme LST values for Guangzhou:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="maps/lst_guangzhou.png" class="img-fluid figure-img"></p>
+<figcaption>Land surface temperature of Guangzhou in August 2025</figcaption>
+</figure>
+</div>
+</section>
 <section id="climate-vulnerability-1" class="level2">
 <h2 class="anchored" data-anchor-id="climate-vulnerability-1">Climate Vulnerability</h2>
 <section id="data-extraction-and-processing" class="level3">
@@ -397,7 +417,6 @@ Figure&nbsp;5: Sub-districts in the central area of Guangzhou
 </div>
 <p>In order to retrieve cadastral information of Guangzhou, the relevant <em>OpenStreetMap</em> (OSM) polygons for general residential land use were first queried using <em>QuickOSM</em> and visualized in QGIS. To avoid relying on overly large, generalized areas, these polygons were subdivided into a standard 100-meter vector grid, effectively generating smaller raster cells that simulate individual building footprints. In addition, green spaces were identified by extracting multiple vegetation categories, such as forests, parks, and grasslands from again using <em>QuickOSM</em>.</p>
 <p>To facilitate a network analysis determining the distance from each simulated residential building to the nearest green area, pedestrian walking paths were also queried to map the usable routing infrastructure by querying over footpaths and similar walking path features. The network analysis was then executed in R using the dodgr package. This script performed a network-based accessibility analysis by converting both the 100-meter residential grid cells and the green spaces into representative origin and destination points. Finally, by utilizing the OSM pedestrian geometries, a routable network graph was constructed to calculate the exact distance a human would need to walk along actual streets and paths to reach the closest park boundary. Since the park polygons are often very large and the actual entrances to the park are not always clearly defined, the distance was calculated to the nearest point on the park boundary.</p>
-<p>The land surface temperature (LST) data for Guangzhou was obtained from LANSAT satellite imagery for the period of <strong>DO you know this? <span class="citation" data-cites="Viktor">(<a href="#ref-Viktor" role="doc-biblioref"><strong>Viktor?</strong></a>)</span></strong> .</p>
 </section>
 <section id="visualization-and-interpretation" class="level3">
 <h3 class="anchored" data-anchor-id="visualization-and-interpretation">Visualization and interpretation</h3>
@@ -460,6 +479,9 @@ Ministerie van Binnenlandse Zaken en Koninkrijksrelaties. 2026. <em><span>Leefba
 </div>
 <div id="ref-OpenStreetMap" class="csl-entry" role="listitem">
 OpenStreetMap contributors. 2017. <em><span class="nocase">Planet dump retrieved from https://planet.osm.org </span></em>.<a href=" https://www.openstreetmap.org " class="uri"> https://www.openstreetmap.org</a>.
+</div>
+<div id="ref-usgsee-2026" class="csl-entry" role="listitem">
+USGS. 2026. <a href="https://earthexplorer.usgs.gov/">https://earthexplorer.usgs.gov/</a>.
 </div>
 <div id="ref-wong-2016" class="csl-entry" role="listitem">
 Wong, Man, Fen Peng, Bin Zou, Wen Shi, and Gaines Wilson. 2016. <span>“<span class="nocase">Spatially Analyzing the inequity of the Hong Kong Urban Heat Island by Socio-Demographic characteristics</span>.”</span> <em>International Journal of Environmental Research and Public Health</em> 13 (3): 317. <a href="https://doi.org/10.3390/ijerph13030317">https://doi.org/10.3390/ijerph13030317</a>.
