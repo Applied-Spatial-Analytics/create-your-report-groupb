@@ -8,8 +8,8 @@ library(here)
 
 city_configs <- list(
   rotterdam = list(
-    output_path   = here("create-your-report-groupb/Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"),
-    file_path     = here("create-your-report-groupb/Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"),
+    output_path   = here("../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"),
+    file_path     = here("../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"),
     col_age       = "percentagePersonen65JaarEnOuder",
     col_female    = "PercentageVrouwen",
     col_density   = "bevolkingsdichtheidInwonersPerKm2",
@@ -21,8 +21,8 @@ city_configs <- list(
   ),
   # Change these things to guangzhou thing
   guangzhou = list(
-    file_path     = here("data/kantondata.gpkg"),
-    output_path   = here("data/kantondata.gpkg"),
+    file_path     = here("../Guangzhou/KantonData.gpkg"),
+    output_path   = here("../Guangzhou/KantonData.gpkg"),
     col_age       = "Over65Percentagemean",
     col_female    = "FemalePercentagemean",
     col_density   = "PopDensity",
