@@ -105,7 +105,7 @@ However, applying this data across the entire administrative boundary of Rotterd
 ## Land Surface Temperature
 
 After deriving the land surface temperature for Rotterdam, the results showcased in the figure below are clearly defined. Lighter areas correspond to larger green areas and the water bodies in the city extent. In contrast, the darker areas correspond to places such as industrial zones and inner ports of Rotterdam, which are the biggest contributor of extreme LST values on the map:
-![Land surface temperature of Rotterdam in July 2025](maps/lst_rotterdam.png){fig-align="center"}
+![Land surface temperature of Rotterdam in July 2025](maps/lst_rotterdam.png){#fig-lst-rdm fig-align="center"}
 
 ## Climate Vulnerability
 
@@ -213,7 +213,7 @@ These central districts are divided into sub-districts, for which there is data 
 ## Land Surface Temperature
 In a similar way after deriving the land surface temperature for Rotterdam, the results for Guangzhou showcase a clear contrast between the least and most influenced areas. The natural parks and water canals that go across Guangzhou are areas that are the least influenced due to their inherent nature. In comparison, the darker areas correspond to the industrial areas and areas under construction, which are the biggest contributor of extreme LST values for Guangzhou:
 
-![Land surface temperature of Guangzhou in August 2025](maps/lst_guangzhou.png){fig-align="center"}
+![Land surface temperature of Guangzhou in August 2025](maps/lst_guangzhou.png){#fig-lst-guang fig-align="center"}
 
 ## Climate Vulnerability
 
