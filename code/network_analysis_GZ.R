@@ -4,10 +4,10 @@ library(dodgr)
 library(here)
 
 
-input_res_path   <- here("create-your-report-groupb/data/Guangzhou/residential_guangzhou.gpkg")
-input_green_path <- here("create-your-report-groupb/data/Guangzhou/green_guangzhou.gpkg")
-input_ped_path   <- here("create-your-report-groupb/data/Guangzhou/pedestrian_guangzhou.gpkg")
-output_grid_path <- here("create-your-report-groupb/data/Guangzhou/residential_walk_dist.gpkg")
+input_res_path   <- here("data/guangzhou/residential_guangzhou.gpkg")
+input_green_path <- here("data/guangzhou/green_guangzhou.gpkg")
+input_ped_path   <- here("data/guangzhou/pedestrian_guangzhou.gpkg")
+output_grid_path <- here("data/guangzhou/residential_walk_dist.gpkg")
 
 # Load Datasets
 res   <- st_read(input_res_path)
