@@ -37,6 +37,16 @@ Because raw data are not hosted in this repository, you must download the source
 
 - Network & Green Infrastructure: Use the [QuickOSM Plugin](https://plugins.qgis.org/plugins/QuickOSM/) in QGIS to extract building footprints, residential land use, pedestrian paths, and green spaces from OpenStreetMap.
 
+**3. Data available for both Rotterdam and Guangzhou**
+
+- Create an account in USGS Earth Explorer (https://earthexplorer.usgs.gov/)
+
+- Set an area around Rotterdam/Guangzhou with small percentage of cloud coverage (e.g., < 40%)
+
+- Set the search criteria to Landsat 8/9 Collection 2 Level-2 Surface Temperature satellite imagery
+
+- Download the ST_B10 file from the Surface Temperature data package
+
 ## Execution Workflow
 
 All scripts are written in R and utilize relative paths Ensure your working directory is set to the project root before executing.

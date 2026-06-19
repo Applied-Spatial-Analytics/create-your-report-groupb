@@ -197,10 +197,16 @@ To ensure the index remains statistically robust and representative, a threshold
 ## Relationship Urban Climate and Spatial Justice
 
 **TO DO: Write introduction to this section**
+As not everyone is as vulnerable to heat stress as others, it is important to look at the relationship between the spatial justice index, which is mostly based on socio-demographic factors, and the land surface temperature. By plotting the two together, we can visually assess whether the most vulnerable neighborhoods are also the ones experiencing the highest temperatures. This can reveal whether there is a spatial justice issue in terms of climate vulnerability, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure.
 
 **TO DO: Make a combined map of Spatial Justice Index and LST**
+![Spatial Justice Index and Land Surface Temperature in Rotterdam](maps/LST_SJI_Rotterdam.png){#fig-sji-lst-rot fig-pos="H" fig-align="center"}
+
 
 **TO DO: Describe the process of making the map and what you can tell from it**
+We used the simplified Spatial Justice Index, which is based on the same metrics as the Guangzhou SJI, to make it comparable. We plotted the SJI against the LST for each neighborhood, using a scatter plot. The plot shows that there is some correlation between the two variables, although not very strong. But we can see some linear trend where the most vulnerable neighborhoods (with a lower SJI) tend to have higher LST values, indicating that they are more exposed to heat stress. However, there are also some outliers where vulnerable neighborhoods have lower LST values, which could be due to the presence of green spaces or other cooling factors. Overall, the plot suggests that there is a spatial justice issue in terms of climate vulnerability in Rotterdam, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. However, the relationship is not very strong, and further analysis would be needed to confirm this finding.
+
+
 
 # Results: Guangzhou Case Study
 
@@ -238,7 +244,13 @@ Compared to the Rotterdam case, the Guangzhou plot shows a higher overall distan
 
 ## Socio-Economic Vulnerability
 
+![Spatial Justice Index per sub-district in Guangzhou](maps/SJI_Guangzhou.png){#fig-sji-guangzhou fig-pos="H" fig-align="center"}
+
 ## Relationship Urban Climate and Spatial Justice
+
+![Spatial Justice Index and Land Surface Temperature in Guangzhou](maps/LST_SJI_Guangzhou.png){#fig-sji-lst-gz fig-pos="H" fig-align="center"}
+
+We used the same simplified Spatial Justice Index as for Rotterdam, which is based on the same metrics. We plotted the SJI against the LST for each sub-district, using a scatter plot. Unlike for Rotterdam, the plot shows no correlation at all between the two variables. This can be due to the lack of detailed data for Guangzhou, or it could indicate that there is no spatial justice issue in terms of climate vulnerability in Guangzhou. However, without further analysis, it is difficult to draw any conclusions from this plot.
 
 # Discussion
 
