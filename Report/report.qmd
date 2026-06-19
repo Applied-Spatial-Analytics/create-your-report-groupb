@@ -102,38 +102,41 @@ Rotterdam and Guangzhou.
 
 <!-- Explain the metrics that will answer the research question -->
 
-- Scale - A map scale of 1:110 000 for both Rotterdam and Guangzhou's city
-  extents was used so that the comparison analysis is harmonized
-  on exclusively one common scale.
+- Scale - A map scale of 1:110 000 for both Rotterdam and Guangzhou's
+  city extents was used so that the comparison analysis is harmonized on
+  exclusively one common scale.
+
 - LST - To assess the urban micro-climate, Land Surface Temperature
   (LST) maps were generated for both cities using sattelite imagery from
   Landsat-8 and Lndsat-9. For Rotterdam, imagery from July 2025, and for
-  Guangzhou, imagery from August 2025 was acquired. The hottest times of the
-  year we re picked to measure the impact of the LST at its
-  highest values. Picking out datasets with unobstructed view of the
-  city extents was heavily dependent on the availability of satellite
-  imagery for the specific period we wanted. The spatial analysis was
-  conducted by first clipping the raster datasets to the respective
-  study area boundary polygons using a mask layer. To convert the raw
-  Digital Number (DN) values into meaningful temperature readings, the
-  standard USGS scale factor was applied to calculate the temperature in
-  Kelvin: $$T_{K}={DN * 0.0341802 + 149.0}$$
+  Guangzhou, imagery from August 2025 was acquired. The hottest times of
+  the year we re picked to measure the impact of the LST at its highest
+  values. Picking out datasets with unobstructed view of the city
+  extents was heavily dependent on the availability of satellite imagery
+  for the specific period we wanted. The spatial analysis was conducted
+  by first clipping the raster datasets to the respective study area
+  boundary polygons using a mask layer. To convert the raw Digital
+  Number (DN) values into meaningful temperature readings, the standard
+  USGS scale factor was applied to calculate the temperature in Kelvin:
+  $$T_{K}={DN * 0.0341802 + 149.0}$$
 
-  Subsequently, the Kelvin values were converted to degrees Celsius using
-the following formula: $$T_{∘C}= {T_{K} - 273.15}$$
+  Subsequently, the Kelvin values were converted to degrees Celsius
+  using the following formula: $$T_{∘C}= {T_{K} - 273.15}$$
 
 - Spatial justice metrics - vulnerable population, in particular elderly
   residents, share of people that make use of welfare, people with
   non-Dutch heritage, housing status and share of rental housing and
-  households relying on welfare. The processing steps to get to these metrics
-  are further explained in the "Socio-Economic Vulnerability" sections
-  of both Rotterdam and Guangzhou's respective case studies later in the report.
+  households relying on welfare. The processing steps to get to these
+  metrics are further explained in the "Socio-Economic Vulnerability"
+  sections of both Rotterdam and Guangzhou's respective case studies
+  later in the report.
+
 - Distance to green areas - all the green areas in Guangzhou and
-  Rotterdam (e.g. parks, grasslands) are combined as a single layer; then they
-  are used in combination with existing infrastructure layers
-  to initialise a network analysis which is further explained in the "Socio-
-  Economic Vulnerability" sections of Rotterdam and Guangzhou's respective
-  case studies later in the report.
+  Rotterdam (e.g. parks, grasslands) are combined as a single layer;
+  then they are used in combination with existing infrastructure layers
+  to initialise a network analysis which is further explained in the
+  "Socio- Economic Vulnerability" sections of Rotterdam and Guangzhou's
+  respective case studies later in the report.
 
 ## Data Sources {#sec-data-sources}
 
@@ -311,11 +314,10 @@ showcased in the figure below are clearly defined. Lighter areas
 correspond to larger green areas and the water bodies in the city
 extent. In contrast, the darker areas correspond to places such as
 industrial zones and inner ports of Rotterdam, which are the biggest
-contributor of extreme LST values on the map: 
+contributor of extreme LST values on the map:
 
-![Land surface temperature
-of Rotterdam in July 2025](maps/lst_rotterdam.png){#fig-lst-rdm
-fig-align="center"}
+![Land surface temperature of Rotterdam in July
+2025](maps/lst_rotterdam.png){#fig-lst-rdm fig-align="center"}
 
 ## Climate Vulnerability
 
@@ -517,6 +519,12 @@ fig-align="center" width="90%"}
 ### Simplified Spatial Justice Index
 
 **TO DO: explain what metrics were used in this map**
+
+- \% above 65 years old
+
+- \% women
+
+- Population density
 
 ![Spatial Justice Index per neighborhood in Rotterdam comparable to
 Guangzhou](maps/RotterdamSJI.png){#fig-rot-sji-simple fig-pos="H"
