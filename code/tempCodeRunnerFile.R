@@ -7,7 +7,7 @@ library(scales)
 library(here)
 
 # Paths for files
-gpkg_bestand <- "Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"
+gpkg_bestand <- here("../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg")
 plot_output  <- here("code", "spatial_justice_rotterdam_complete.png")
 
 buurten_sf <- st_read(gpkg_bestand)
@@ -116,7 +116,7 @@ p <- ggplot(data = buurten_index) +
     panel.grid = element_blank(),
     axis.text = element_blank(),
     plot.title = element_text(face = "bold", size = 14),
-    #subtitle = element_text(size = 11, color = "grey30"),
+    subtitle = element_text(size = 11, color = "grey30"),
     legend.position = "right"
   )
 
@@ -130,9 +130,8 @@ buurten_gpkg_klaar <- buurten_index %>%
 st_write(
   obj = buurten_gpkg_klaar,
   dsn = gpkg_bestand,
-  layer = "neighborhood_groen_netwerk",
+  layer = "Neighborhood_groen_netwerk",
   delete_layer = TRUE
 )
 
 # ggsave("spatial_justice_rotterdam.png", width = 10, height = 8, dpi = 300)
-

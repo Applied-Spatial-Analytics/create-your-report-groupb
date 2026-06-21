@@ -260,12 +260,13 @@ We used the same simplified Spatial Justice Index as for Rotterdam, which is bas
 Compare how green infrastructure impacts spatial justice in Rotterdam versus Guangzhou -->
 ```
 
+While the research question is answered, there is plenty of room for improvement to the research, on our part and on the part of the data providers. For the research on Rotterdam, there was a lot of data available, which made it possible to make a very detailed analysis. However, for Guangzhou, there was a lack of data, which made it difficult to make a detailed analysis. This is a common issue when comparing cities in different countries, as data availability can vary greatly. In the future, it would be beneficial to have more standardized data collection and reporting across cities to facilitate comparative research. Additionally, the analysis could be improved by incorporating more detailed data on green infrastructure and its impact on spatial justice, as well as by exploring other factors that may influence the relationship between urban climate and spatial justice, such as social networks, community resilience, and local governance structures.
+
+
 # Conclusion
 
 ```{=html}
-<!-- Summarise the main findings
-
-Answer research question -->
+To answer the main research question, we need to answer the two sub-questions first. The first sub-question was 
 ```
 
 # References
