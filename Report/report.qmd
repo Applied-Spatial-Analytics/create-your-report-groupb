@@ -75,8 +75,8 @@ allocation and socio-economic vulnerability, this study bridges urban
 climate and social equity by quantifying the land surface temperature
 (LST) distribution alongside a Spatial Justice Index, which includes
 several metrics of spatial justice. The methodology is structured as
-follows: defining the metrics for measuring LST and spatial justice,
-explaining the data sources used for the analysis, and integrating these
+follows: outlining the overarching analytical workflow, detailing data
+sources, defining the technical metrics, and intergrating these
 dimensions through a Multi-Criteria Decision Analysis (MCDA) framework.
 
 As @bartesaghi-koc-2020 describe, the UHI effect is a phenomenon where
@@ -98,70 +98,48 @@ Multi-Criteria Decision Analysis (MCDA) framework, the relation between
 urban climate and spatial justice can be evaluated and compared for
 Rotterdam and Guangzhou.
 
-## Metrics
+## Analytical Workflow and Comparative Framework
 
-<!-- Explain the metrics that will answer the research question -->
+To ensure a structured and symmetrical cross-city comparison, the
+analysis for both Rotterdam and Guangzhou follows an identical
+three-phase analytical pipeline:
 
-- Scale - A map scale of 1:110 000 for both Rotterdam and Guangzhou's
-  city extents was used so that the comparison analysis is harmonized on
-  exclusively one common scale.
-
-- LST - To assess the urban micro-climate, Land Surface Temperature
-  (LST) maps were generated for both cities using sattelite imagery from
-  Landsat-8 and Lndsat-9. For Rotterdam, imagery from July 2025, and for
-  Guangzhou, imagery from August 2025 was acquired. The hottest times of
-  the year we re picked to measure the impact of the LST at its highest
-  values. Picking out datasets with unobstructed view of the city
-  extents was heavily dependent on the availability of satellite imagery
-  for the specific period we wanted. The spatial analysis was conducted
-  by first clipping the raster datasets to the respective study area
-  boundary polygons using a mask layer. To convert the raw Digital
-  Number (DN) values into meaningful temperature readings, the standard
-  USGS scale factor was applied to calculate the temperature in Kelvin:
-  $$T_{K}={DN * 0.0341802 + 149.0}$$
-
-  Subsequently, the Kelvin values were converted to degrees Celsius
-  using the following formula: $$T_{∘C}= {T_{K} - 273.15}$$
-
-- Spatial justice metrics - vulnerable population, in particular elderly
-  residents, share of people that make use of welfare, people with
-  non-Dutch heritage, housing status and share of rental housing and
-  households relying on welfare. The processing steps to get to these
-  metrics are further explained in the "Socio-Economic Vulnerability"
-  sections of both Rotterdam and Guangzhou's respective case studies
-  later in the report.
-
-- Distance to green areas - all the green areas in Guangzhou and
-  Rotterdam (e.g. parks, grasslands) are combined as a single layer;
-  then they are used in combination with existing infrastructure layers
-  to initialise a network analysis which is further explained in the
-  "Socio- Economic Vulnerability" sections of Rotterdam and Guangzhou's
-  respective case studies later in the report.
+1.  Thermal and Physical Amenity Correlation: First, high-resolution
+    Land Surface Temperature (LST) distributions are mapped and directly
+    correlated against physical walking distances to urban green spaces.
+    This establishes the baseline relationship between micro-climate
+    intensity and physical access in each urban context.
+2.  Index Calibration: Second, the Spatial Justice Index (SJI) is
+    generated. For Rotterdam, two variations are calculated -a complete
+    model leveraging the full depth of available Dutch socio-economic
+    data, and a simplified model restricted to baseline indicators. For
+    Guangzhou, the simplified model is executed using harmonized proxies
+    to ensure exact cross-city compatability.
+3.  Synthesis and Equity Mapping: Finally, the generated Spatial Justice
+    Indices are cross-analyzed against the LST layers. This synthesis
+    produces final overlay maps that explicitly identify "priority
+    zones" -neighborhoods where high socio-economic vulnerability,
+    structural green deficits, and elevated thermal stress intersect.
 
 ## Data Sources {#sec-data-sources}
 
 For both Rotterdam and Guangzhou, the analysis relies on a combination
-of spatial and socio-economic datasets. The LST data for Guangzhou and
-Rotterdam was obtained by downloading Landsat 8/9 Collection 2 Level-2
-Surface Temperature satellite imagery (ST_B10) using the *USGS Earth
-Explorer* [@usgsee-2026]. The data for Rotterdam is from the month of
-July 2025, and for Guangzhou, it its from August 2025. We wanted to pick
-the hottest times of the year to measure the impact of the LST at its
-highest values. It is important to point out that picking out datasets
-with unobstructed view of the city extents was heavily dependent on the
-availability of satellite imagery for the specific period we wanted.
+of spatial and socio-economic datasets. The LST data for both cities was
+obtained by downloading *Landsat 8/9 Collection 2 Level-2* Surface
+Temperature satellite imagery (*ST_B10*) using the *USGS Earth Explorer*
+[@usgsee-2026].
 
-For Rotterdam, data was primarily sourced from the *Leefbaarometer 2024*
-[@leefbarometer-2026] and *CBS Buurtgegevens [@cbs-2026]* , which
-provide comprehensive neighborhood-level information on physical
-livability, social cohesion, housing conditions, and demographic
-characteristics. These datasets are complemented by high-resolution Land
-Surface Temperature (LST) data derived from satellite imagery, enabling
-precise mapping of urban heat distribution. Because distance to green is
-an important indicator in Spatial Justice, a network analysis was
-performed using building data from the *BAG*, obtained via the PDOK
-plugin in QGIS [@pdok-2026], and road networks and green areas from
-*OpenStreetMap (OSM)* [@OpenStreetMap]*.*
+For Rotterdam, socio-economic data was primarily sourced from the
+*Leefbaarometer 2024* [@leefbarometer-2026] and *CBS Buurtgegevens
+[@cbs-2026]* , which provide comprehensive neighborhood-level
+information on physical livability, social cohesion, housing conditions,
+and demographic characteristics. These datasets are complemented by the
+high-resolution Land Surface Temperature (LST) data, enabling precise
+mapping of urban heat distribution. Because distance to green is an
+important indicator in Spatial Justice, a network analysis was performed
+using building data from the *BAG*, obtained via the *PDOK* plugin in
+QGIS [@pdok-2026], and road networks and green areas from *OpenStreetMap
+(OSM)* [@OpenStreetMap]*.*
 
 For Guangzhou, data acquisition posed a greater challenge due to limited
 availability of granular socio-economic information. Consequently, the
@@ -169,12 +147,12 @@ analysis utilized *OSM* data to extract residential land use and green
 space locations, supplemented by pedestrian network data to assess
 accessibility. LST data for Guangzhou was obtained from remote sensing
 sources, ensuring methodological consistency with the Rotterdam dataset.
-Population distribution for Guangzhou was modelled using open-source
-data from "WorldPop.org" [@worldpop-2026]. However, because *WorldPop*
-is a gridded global dataset, it may lack the localized accuracy of
-official census products like the Dutch CBS data. Despite these
-variations in source material, the integration of these datasets allows
-for a robust cross-city comparison of spatial justice and urban climate
+Population distribution for Guangzhou was modeled using open-source data
+from "*WorldPop.org*" [@worldpop-2026]. However, because *WorldPop* is a
+gridded global dataset, it may lack the localized accuracy of official
+census products like the Dutch CBS data. Despite these variations in
+source material, the integration of these datasets allows for a robust
+cross-city comparison of spatial justice and urban climate
 vulnerability.
 
 To ensure a valid comparative analysis between the two distinct urban
@@ -185,6 +163,70 @@ with the indicators available for Guangzhou. Omitting these
 higher-resolution variables for Rotterdam represents a deliberate
 methodological limitation of this study, accepted in favor of cross-city
 comparability.
+
+## Metrics
+
+To ensure a robust comparative spatial analysis between Rotterdam and
+Guangzhou, a standardized set of metrics was established. By aligning
+the spatial scale, temporal context, environmental hazard variables, and
+socio-economic vulnerability indicators, the analytical pipeline ensures
+that the divergent urban fabrics of both cities are evaluated through a
+mathematically and conceptually consistent framework. The core metrics
+and their technical parameters are detailed below.
+
+### Scale
+
+A map scale of 1:110,000 for both Rotterdam and Guangzhou's city extents
+was applied. Standardizing the spatial extent at this scale harmonizes
+the comparative analysis, ensuring that density, spatial patterns, and
+network distances are observed and measured at an identical resolution
+across both urban contexts.
+
+### Land Surface Temperature (LST)
+
+To assess the urban micro-climate and isolate localized thermal stress,
+Land Surface Temperature (LST) maps were generated using satellite
+imagery. Imagery was acquired from July 2025 for Rotterdam and August
+2025 for Guangzhou. These periods were selected to capture the thermal
+landscape during the hottest months of the year, thereby measuring the
+impact of LST at its peak intensity. The selection of specific imagery
+dates was dependent on satellite revisit cycles and the availability of
+cloud-free scenes with an unobstructed view of the respective city
+boundaries.
+
+The spatial processing began by clipping the raster datasets to the
+study area boundary polygons using an administrative mask layer. To
+convert the raw Digital Number (`DN`) values from the thermal infrared
+sensors into meaningful temperature readings, the standard USGS scale
+factor was applied to calculate top-of-atmosphere brightness temperature
+in Kelvin: $$T_{K}={DN * 0.0341802 + 149.0}$$
+
+Subsequently, the Kelvin values were converted to degrees Celsius
+($T_{∘C}$) to facilitate intuitive interpretation using the standard
+thermodynamic conversion formula: $$T_{∘C}= {T_{K} - 273.15}$$
+
+### Distance to green areas
+
+To model environmental accessibility, localized green spaces were
+aggregated into a unified destination layer for each city. These
+destination assets were then coupled with municipal building footprints
+and pedestrian road network layers to initialize a true network
+analysis. The algorithmic configuration and network construction
+mechanics are detailed further within the "Socio-Economic Vulnerability"
+subsections of the respective city case studies.
+
+### Spatial Justice Metrics
+
+To operationalize socio-economic vulnerability within the Spatial
+Justice Index (SJI), several demographic and housing indicators were
+selected. These metrics focus on disadvantaged populations, specifically
+isolating the proportion of elderly residents, households relying on
+social welfare benefits, individuals with non-Dutch or migrant
+backgrounds, and the spatial distribution and share of rental housing.
+The specific data processing, normalization, and aggregation steps
+required to construct these metrics are detailed within the
+"Socio-Economic Vulnerability" subsections of respective Rotterdam and
+Guangzhou case studies later in the report.
 
 ## Multi-Criteria Decision Analysis
 
@@ -220,29 +262,6 @@ assignment, and aggregation. To construct a comprehensive Spatial
 Justice Index, MCDA provided the mechanisms to normalize all
 heterogeneous indicators and assign strategic weights to each criterion.
 
-## Analytical Workflow and Comparative Framework
-
-To ensure a structured and symmetrical cross-city comparison, the
-analysis for both Rotterdam and Guangzhou follows an identical
-three-phase analytical pipeline:
-
-1.  Thermal and Physical Amenity Correlation: First, high-resolution
-    Land Surface Temperature (LST) distributions are mapped and directly
-    correlated against physical walking distances to urban green spaces.
-    This establishes the baseline relationship between micro-climate
-    intensity and physical access in each urban context.
-2.  Index Calibration: Second, the Spatial Justice Index (SJI) is
-    generated. For Rotterdam, two variations are calculated -a complete
-    model leveraging the full depth of available Dutch socio-economic
-    data, and a simplified model restricted to baseline indicators. For
-    Guangzhou, the simplified model is executed using harmonized proxies
-    to ensure exact cross-city compatability.
-3.  Synthesis and Equity Mapping: Finally, the generated Spatial Justice
-    Indices are cross-analyzed against the LST layers. This synthesis
-    produces final overlay maps that explicitly identify "priority
-    zones" -neighborhoods where high socio-economic vulnerability,
-    structural green deficits, and elevated thermal stress intersect.
-
 ## Reproducibility
 
 To ensure the transparency, verifiability, and replicability of this
@@ -255,10 +274,9 @@ acquire the baseline data from the data sources linked in
 `/data` folder of the repository.
 
 The analytical pipeline is executed entirely via open-source R scripts,
-organized within the `/code` folder of the repository. Because raw
-source data are not pre-packaged in the repository, users must download
-the datasets from the links in @sec-data-sources and format them to
-match the expected directory inputs.
+organized within the `/code` folder of the repository. Raw source data
+not pre-packaged in the repository should be downloaded first and
+formatted to match the expected directory inputs.
 
 - Spatial Justice Index (SJI) Calculation: The R scripts execute the
   normalization, weighting, and multi-criteria aggregation of the
@@ -307,14 +325,13 @@ human-centric environmental exposure.
 Rotterdam](maps/Rotterdam_admin_boundaries.png){#fig-buurten-rotterdam
 fig-align="center"}
 
-## Land Surface Temperature
-
-After deriving the land surface temperature for Rotterdam, the results
-showcased in the figure below are clearly defined. Lighter areas
-correspond to larger green areas and the water bodies in the city
-extent. In contrast, the darker areas correspond to places such as
-industrial zones and inner ports of Rotterdam, which are the biggest
-contributor of extreme LST values on the map:
+The initial mapping of Land Surface Temperature (LST) across Rotterdam
+provides a preliminary indication of the city's thermal distribution
+(@fig-lst-rdm). At first glance, light orange areas appear to align
+mostly with water bodies and larger green spaces, suggesting lower
+surface temperatures. In contrast, the darker regions correspond
+visually with industrial sectors and the inner port areas, pointing to
+them as potential primary contributors to elevated LST values.
 
 ![Land surface temperature of Rotterdam in July
 2025](maps/lst_rotterdam.png){#fig-lst-rdm fig-align="center"}
@@ -338,7 +355,7 @@ the nearest designated green space destination. To ensure a
 standardized, continuous unit of analysis, the network routing results
 are aggregated into a 150-meter hexagonal grid, calculating the average
 walking distance from the enclosed buildings to the nearest cool space.
-Concurrently, the satellite-derived LST raster map is reprojected and
+Concurrently, the satellite-derived LST raster map is re-projected and
 cropped to match the city's residential extent.
 
 Based on the spatial distributions shown in @fig-rot-green-lst, there is
@@ -518,56 +535,84 @@ fig-align="center" width="90%"}
 
 ### Simplified Spatial Justice Index
 
-**TO DO: explain what metrics were used in this map**
-
-- \% above 65 years old
-
-- \% women
-
-- Population density
+Because of the sparse data availability for Guangzhou, it is an
+important step of the analysis to simplify the Spatial Justice Index for
+Rotterdam as well. The metrics in this SJI were limited to population
+density, distance to green, percentage of inhabitants older than 65, and
+percentage of inhabitants that are women. By simplifying the Rotterdam
+SJI, it was better comparable to Guangzhou.
 
 ![Spatial Justice Index per neighborhood in Rotterdam comparable to
 Guangzhou](maps/RotterdamSJI.png){#fig-rot-sji-simple fig-pos="H"
 fig-align="center" width="90%"}
 
-### Notable aspects in the Spatial Justice Index distribution
+### Comparative Analysis of the Full and Simplified Spatial Justice Index
 
-**TO DO: explain what we can tell from the map**
+Comparing the full Spatial Justice Index (@fig-sji-rot-full) with the
+simplified Spatial Justice Index calibrated for cross-city comparison
+(@fig-rot-sji-simple) reveals spatial patterns and highlights how data
+resolution impacts equity mapping.
+
+The most prominent takeaways across both SJI distributions is the
+distinct center-periphery gradient. In both maps, central neighborhoods
+consistently display significantly lower Spatial Justice Index scores.
+This indicates that regardless of whether the index relies on
+high-resolution Dutch socio-economic indicators or a streamlined set of
+proxy variables, the urban core stands out as an area of high
+vulnerability and lower environmental/spatial justice. Conversely,
+peripheral northern and western neighborhoods tend to retain higher
+index values in both configurations.
+
+While the general spatial trend holds true, lowering the data resolution
+to ensure comparability introduces notable variations in the sensitivity
+and classification of individual neighborhoods:
+
+- Index Range and Sensitivity Shifts; the full SJI features a tighter,
+  more nuanced score distribution ranging from $0.37$ to $0.90$. In
+  contrast, the simplified SJI exhibits a broader stretched distribution
+  from $0$ to $1$. This expansion of the scale suggests that reducing
+  the model to fewer variables can over-amplify extreme values,
+  potentially masking localized nuances.
+
+- Over-smoothing of Vulnerability; by omitting granular variables such
+  as welfare dependency, migration backgrounds, and detailed housing
+  tenure types, the simplified SJI forces a heavier mathematical
+  reliance on population aspects. As a result, certain suburban or
+  transition zones switch classifications.
 
 ## Relationship Urban Climate and Spatial Justice
 
-**TO DO: Write introduction to this section** As not everyone is as
-vulnerable to heat stress as others, it is important to look at the
-relationship between the spatial justice index, which is mostly based on
-socio-demographic factors, and the land surface temperature. By plotting
-the two together, we can visually assess whether the most vulnerable
-neighborhoods are also the ones experiencing the highest temperatures.
-This can reveal whether there is a spatial justice issue in terms of
-climate vulnerability, where disadvantaged populations may be
-disproportionately exposed to heat stress without adequate access to
-mitigating green infrastructure.
+As not everyone is as vulnerable to heat stress as others, it is
+important to look at the relationship between the Spatial Justice Index,
+which is mostly based on socio-demographic factors, and the Land Surface
+Temperature. By plotting the two together, it is possible to visually
+assess whether the most vulnerable neighborhoods are also the ones
+experiencing the highest temperatures. This can reveal whether there is
+a spatial justice issue in terms of climate vulnerability, where
+disadvantaged populations may be disproportionately exposed to heat
+stress without adequate access to mitigating green infrastructure.
 
-**TO DO: Make a combined map of Spatial Justice Index and LST**
 ![Spatial Justice Index and Land Surface Temperature in
 Rotterdam](maps/LST_SJI_Rotterdam.png){#fig-sji-lst-rot fig-pos="H"
 fig-align="center"}
 
-**TO DO: Describe the process of making the map and what you can tell
-from it** We used the simplified Spatial Justice Index, which is based
-on the same metrics as the Guangzhou SJI, to make it comparable. We
-plotted the SJI against the LST for each neighborhood, using a scatter
-plot. The plot shows that there is some correlation between the two
-variables, although not very strong. But we can see some linear trend
-where the most vulnerable neighborhoods (with a lower SJI) tend to have
-higher LST values, indicating that they are more exposed to heat stress.
-However, there are also some outliers where vulnerable neighborhoods
-have lower LST values, which could be due to the presence of green
-spaces or other cooling factors. Overall, the plot suggests that there
-is a spatial justice issue in terms of climate vulnerability in
-Rotterdam, where disadvantaged populations may be disproportionately
-exposed to heat stress without adequate access to mitigating green
-infrastructure. However, the relationship is not very strong, and
-further analysis would be needed to confirm this finding.
+**TO DO: don't use "we" here, write it in third person.**
+
+We used the simplified Spatial Justice Index, which is based on the same
+metrics as the Guangzhou SJI, to make it comparable. We plotted the SJI
+against the LST for each neighborhood, using a scatter plot. The plot
+shows that there is some correlation between the two variables, although
+not very strong. But we can see some linear trend where the most
+vulnerable neighborhoods (with a lower SJI) tend to have higher LST
+values, indicating that they are more exposed to heat stress. However,
+there are also some outliers where vulnerable neighborhoods have lower
+LST values, which could be due to the presence of green spaces or other
+cooling factors. Overall, the plot suggests that there is a spatial
+justice issue in terms of climate vulnerability in Rotterdam, where
+disadvantaged populations may be disproportionately exposed to heat
+stress without adequate access to mitigating green infrastructure.
+However, the relationship is not very strong, and further analysis would
+be needed to confirm this finding.
 
 # Results: Guangzhou Case Study
 
@@ -586,15 +631,13 @@ neighborhoods of Rotterdam, making it a comparable set-up.
 Guangzhou](maps/Guangzhou_admin_boundaries.png){#fig-sub-districts
 fig-pos="H" fig-align="center"}
 
-## Land Surface Temperature
-
 In a similar way after deriving the land surface temperature for
 Rotterdam, the results for Guangzhou showcase a clear contrast between
-the least and most influenced areas. The natural parks and water canals
-that go across Guangzhou are areas that are the least influenced due to
-their inherent nature. In comparison, the darker areas correspond to the
-industrial areas and areas under construction, which are the biggest
-contributor of extreme LST values for Guangzhou:
+the least and most influenced areas (@fig-lst-guang). The natural parks
+and water canals that go across Guangzhou are areas that are the least
+influenced due to their inherent nature. In comparison, the darker areas
+correspond to the industrial areas and areas under construction, which
+are the biggest contributor of extreme LST values for Guangzhou.
 
 ![Land surface temperature of Guangzhou in August
 2025](maps/lst_guangzhou.png){#fig-lst-guang fig-align="center"}
@@ -662,6 +705,8 @@ fig-pos="H" fig-align="center" width="90%"}
 
 ## Socio-Economic Vulnerability
 
+**TO DO: write explanation here**
+
 ![Spatial Justice Index per sub-district in
 Guangzhou](maps/SJI_Guangzhou.png){#fig-sji-guangzhou fig-pos="H"
 fig-align="center"}
@@ -671,6 +716,8 @@ fig-align="center"}
 ![Spatial Justice Index and Land Surface Temperature in
 Guangzhou](maps/LST_SJI_Guangzhou.png){#fig-sji-lst-gz fig-pos="H"
 fig-align="center"}
+
+**TO DO: also write this in third person**
 
 We used the same simplified Spatial Justice Index as for Rotterdam,
 which is based on the same metrics. We plotted the SJI against the LST
@@ -683,18 +730,109 @@ any conclusions from this plot.
 
 # Discussion
 
-```{=html}
-<!-- Discuss limitations in data availability, what made it difficult to compare 
+While this study successfully addresses the main research objectives,
+several critical limitations highlight opportunities for methodological
+improvement, largely stemming from discrepancies in data availability
+and type.
 
-Compare how green infrastructure impacts spatial justice in Rotterdam versus Guangzhou -->
-```
+For the analysis of Rotterdam, the wide availability of
+neighborhood-level statistics enabled a rich, multidimensional analysis.
+However, equivalent localized socio-economic and physical datasets were
+unavailable for Guangzhou. This data asymmetry is a persistent hurdle in
+transnational compartive urban research, where data collection standards
+and public accessibility vary drastically by jurisdiction. To facilitate
+more robust comparative frameworks in the future, establishing
+standardized reporting metrics for urban demographic and environmental
+datasets across global municipalities remains essential.
+
+Further more, the explanatory power of the spatial model could be
+enhanced by integrating more detailed metrics regarding green
+infrastructure quality (such as canopy density or biodiversity indices
+rather than simple proximity) and its direct socio-political
+implications. Incorporating advanced spatial network variables -such as
+transit infrastructure connectivity and pedestrian walking barrier-
+would also provide a more sophisticated understanding of how physical
+networks shape environmental access.
+
+Finally, because officiel urban heat island (UHI) data was not available
+for Guangzhou, the study relied on raw satellite remote sensing to
+derive Land Surface Temperature. This approach introduces logistical
+challenges, particularly in aligning cloud-free satellite overpasses to
+capture comparable peak-summer thermal anomalies for both cities.
+Methodologically, while LST acts as a valuable proxy for localized
+surface heat accumulation, it does not perfectly mirror ambient air
+temperatures or true human thermal comfort. Consequently, relying on
+surface temperature slightly shifted the analytical focus away from the
+atmospheric UHI effects originally intended for evaluation.
 
 # Conclusion
 
-```{=html}
-<!-- Summarise the main findings
+**TODO: add something about the distance to green vs LST here?**
 
-Answer research question -->
-```
+This study set out to evaluate the following central research question:
+*How does the relationship between urban green infrastructure allocation
+and socio-economic vulnerability vary between Rotterdam and Guangzhou?*
+By operationalizing a Spatial Justice Index (SJI) and intersecting it
+with Land Surface Temperature (LST) distributions, the analysis reveals
+two different spatial correlations. While both cities face distinct
+urban heat pressures, the intersection of socio-economic marginalization
+and environmental exposure is context-dependent, necessitating entirely
+divergent climate adaptation strategies.
+
+To address how the physical and socio-economic criteria of spatial
+justice correlate with LST in each city, the results reveal a strong
+contrast;
+
+- Rotterdam: The analysis demonstrates a distinct, negative correlation
+  between the Spatial Justice Index and Land Surface Temperature,
+  clearly visible in the scatter plots (@fig-sji-lst-rot and **figure
+  with full SJI)**. In Rotterdam, environmental burdens and
+  socio-economic vulnerabilities are spatially aligned: neighborhoods
+  with lower socio-economic coping capacity and poorer physical
+  livability experience higher thermal stress.
+
+<!-- -->
+
+- Guangzhou: Conversely, Guangzhou exhibits no clear or statistically
+  coherent correlation between SJI and LST (@fig-sji-lst-gz). The
+  thermal landscape of Guangzhou does not mirror its socio-economic
+  divides; pockets of intense heat and areas of high-quality cooling
+  areas are distributed across wealthy and vulnerable administrative
+  units alike. However, due to the constrained availability and lower
+  resolution of data for Guangzhou, the resulting index is inherently
+  less reliable than Rotterdam's. Consequently, it cannot be
+  definitively concluded that no correlation exists, but rather that the
+  available data fails to capture a statistically significant link.
+
+By evaluating which specific neighborhoods exhibit the highest deficit
+in environmental amenities relative to their vulnerability, the study
+successfully identified the "priority zones" requiring targeted green
+adaptation:
+
+- In Rotterdam, municipal planners should adopt a thermal-led
+  intervention strategy, focusing climate adaptation resources directly
+  on areas exhibiting the highest LST. Because environmental degradation
+  and lower socio-economic scores are linked in Rotterdam, targeting the
+  absolute hottest zones will inherently and effectively deliver green
+  infrastructure interventions to the most vulnerable, low-SJI
+  populations who need them most.
+
+- In Guangzhou, a thermal-led strategy would fail to address
+  environmental injustice. Because green infrastructure distribution is
+  decoupled from the temperature grid, planners must implement an
+  equity-led intervention strategy, deliberately targeting municipal
+  resources toward areas with low SJI scores regardless of their current
+  thermal profile. Greening initiatives must be deployed to uplift
+  disadvantaged neighborhoods, ensuring that access to the health,
+  social, and physical benefits of urban vegetation is equitably
+  distributed.
+
+Ultimately, this comparison highlights that achieving spatial justice
+requires looking beyond raw environmental hazards. In cities like
+Rotterdam, mapping the physical hazard (heat) effectively maps the
+social injustice. In cities like Guangzhou, social injustice is hidden
+within the temperature variations, requiring planners to prioritize
+demographic vulnerability independently to ensure equitable urban
+futures.
 
 # References
