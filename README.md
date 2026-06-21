@@ -37,7 +37,7 @@ Because raw data are not hosted in this repository, you must download the source
 
 - Network & Green Infrastructure: Use the [QuickOSM Plugin](https://plugins.qgis.org/plugins/QuickOSM/) in QGIS to extract building footprints, residential land use, pedestrian paths, and green spaces from OpenStreetMap.
 
-**3. Data available for both Rotterdam and Guangzhou**
+**3. Land Surface Temperature Data**
 
 - Create an account in USGS Earth Explorer (https://earthexplorer.usgs.gov/)
 
