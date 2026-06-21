@@ -596,13 +596,11 @@ stress without adequate access to mitigating green infrastructure.
 Rotterdam](maps/LST_SJI_Rotterdam.png){#fig-sji-lst-rot fig-pos="H"
 fig-align="center"}
 
-**TO DO: don't use "we" here, write it in third person.**
-
-We used the simplified Spatial Justice Index, which is based on the same
-metrics as the Guangzhou SJI, to make it comparable. We plotted the SJI
-against the LST for each neighborhood, using a scatter plot. The plot
+The simplified Spatial Justice Index is used, which is based on the same
+metrics as the Guangzhou SJI, to make it comparable. The SJI
+against the LST for each neighborhood is plotted using a scatter plot. The plot
 shows that there is some correlation between the two variables, although
-not very strong. But we can see some linear trend where the most
+not very strong. But some linear trend can be observed, where the most
 vulnerable neighborhoods (with a lower SJI) tend to have higher LST
 values, indicating that they are more exposed to heat stress. However,
 there are also some outliers where vulnerable neighborhoods have lower
@@ -717,16 +715,8 @@ fig-align="center"}
 Guangzhou](maps/LST_SJI_Guangzhou.png){#fig-sji-lst-gz fig-pos="H"
 fig-align="center"}
 
-**TO DO: also write this in third person**
 
-We used the same simplified Spatial Justice Index as for Rotterdam,
-which is based on the same metrics. We plotted the SJI against the LST
-for each sub-district, using a scatter plot. Unlike for Rotterdam, the
-plot shows no correlation at all between the two variables. This can be
-due to the lack of detailed data for Guangzhou, or it could indicate
-that there is no spatial justice issue in terms of climate vulnerability
-in Guangzhou. However, without further analysis, it is difficult to draw
-any conclusions from this plot.
+The same simplified Spatial Justice Index was used for Guangzhou, which is based on the same metrics as the Rotterdam SJI, to make it comparable. The scatter plot of SJI against LST for Guangzhou shows a same correlation, although it is less strong. The plot suggests that there is a spatial justice issue in terms of climate vulnerability in Guangzhou, where disadvantaged populations may be disproportionately exposed to heat stress without adequate access to mitigating green infrastructure. However, the relationship is not very strong, and further analysis would be needed to confirm this finding.
 
 # Discussion
 
@@ -754,7 +744,7 @@ transit infrastructure connectivity and pedestrian walking barrier-
 would also provide a more sophisticated understanding of how physical
 networks shape environmental access.
 
-Finally, because officiel urban heat island (UHI) data was not available
+Finally, because official urban heat island (UHI) data was not available
 for Guangzhou, the study relied on raw satellite remote sensing to
 derive Land Surface Temperature. This approach introduces logistical
 challenges, particularly in aligning cloud-free satellite overpasses to
@@ -793,16 +783,9 @@ contrast;
 
 <!-- -->
 
-- Guangzhou: Conversely, Guangzhou exhibits no clear or statistically
-  coherent correlation between SJI and LST (@fig-sji-lst-gz). The
-  thermal landscape of Guangzhou does not mirror its socio-economic
-  divides; pockets of intense heat and areas of high-quality cooling
-  areas are distributed across wealthy and vulnerable administrative
-  units alike. However, due to the constrained availability and lower
+- Guangzhou: As can be observed in Figure (@fig-sji-lst-gz), there is a same trend present in Guangzhou around the relation between the Spatial Justice Index and Land Surface Temperature. However, due to the constrained availability and lower
   resolution of data for Guangzhou, the resulting index is inherently
-  less reliable than Rotterdam's. Consequently, it cannot be
-  definitively concluded that no correlation exists, but rather that the
-  available data fails to capture a statistically significant link.
+  less reliable than Rotterdam's. The observed correlation is weaker and more scattered, suggesting that the relationship between socio-economic vulnerability and heat exposure is less direct or more complex in Guangzhou. This could be due to a variety of factors, such as a more heterogeneous urban fabric, different patterns of green space distribution, or other unmeasured variables influencing the spatial justice dynamics.
 
 By evaluating which specific neighborhoods exhibit the highest deficit
 in environmental amenities relative to their vulnerability, the study

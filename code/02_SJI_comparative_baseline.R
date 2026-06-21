@@ -8,26 +8,28 @@ library(here)
 
 city_configs <- list(
   rotterdam = list(
-    output_path   = here("../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"),
-    file_path     = here("../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"),
+    output_path   = "../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg",
+    file_path     = "../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg",
     col_age       = "percentagePersonen65JaarEnOuder",
     col_female    = "PercentageVrouwen",
     col_density   = "bevolkingsdichtheidInwonersPerKm2",
     col_pop       = "aantalInwoners",
     col_lst       = "LSTmean",
+    col_dtg       = "gemiddelde_afstand_groen_m",
     title         = "Spatial Justice Index per Neighborhood in Rotterdam",
     caption       = "Source: Leefbaarometer 2024 & CBS Buurtgegevens",
     plot_output   = "spatial_justice_rotterdam.png"
   ),
   # Change these things to guangzhou thing
   guangzhou = list(
-    file_path     = here("../Guangzhou/KantonData.gpkg"),
-    output_path   = here("../Guangzhou/KantonData.gpkg"),
+    file_path     = "../Guangzhou/GuangzhouFull.gpkg",
+    output_path   = "../Guangzhou/GuangzhouFull.gpkg",
     col_age       = "Over65Percentagemean",
     col_female    = "FemalePercentagemean",
     col_density   = "PopDensity",
     col_pop       = "PopulationKanton_Pop2022",
     col_lst       = "LSTmean",
+    col_dtg       = "walk_dist_to_green_m_mean",
     title         = "Spatial Justice Index per Block in Guangzhou",
     caption       = "Source: OpenStreetMap & WorldPop",
     plot_output   = "spatial_justice_guangzhou.png"
@@ -44,7 +46,7 @@ min_max_scale <- function(x) {
   (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
 }
 
-weights <- c(age = 0.5, fem = 0.3, dens = 1, lst = 1)
+weights <- c(age = 0.5, fem = 0.3, dens = 1, lst = 1, dtg = 1)
 
 for (city_name in names(city_configs)) {
   cfg <- city_configs[[city_name]]
@@ -59,7 +61,8 @@ for (city_name in names(city_configs)) {
       female_num  = clean_cbs(.data[[cfg$col_female]]),
       pop_density = clean_cbs(.data[[cfg$col_density]]),
       pop_count   = clean_cbs(.data[[cfg$col_pop]]),
-      lst_mean    = clean_cbs(.data[[cfg$col_lst]])
+      lst_mean    = clean_cbs(.data[[cfg$col_lst]]),
+      dtg_mean    = clean_cbs(.data[[cfg$col_dtg]])
     )
 
   # Normalize
@@ -68,7 +71,8 @@ for (city_name in names(city_configs)) {
       norm_age  = min_max_scale(age65_num),
       norm_fem  = min_max_scale(female_num),
       norm_dens = min_max_scale(pop_density),
-      norm_lst  = min_max_scale(lst_mean)
+      norm_lst  = min_max_scale(lst_mean),
+      norm_dtg  = min_max_scale(dtg_mean)
     )
 
   # Calculate index
@@ -77,11 +81,12 @@ for (city_name in names(city_configs)) {
       `65plus_score` = 1 - norm_age,
       fem_score      = 1 - norm_fem,
       dens_score     = 1 - norm_dens,
-      lst_score      = 1 - norm_lst
+      lst_score      = 1 - norm_lst,
+      dtg_score      = 1 - norm_dtg
     ) %>%
     rowwise() %>%
     mutate(
-      scores_vector = list(c(`65plus_score`, fem_score, dens_score, lst_score)),
+      scores_vector = list(c(`65plus_score`, fem_score, dens_score, lst_score, dtg_score)),
       aantal_na     = sum(is.na(unlist(scores_vector))),
 
       spatial_justice_index = ifelse(

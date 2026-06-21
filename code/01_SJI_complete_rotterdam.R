@@ -7,7 +7,7 @@ library(scales)
 library(here)
 
 # Paths for files
-gpkg_bestand <- "Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"
+gpkg_bestand <- "../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"
 plot_output  <- here("code", "spatial_justice_rotterdam_complete.png")
 
 buurten_sf <- st_read(gpkg_bestand)
@@ -121,7 +121,7 @@ p <- ggplot(data = buurten_index) +
   )
 
 print(p)
-ggsave(plot_output, plot = p, width = 10, height = 8, dpi = 300)
+#ggsave(plot_output, plot = p, width = 10, height = 8, dpi = 300)
 
 
 buurten_gpkg_klaar <- buurten_index %>%
