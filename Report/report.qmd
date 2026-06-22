@@ -687,14 +687,14 @@ Compared to the Rotterdam case, the Guangzhou plot shows a higher
 overall distance to green spaces, with many residential areas located
 more than 500 meters away from the nearest park. It is crucial to note the difference in baseline accessibility between the two cities. In Rotterdam, the critical vulnerability threshold was set at >400 meters, whereas in Guangzhou, a comparable mapping of extreme distance required a threshold of >1500 meters. This highlights that Guangzhou's baseline urban form inherently places residential areas much further from green infrastructure compared to the more compact Dutch city. 
 Furthermore, the distribution of critical distance hexagons in Guangzhou is highly clustered, with large contiguous zones of high vulnerability, whereas in Rotterdam, the vulnerable hexagons are more dispersed across the city. Additionally, there is
-a clearer positive correlation to be found between distance to green and LST in
+a slightly clearer positive correlation to be found between distance to green and LST in
 Guangzhou, suggesting that residents in hotter areas are also more
 likely to be farther from cooling green spaces. This pattern indicates a
 significant climate risk, as vulnerable populations may be
 disproportionately exposed to heat stress without adequate access to
 mitigating green infrastructure. This pattern was not so clearly visible
 for Rotterdam, where the distance to green spaces was generally lower
-and less strongly correlated with LST, suggesting a more equitable
+and not are very slightly correlated with LST, suggesting a more equitable
 distribution of green infrastructure in relation to heat exposure.
 
 ![Distance to green vs LST in
@@ -784,7 +784,7 @@ contrast;
 
 - Guangzhou: As can be observed in Figure (@fig-sji-lst-gz), there is a same trend present in Guangzhou around the relation between the Spatial Justice Index and Land Surface Temperature. However, due to the constrained availability and lower
   resolution of data for Guangzhou, the resulting index is inherently
-  less reliable than Rotterdam's. The observed correlation is weaker and more scattered, suggesting that the relationship between socio-economic vulnerability and heat exposure is less direct or more complex in Guangzhou. This could be due to a variety of factors, such as a more heterogeneous urban fabric, different patterns of green space distribution, or other unmeasured variables influencing the spatial justice dynamics. In comparison to Rotterdam, the overall distance to green spaces is much greater in Guangzhou, and the relationship between Land Surface Temperature and distance to green spaces is stronger in Guangzhou. This suggests that areas with higher heat exposure also tend to have poorer access to green infrastructure in Guangzhou.
+  less reliable than Rotterdam's. The observed correlation is weaker and more scattered, suggesting that the relationship between socio-economic vulnerability and heat exposure is less direct or more complex in Guangzhou. This could be due to a variety of factors, such as a more heterogeneous urban fabric, different patterns of green space distribution, or other unmeasured variables influencing the spatial justice dynamics. In comparison to Rotterdam, the overall distance to green spaces is much greater in Guangzhou, and a slightly clearer positive relationship is observed between Land Surface Temperature and distance to green spaces. This suggests that areas with higher heat exposure more frequently coincide with greater distances to green infrastructure in Guangzhou than in Rotterdam. Additionally, the map shows that areas with poor access to parks in Guangzhou are clustered together, forming massive, continuous blocks of the city that lack green space. In Rotterdam, however, the isolated neighborhoods are widely scattered across the city.
 By evaluating which specific neighborhoods exhibit the highest deficit
 in environmental amenities relative to their vulnerability, the study
 successfully identified the "priority zones" requiring targeted green
