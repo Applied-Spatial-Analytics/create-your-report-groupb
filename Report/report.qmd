@@ -364,7 +364,7 @@ in Rotterdam. The most vulnerable residential clusters in terms of green
 space accessibility are distributed across both high-heat and
 moderate-temperature urban areas. This indicates that poor access to
 cooling spaces is a structural issue that is not exclusively isolated to
-the absolute hottest neighborhoods in the city of Rotterdam.
+the absolute hottest neighborhoods in the city of Rotterdam.  In Rotterdam, the critical hotspots (purple borders) appear  scattered across the city, appearing in both the heavily built-up areas and the southern less urban developed areas.
 
 ![Distance to green vs LST in
 Rotterdam](maps/vulnerability_rotterdam.png){#fig-rot-green-lst
@@ -680,17 +680,17 @@ After all data had been extracted, the same visualization can be done
 for Climate vulnerability as for Rotterdam, by plotting the distance to
 green spaces against the mean land surface temperature (LST). This
 allows us to visually assess whether areas with higher LST also tend to
-be farther from green spaces, which would indicate a spatial justice
-issue in terms of climate vulnerability. In the case of Guangzhou, the
+be farther from green spaces, which would indicate an unequal spatial distribution of climate risks. In the case of Guangzhou, the
 hexagons are 300 meter hexagons which is the same size as in Rotterdam.
 
 Compared to the Rotterdam case, the Guangzhou plot shows a higher
 overall distance to green spaces, with many residential areas located
-more than 500 meters away from the nearest park. Additionally, there is
-a clearer positive correlation between distance to green and LST in
+more than 500 meters away from the nearest park. It is crucial to note the difference in baseline accessibility between the two cities. In Rotterdam, the critical vulnerability threshold was set at >400 meters, whereas in Guangzhou, a comparable mapping of extreme distance required a threshold of >1500 meters. This highlights that Guangzhou's baseline urban form inherently places residential areas much further from green infrastructure compared to the more compact Dutch city. 
+Furthermore, the distribution of critical distance hexagons in Guangzhou is highly clustered, with large contiguous zones of high vulnerability, whereas in Rotterdam, the vulnerable hexagons are more dispersed across the city. Additionally, there is
+a clearer positive correlation to be found between distance to green and LST in
 Guangzhou, suggesting that residents in hotter areas are also more
 likely to be farther from cooling green spaces. This pattern indicates a
-significant spatial justice concern, as vulnerable populations may be
+significant climate risk, as vulnerable populations may be
 disproportionately exposed to heat stress without adequate access to
 mitigating green infrastructure. This pattern was not so clearly visible
 for Rotterdam, where the distance to green spaces was generally lower
@@ -779,14 +779,12 @@ contrast;
   with full SJI)**. In Rotterdam, environmental burdens and
   socio-economic vulnerabilities are spatially aligned: neighborhoods
   with lower socio-economic coping capacity and poorer physical
-  livability experience higher thermal stress.
-
+  livability experience higher thermal stress. In contrast, no clear relationship was found between Land Surface Temperature and distance to green spaces. Residential areas with poor access to green infrastructure were distributed across both high- and moderate-temperature areas, suggesting that limited green accessibility is a structural characteristic of the city rather than being concentrated in the hottest neighborhoods.
 <!-- -->
 
 - Guangzhou: As can be observed in Figure (@fig-sji-lst-gz), there is a same trend present in Guangzhou around the relation between the Spatial Justice Index and Land Surface Temperature. However, due to the constrained availability and lower
   resolution of data for Guangzhou, the resulting index is inherently
-  less reliable than Rotterdam's. The observed correlation is weaker and more scattered, suggesting that the relationship between socio-economic vulnerability and heat exposure is less direct or more complex in Guangzhou. This could be due to a variety of factors, such as a more heterogeneous urban fabric, different patterns of green space distribution, or other unmeasured variables influencing the spatial justice dynamics.
-
+  less reliable than Rotterdam's. The observed correlation is weaker and more scattered, suggesting that the relationship between socio-economic vulnerability and heat exposure is less direct or more complex in Guangzhou. This could be due to a variety of factors, such as a more heterogeneous urban fabric, different patterns of green space distribution, or other unmeasured variables influencing the spatial justice dynamics. In comparison to Rotterdam, the overall distance to green spaces is much greater in Guangzhou, and the relationship between Land Surface Temperature and distance to green spaces is stronger in Guangzhou. This suggests that areas with higher heat exposure also tend to have poorer access to green infrastructure in Guangzhou.
 By evaluating which specific neighborhoods exhibit the highest deficit
 in environmental amenities relative to their vulnerability, the study
 successfully identified the "priority zones" requiring targeted green
