@@ -6,17 +6,17 @@ library(tidygraph)
 library(purrr)
 
 # Read data
-buurten <- st_read("C:/Users/annas/create-your-report-groupb/Liveablility/Neighborhood_data.gpkg")
-gebouwen <- st_read("C:/Users/annas/create-your-report-groupb/Liveablility/Buildings_Rotterdam.gpkg") %>%
+buurten <- st_read("../data/rotterdam/Liveablility/Neighborhood_data.gpkg")
+gebouwen <- st_read("../data/rotterdam/Liveablility/Buildings_Rotterdam.gpkg") %>%
   filter(grepl("woonfunctie", gebruiksdoel, ignore.case = TRUE))
-groen_raw <- st_read("C:/Users/annas/create-your-report-groupb/Liveablility/Green_areas_OSM.gpkg")
+groen_raw <- st_read("../data/rotterdam/Liveablility/Green_areas_OSM.gpkg")
 
 target_crs <- 28992
 buurten <- st_transform(buurten, target_crs)
 gebouwen <- st_transform(gebouwen, target_crs)
 groen_rd <- st_transform(groen_raw, target_crs)
 
-roads <- st_read("C:/Users/annas/create-your-report-groupb/Liveablility/Roads_Rotterdam.gpkg") %>%
+roads <- st_read("../data/rotterdam/Liveablility/Roads_Rotterdam.gpkg") %>%
   st_transform(target_crs) %>%
   st_geometry() %>%
   st_cast("LINESTRING")
@@ -66,7 +66,7 @@ buurten_resultaat <- buurten %>%
   left_join(buurt_groen_afstand, by = "buurtcode")
 
 #
-st_write(buurten_resultaat, "C:/Users/annas/create-your-report-groupb/Liveablility/Neighborhood_groen_netwerk.gpkg", delete_layer = TRUE)
+st_write(buurten_resultaat, "../data/rotterdam/Liveablility/Neighborhood_groen_netwerk.gpkg", delete_layer = TRUE)
 
 # Korte inspectie van de eerste resultaten in de console
 print(head(buurten_resultaat %>% select(buurtnaam, gemiddelde_afstand_groen_m)))

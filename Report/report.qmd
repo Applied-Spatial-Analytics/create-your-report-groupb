@@ -596,8 +596,12 @@ is a spatial justice issue in terms of climate vulnerability, where
 disadvantaged populations may be disproportionately exposed to heat
 stress without adequate access to mitigating green infrastructure.
 
-![Spatial Justice Index and Land Surface Temperature in
-Rotterdam](maps/LST_SJI_Rotterdam.png){#fig-sji-lst-rot fig-pos="H"
+![Full Spatial Justice Index and Land Surface Temperature in
+Rotterdam](maps/LST_SJI_Rotterdam_Full.png){#fig-sji-lst-rot-full fig-pos="H"
+fig-align="center"}
+
+![Simplified Spatial Justice Index and Land Surface Temperature in
+Rotterdam](maps/LST_SJI_Rotterdam.png){#fig-sji-lst-rot-simple fig-pos="H"
 fig-align="center"}
 
 The simplified Spatial Justice Index is used, which is based on the same
@@ -719,7 +723,7 @@ fig-pos="H" fig-align="center" width="90%"}
 
 ## Socio-Economic Vulnerability
 
-**TO DO: write explanation here**
+The same simplified Spatial Justice Index for Rotterdam was used for Guangzhou to ensure a fair comparison between the two cities. In the map of the SJI for Guangzhou, it can be observed that the most vulnerable sub-districts are located in the central areas of the city, while the peripheral sub-districts tend to have higher SJI scores, indicating better socio-economic conditions and access to green infrastructure. This spatial pattern suggests that the central urban areas of Guangzhou may face greater challenges in terms of spatial justice and climate vulnerability. Although this might seem the same as for Rotterdam, it has to be noted that the SJI is based on normalised values, which means that the absolute values of the SJI scores are not directly comparable between the two cities. For a direct comparison between the two cities on which performs better, the data has to be joined and normalised together, which is not done in this study. 
 
 ![Spatial Justice Index per sub-district in
 Guangzhou](maps/SJI_Guangzhou.png){#fig-sji-guangzhou fig-pos="H"
@@ -732,9 +736,7 @@ Guangzhou](maps/LST_SJI_Guangzhou.png){#fig-sji-lst-gz fig-pos="H"
 fig-align="center"}
 
 
-The same simplified Spatial Justice Index for Rotterdam was used for Guangzhou
-to ensure a fair comparison between the two cities. The scatter plot of SJI
-against LST for Guangzhou shows a similar correlation between both metrics.
+The scatter plot of SJI against LST for Guangzhou shows a similar correlation between both metrics as with Rotterdam.
 The results suggest that there is a spatial justice issue in terms of climate
 vulnerability in Guangzhou where disadvantaged populations are
 disproportionately exposed
@@ -799,8 +801,7 @@ contrast;
 
 - Rotterdam: The analysis demonstrates a distinct, negative correlation
   between the Spatial Justice Index and Land Surface Temperature,
-  clearly visible in the scatter plots (@fig-sji-lst-rot and **figure
-  with full SJI)**. In Rotterdam, environmental burdens and
+  clearly visible in the scatter plots (@fig-sji-lst-rot and @fig-sji-lst-rot-full). In Rotterdam, environmental burdens and
   socio-economic vulnerabilities are spatially aligned: neighbourhoods
   with lower socio-economic coping capacity and poorer physical
   livability experience higher thermal stress. In contrast, no clear
@@ -854,5 +855,8 @@ social injustice. In cities like Guangzhou, social injustice is hidden
 within the temperature variations, requiring planners to prioritize
 demographic vulnerability independently to ensure equitable urban
 futures.
+
+# AI Acknowledgement
+AI tools were used to assist in refining the language and structure of this report. All the content was reviewed and verified afterwards. They were used as an assisting tool for writing code in, for us, new languages, such as R.
 
 # References

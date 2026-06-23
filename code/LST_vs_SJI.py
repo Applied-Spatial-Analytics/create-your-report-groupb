@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # ------------------------------------------------------------------
 # Configuration
 # ------------------------------------------------------------------
-gpkg_file = "Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"  # Path to your GeoPackage file
+gpkg_file = "../data/rotterdam/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"  # Path to your GeoPackage file
 layer_name = "neighborhood_groen_netwerk"  # Set layer name if needed
 
 # ------------------------------------------------------------------

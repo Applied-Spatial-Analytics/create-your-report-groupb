@@ -7,7 +7,7 @@ library(scales)
 library(here)
 
 # Paths for files
-gpkg_bestand <- "../Rotterdam_data/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"
+gpkg_bestand <- "../data/rotterdam/Liveablility/Neighborhood_groen_netwerk_with_LST.gpkg"
 plot_output  <- here("code", "spatial_justice_rotterdam_complete.png")
 
 buurten_sf <- st_read(gpkg_bestand)
