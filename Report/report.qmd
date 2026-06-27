@@ -198,7 +198,7 @@ The spatial processing began by clipping the raster datasets to the
 study area boundary polygons using an administrative mask layer. To
 convert the raw Digital Number (`DN`) values from the thermal infrared
 sensors into meaningful temperature readings, a standard scale factor by *USGS*
-[@usgs_index2026] was applied to calculate the brightness temperature in Kelvin:
+[@usgs_index-2026] was applied to calculate the brightness temperature in Kelvin:
 $$T_{K}={DN * 0.0341802 + 149.0}$$
 
 Subsequently, the Kelvin values were converted to degrees Celsius
