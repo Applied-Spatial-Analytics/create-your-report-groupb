@@ -783,8 +783,6 @@ atmospheric UHI effects originally intended for evaluation.
 
 # Conclusion
 
-**TODO: add something about the distance to green vs LST here?**
-
 This study set out to evaluate the following central research question:
 *How does the relationship between urban green infrastructure allocation
 and socio-economic vulnerability vary between Rotterdam and Guangzhou?*
@@ -801,7 +799,7 @@ contrast;
 
 - Rotterdam: The analysis demonstrates a distinct, negative correlation
   between the Spatial Justice Index and Land Surface Temperature,
-  clearly visible in the scatter plots (@fig-sji-lst-rot and @fig-sji-lst-rot-full). In Rotterdam, environmental burdens and
+  clearly visible in the scatter plots (e.g., @fig-sji-lst-rot-full). In Rotterdam, environmental burdens and
   socio-economic vulnerabilities are spatially aligned: neighbourhoods
   with lower socio-economic coping capacity and poorer physical
   livability experience higher thermal stress. In contrast, no clear
